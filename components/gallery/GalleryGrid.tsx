@@ -21,16 +21,19 @@ function ImageTile({
   onOpen,
   className,
   inquireHref,
+  productFit = false,
 }: {
   image: GalleryImage;
   contain: boolean;
   onOpen: () => void;
   className?: string;
   inquireHref?: string;
+  /** Square tiles + padded contain — full product visible at a smaller scale */
+  productFit?: boolean;
 }) {
   const modelName = image.name ?? (image.id ? getImageLabel(image) : null);
-  const useContain = image.imageFit === "contain" || contain;
-  const scale = image.imageScale ?? 1;
+  const useContain = image.imageFit === "contain" || contain || productFit;
+  const scale = image.imageScale ?? (productFit ? 0.82 : 1);
 
   return (
     <div className={cn("group relative", className)}>
@@ -38,7 +41,11 @@ function ImageTile({
         type="button"
         className={cn(
           "relative w-full overflow-hidden rounded-xl",
-          contain ? "aspect-[3/4] bg-[#c8dceb]" : "aspect-[4/3] bg-stone"
+          productFit
+            ? "aspect-square bg-[#e8eef2]"
+            : contain
+              ? "aspect-[3/4] bg-[#c8dceb]"
+              : "aspect-[4/3] bg-stone"
         )}
         onClick={onOpen}
       >
@@ -66,11 +73,11 @@ function ImageTile({
             src={image.src}
             alt={image.alt}
             fill
-            unoptimized={image.imageFit === "contain"}
+            unoptimized={useContain}
             className={cn(
               "transition-transform duration-500 group-hover:scale-105",
               useContain
-                ? "object-contain object-center p-4"
+                ? "object-contain object-center p-5"
                 : "object-cover"
             )}
             sizes="(max-width: 768px) 100vw, 33vw"
@@ -110,6 +117,7 @@ function SectionBlock({
   onOpenImage,
   anchorImage,
   inquireFor,
+  productFit = false,
 }: {
   section: GallerySection;
   contain: boolean;
@@ -117,6 +125,7 @@ function SectionBlock({
   onOpenImage: (src: string) => void;
   anchorImage?: GalleryImage;
   inquireFor?: (image: GalleryImage) => string | undefined;
+  productFit?: boolean;
 }) {
   if (
     section.layout === "anchor-aside" &&
@@ -131,12 +140,14 @@ function SectionBlock({
           <ImageTile
             image={anchorImage}
             contain={contain}
+            productFit={productFit}
             onOpen={() => onOpenImage(anchorImage.src)}
             inquireHref={inquireFor?.(anchorImage)}
           />
           <ImageTile
             image={featured}
             contain={contain}
+            productFit={productFit}
             onOpen={() => onOpenImage(featured.src)}
             inquireHref={inquireFor?.(featured)}
           />
@@ -161,6 +172,7 @@ function SectionBlock({
                 key={image.src}
                 image={image}
                 contain={contain}
+                productFit={productFit}
                 onOpen={() => onOpenImage(image.src)}
                 inquireHref={inquireFor?.(image)}
               />
@@ -180,6 +192,7 @@ function SectionBlock({
           <ImageTile
             image={featured}
             contain={contain}
+            productFit={productFit}
             onOpen={() => onOpenImage(featured.src)}
             inquireHref={inquireFor?.(featured)}
           />
@@ -204,6 +217,7 @@ function SectionBlock({
                 key={image.src}
                 image={image}
                 contain={contain}
+                productFit={productFit}
                 onOpen={() => onOpenImage(image.src)}
                 inquireHref={inquireFor?.(image)}
               />
@@ -232,6 +246,7 @@ function SectionBlock({
             key={image.src}
             image={image}
             contain={contain}
+            productFit={productFit}
             onOpen={() => onOpenImage(image.src)}
             inquireHref={inquireFor?.(image)}
           />
@@ -259,7 +274,8 @@ function inquiryHeadline(gallery: Gallery): string {
 
 export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const contain = gallery.imageFit === "contain";
+  const productFit = gallery.slug === "litter-receptacles";
+  const contain = gallery.imageFit === "contain" && !productFit;
   const hasLabeledProducts =
     gallery.images.some((image) => Boolean(image.id)) ||
     (gallery.sections?.some((section) =>
@@ -286,9 +302,11 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
 
   const gridClass = cn(
     "grid gap-4",
-    contain
-      ? "mx-auto max-w-3xl sm:grid-cols-2 lg:grid-cols-2"
-      : "sm:grid-cols-2 lg:grid-cols-3"
+    productFit
+      ? "mx-auto max-w-4xl sm:grid-cols-2 lg:grid-cols-3"
+      : contain
+        ? "mx-auto max-w-3xl sm:grid-cols-2 lg:grid-cols-2"
+        : "sm:grid-cols-2 lg:grid-cols-3"
   );
 
   function openImage(src: string) {
@@ -309,6 +327,7 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
             key={image.src}
             image={image}
             contain={contain}
+            productFit={productFit}
             onOpen={() => openImage(image.src)}
             inquireHref={inquireFor(image)}
           />
@@ -320,6 +339,7 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
           key={section.id}
           section={section}
           contain={contain}
+          productFit={productFit}
           gridClass={gridClass}
           onOpenImage={openImage}
           inquireFor={showInquiry ? inquireFor : undefined}
