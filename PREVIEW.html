@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parkezza Preview</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body { font-family: "DM Sans", system-ui, sans-serif; background: #f5f0e8; color: #1c1c1e; margin: 0; padding: 2rem; -webkit-font-smoothing: antialiased; }
+    header { text-align: center; margin-bottom: 2rem; padding-bottom: 2rem; border-bottom: 1px solid #ddd6cb; }
+    header img { max-height: 48px; }
+    h1 { font-family: "DM Serif Display", Georgia, serif; font-size: 2.5rem; font-weight: 400; line-height: 1.15; letter-spacing: -0.01em; margin: 1rem auto 0.5rem; max-width: 820px; }
+    h2 { font-family: "DM Serif Display", Georgia, serif; font-weight: 400; }
+    .note { background: #1c1c1e; color: #f5f0e8; padding: 1rem 1.5rem; border-radius: 8px; max-width: 640px; margin: 0 auto 2rem; font-family: sans-serif; font-size: 0.9rem; line-height: 1.5; }
+    nav { display: flex; flex-wrap: wrap; gap: 0.5rem; justify-content: center; margin-bottom: 2rem; font-family: sans-serif; }
+    nav a { background: #a67c52; color: white; padding: 0.4rem 0.8rem; border-radius: 999px; text-decoration: none; font-size: 0.85rem; }
+    nav a:hover { background: #8a6644; }
+    .category { background: white; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; box-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+    .category h2 { margin: 0 0 0.5rem; font-size: 1.5rem; }
+    .tier { font-size: 0.7rem; background: #1c1c1e; color: #f5f0e8; padding: 0.2rem 0.6rem; border-radius: 999px; vertical-align: middle; font-family: sans-serif; text-transform: uppercase; }
+    .count { font-family: sans-serif; font-size: 0.85rem; color: #5c5650; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 0.75rem; margin-top: 1rem; }
+    .grid img { width: 100%; aspect-ratio: 4/3; object-fit: cover; border-radius: 8px; cursor: zoom-in; }
+    .grid img:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="public/logo.png" alt="Parkezza">
+    <h1>Curated furnishings for distinguished outdoor environments</h1>
+    <p>Static preview — double-click this file anytime. No server needed.</p>
+  </header>
+  <div class="note">
+    <strong>Full website:</strong> Double-click <code>START-SITE.bat</code> in this same folder to run the complete site at localhost:3000.<br>
+    <strong>Images folder:</strong> Browse <code>public\images\galleries</code> in File Explorer.
+  </div>
+  <nav>
+    <a href="#benches">Benches</a>
+    <a href="#litter-receptacles">Litter Receptacles</a>
+    <a href="#shade-structures">Shade Structures</a>
+    <a href="#bollards">Bollards</a>
+    <a href="#dog-waste-stations">Dog Waste Stations</a>
+    <a href="#umbrellas">Commercial Umbrellas</a>
+    <a href="#picnic-tables">Picnic Tables</a>
+    <a href="#pergolas-gazebos">Pergolas & Gazebos</a>
+    <a href="#bike-racks">Bike Racks</a>
+    <a href="#flagpoles">Flagpoles</a>
+    <a href="#tree-guards">Tree Guards</a>
+  </nav>
+  
+    <section class="category" id="benches">
+      <h2>Benches <span class="tier">signature</span></h2>
+      <p>Signature and essential outdoor benches for streetscapes, plazas, campuses, and resort gathering spaces.</p>
+      <p class="count">16 images</p>
+      <div class="grid"><img src="public/images/galleries/benches/bench-wood-metal-arms.png" alt="Benches — wood slat bench with metal arms and back" title="Benches — wood slat bench with metal arms and back">
+        <img src="public/images/galleries/benches/p-backlessvs1.png" alt="Benches — backless VS1" title="Benches — backless VS1">
+        <img src="public/images/galleries/benches/p-evavs1.png" alt="Benches — Eva VS1" title="Benches — Eva VS1">
+        <img src="public/images/galleries/benches/p-lilyvs1.png" alt="Benches — Lily VS1" title="Benches — Lily VS1">
+        <img src="public/images/galleries/benches/p-lilyvs2.png" alt="Benches — Lily VS2" title="Benches — Lily VS2">
+        <img src="public/images/galleries/benches/p-lilyvs3.png" alt="Benches — Lily VS3" title="Benches — Lily VS3"></div>
+    </section>
+
+    <section class="category" id="litter-receptacles">
+      <h2>Litter Receptacles <span class="tier">essential</span></h2>
+      <p>Attractive trash and recycling receptacles for public spaces, resorts, and municipal environments.</p>
+      <p class="count">4 images</p>
+      <div class="grid"><img src="public/images/galleries/waste-receptacles/p-litterrecyclevs4.png" alt="Litter Receptacles — Litter Recycle VS4" title="Litter Receptacles — Litter Recycle VS4">
+        <img src="public/images/galleries/waste-receptacles/p-littersteelsvs2.png" alt="Litter Receptacles — Litter Steel SVS2" title="Litter Receptacles — Litter Steel SVS2">
+        <img src="public/images/galleries/waste-receptacles/p-littersteelsvs3.png" alt="Litter Receptacles — Litter Steel SVS3" title="Litter Receptacles — Litter Steel SVS3">
+        <img src="public/images/galleries/waste-receptacles/p-litterwoodvs1.png" alt="Litter Receptacles — Litter Wood VS1" title="Litter Receptacles — Litter Wood VS1"></div>
+    </section>
+
+    <section class="category" id="shade-structures">
+      <h2>Shade Structures <span class="tier">signature</span></h2>
+      <p>Engineered shade canopies and structures for playgrounds, pools, dining, and outdoor gathering.</p>
+      <p class="count">19 images</p>
+      <div class="grid"><img src="public/images/galleries/shade-structures/hip-downcurve-barrel-vault.png" alt="Shade Structures — hip downcurve barrel vault" title="Shade Structures — hip downcurve barrel vault">
+        <img src="public/images/galleries/shade-structures/hip-dual-pavilions-park.png" alt="Shade Structures — hip dual pavilions park" title="Shade Structures — hip dual pavilions park">
+        <img src="public/images/galleries/shade-structures/hip-single-post-playground.png" alt="Shade Structures — hip single post playground" title="Shade Structures — hip single post playground">
+        <img src="public/images/galleries/shade-structures/hip-tiered-clerestory.png" alt="Shade Structures — hip tiered clerestory" title="Shade Structures — hip tiered clerestory">
+        <img src="public/images/galleries/shade-structures/roof-styles-overview.png" alt="Shade Structures — roof styles overview" title="Shade Structures — roof styles overview">
+        <img src="public/images/galleries/shade-structures/shade-01.png" alt="Shade Structures — shade 01" title="Shade Structures — shade 01"></div>
+    </section>
+
+    <section class="category" id="bollards">
+      <h2>Bollards <span class="tier">essential</span></h2>
+      <p>Security and perimeter bollards for traffic calming, site delineation, and architectural streetscapes.</p>
+      <p class="count">13 images</p>
+      <div class="grid"><img src="public/images/galleries/bollards/p-bollardsz-1-3.png" alt="Bollards — Bollards Z 1 3" title="Bollards — Bollards Z 1 3">
+        <img src="public/images/galleries/bollards/p-bollardsz-1light.png" alt="Bollards — Bollards Z 1light" title="Bollards — Bollards Z 1light">
+        <img src="public/images/galleries/bollards/p-bollardsz-2light.png" alt="Bollards — Bollards Z 2light" title="Bollards — Bollards Z 2light">
+        <img src="public/images/galleries/bollards/p-bollardsz-3light.png" alt="Bollards — Bollards Z 3light" title="Bollards — Bollards Z 3light">
+        <img src="public/images/galleries/bollards/p-bollardsz-4-5.png" alt="Bollards — Bollards Z 4 5" title="Bollards — Bollards Z 4 5">
+        <img src="public/images/galleries/bollards/p-bollardsz-4light.png" alt="Bollards — Bollards Z 4light" title="Bollards — Bollards Z 4light"></div>
+    </section>
+
+    <section class="category" id="dog-waste-stations">
+      <h2>Dog Waste Stations <span class="tier">essential</span></h2>
+      <p>Dog waste stations, dispensers, agility equipment, and site amenities for dog parks and trails.</p>
+      <p class="count">27 images</p>
+      <div class="grid"><img src="public/images/galleries/dog-park-stations/hero-stations-no-model-number.png" alt="Dog Waste Stations — square can, mesh can, and no can models" title="Dog Waste Stations — square can, mesh can, and no can models">
+        <img src="public/images/galleries/dog-park-stations/hero-trail-proven-recycled-wood.png" alt="Trail Proven recycled wood-look dog waste station for trails and trailheads" title="Trail Proven recycled wood-look dog waste station for trails and trailheads">
+        <img src="public/images/galleries/dog-park-stations/img-0ff701b165f4405aeaa1ae51b40892a014a5bf1f.png" alt="Recycled Dog Jump BARK-424" title="Recycled Dog Jump BARK-424">
+        <img src="public/images/galleries/dog-park-stations/img-146f2299cc97b81300714ee32db4820ab409cfe4.png" alt="Steel Teeter Totter PBARK-440" title="Steel Teeter Totter PBARK-440">
+        <img src="public/images/galleries/dog-park-stations/img-1924f65474a4710abead3f02b923341199fa53c4.png" alt="Dog Waste Stations — img 1924f65474a4710abead3f02b923341199fa53c4" title="Dog Waste Stations — img 1924f65474a4710abead3f02b923341199fa53c4">
+        <img src="public/images/galleries/dog-park-stations/img-1f3c975feb22b0023fecb56d22b6019dff55bfc2.png" alt="Doggie Crawl Tunnel PBARK-491" title="Doggie Crawl Tunnel PBARK-491"></div>
+    </section>
+
+    <section class="category" id="umbrellas">
+      <h2>Commercial Umbrellas <span class="tier">signature</span></h2>
+      <p>Wind-rated commercial patio umbrellas, cantilever systems, and shade for resorts and hospitality.</p>
+      <p class="count">75 images</p>
+      <div class="grid"><img src="public/images/galleries/umbrellas/1081498.png" alt="Commercial Umbrellas — 1081498" title="Commercial Umbrellas — 1081498">
+        <img src="public/images/galleries/umbrellas/1081498-orig.png" alt="Commercial Umbrellas — 1081498 orig" title="Commercial Umbrellas — 1081498 orig">
+        <img src="public/images/galleries/umbrellas/1125551.png" alt="Commercial Umbrellas — 1125551" title="Commercial Umbrellas — 1125551">
+        <img src="public/images/galleries/umbrellas/1125551-orig.png" alt="Commercial Umbrellas — 1125551 orig" title="Commercial Umbrellas — 1125551 orig">
+        <img src="public/images/galleries/umbrellas/1477140.jpg" alt="Commercial Umbrellas — 1477140" title="Commercial Umbrellas — 1477140">
+        <img src="public/images/galleries/umbrellas/1477140-orig.jpg" alt="Commercial Umbrellas — 1477140 orig" title="Commercial Umbrellas — 1477140 orig"></div>
+    </section>
+
+    <section class="category" id="picnic-tables">
+      <h2>Picnic Tables <span class="tier">essential</span></h2>
+      <p>Heavy-duty picnic tables for parks, recreation centers, and outdoor dining — ADA configurations available.</p>
+      <p class="count">4 images</p>
+      <div class="grid"><img src="public/images/galleries/picnic-tables/p-picnicvs1.png" alt="Picnic Tables — Picnic VS1" title="Picnic Tables — Picnic VS1">
+        <img src="public/images/galleries/picnic-tables/p-picnicvs2.png" alt="Picnic Tables — Picnic VS2" title="Picnic Tables — Picnic VS2">
+        <img src="public/images/galleries/picnic-tables/p-picnicvs3.png" alt="Picnic Tables — Picnic VS3" title="Picnic Tables — Picnic VS3">
+        <img src="public/images/galleries/picnic-tables/p-picnicvs4.png" alt="Picnic Tables — Picnic VS4" title="Picnic Tables — Picnic VS4"></div>
+    </section>
+
+    <section class="category" id="pergolas-gazebos">
+      <h2>Pergolas & Gazebos <span class="tier">signature</span></h2>
+      <p>Architectural pergolas and gazebos for resorts, golf courses, and distinguished outdoor environments.</p>
+      <p class="count">21 images</p>
+      <div class="grid"><img src="public/images/galleries/pergolas-gazebos/pergola-arched-arbor-park.png" alt="Pergolas & Gazebos — pergola arched arbor park" title="Pergolas & Gazebos — pergola arched arbor park">
+        <img src="public/images/galleries/pergolas-gazebos/pergola-cantilever-picnic-row.png" alt="Pergolas & Gazebos — pergola cantilever picnic row" title="Pergolas & Gazebos — pergola cantilever picnic row">
+        <img src="public/images/galleries/pergolas-gazebos/pergola-curved-plaza.png" alt="Pergolas & Gazebos — pergola curved plaza" title="Pergolas & Gazebos — pergola curved plaza">
+        <img src="public/images/galleries/pergolas-gazebos/zc-pg01.png" alt="Pergolas & Gazebos — zc pg01" title="Pergolas & Gazebos — zc pg01">
+        <img src="public/images/galleries/pergolas-gazebos/zc-pg02.png" alt="Pergolas & Gazebos — zc pg02" title="Pergolas & Gazebos — zc pg02">
+        <img src="public/images/galleries/pergolas-gazebos/zc-pg03.png" alt="Pergolas & Gazebos — zc pg03" title="Pergolas & Gazebos — zc pg03"></div>
+    </section>
+
+    <section class="category" id="bike-racks">
+      <h2>Bike Racks <span class="tier">essential</span></h2>
+      <p>Secure bicycle parking from loop racks to decorative designs for campuses and streetscapes.</p>
+      <p class="count">2 images</p>
+      <div class="grid"><img src="public/images/galleries/bike-racks/loop-racks-commercial.png" alt="Bike Racks — commercial loop racks on a plaza" title="Bike Racks — commercial loop racks on a plaza">
+        <img src="public/images/galleries/bike-racks/loop-racks-plaza.png" alt="Bike Racks — sculptural loop racks along a walkway" title="Bike Racks — sculptural loop racks along a walkway"></div>
+    </section>
+
+    <section class="category" id="flagpoles">
+      <h2>Flagpoles <span class="tier">essential</span></h2>
+      <p>Standard, Premium, and Heavy Duty Flagpoles. Internal and External Halyards, Vanguard. Flags, all sizes. Heights 20 ft – 70 ft. Butt diameters 3" – 12".</p>
+      <p class="count">2 images</p>
+      <div class="grid"><img src="public/images/galleries/flagpoles/flagpole-commercial.png" alt="Flagpoles — commercial aluminum flagpole with American flag" title="Flagpoles — commercial aluminum flagpole with American flag">
+        <img src="public/images/galleries/flagpoles/flagpole-external-halyard.png" alt="Flagpoles — external halyard flagpole with gold ball finial" title="Flagpoles — external halyard flagpole with gold ball finial"></div>
+    </section>
+
+    <section class="category" id="tree-guards">
+      <h2>Tree Guards <span class="tier">essential</span></h2>
+      <p>Decorative tree grates and guards that protect root zones while completing the streetscape.</p>
+      <p class="count">13 images</p>
+      <div class="grid"><img src="public/images/galleries/tree-grates/p-treeguardvs1.png" alt="Tree Guards — Treeguard VS1" title="Tree Guards — Treeguard VS1">
+        <img src="public/images/galleries/tree-grates/o-trg-01.png" alt="Tree Guards — o trg 01" title="Tree Guards — o trg 01">
+        <img src="public/images/galleries/tree-grates/o-trg-02.png" alt="Tree Guards — o trg 02" title="Tree Guards — o trg 02">
+        <img src="public/images/galleries/tree-grates/o-trg-03.png" alt="Tree Guards — o trg 03" title="Tree Guards — o trg 03">
+        <img src="public/images/galleries/tree-grates/o-trg-06.png" alt="Tree Guards — o trg 06" title="Tree Guards — o trg 06">
+        <img src="public/images/galleries/tree-grates/o-trg-15.png" alt="Tree Guards — o trg 15" title="Tree Guards — o trg 15"></div>
+    </section>
+</body>
+</html>

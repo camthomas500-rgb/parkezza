@@ -1,0 +1,34 @@
+﻿=== NEW ===
+benches: 17
+bike-racks: 2
+bollards: 13
+chairs-chaises: 5
+dog-park-stations: 27
+flagpoles: 2
+park-shelters: 18
+pergolas-gazebos: 21
+picnic-tables: 4
+planters: 8
+shade-structures: 19
+tree-grates: 13
+umbrellas: 75
+waste-receptacles: 4
+TOTAL: 228
+
+=== OLD ===
+benches: 17
+bike-racks: 2
+bollards: 13
+chairs-chaises: 5
+dog-park-stations: 27
+flagpoles: 2
+park-shelters: 18
+pergolas-gazebos: 21
+picnic-tables: 4
+planters: 8
+shade-structures: 19
+tree-grates: 13
+umbrellas: 75
+waste-receptacles: 4
+TOTAL: 228
+

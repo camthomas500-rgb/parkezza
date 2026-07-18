@@ -1,0 +1,935 @@
+[
+  {
+    "slug": "benches",
+    "name": "Benches",
+    "tier": "signature",
+    "description": "Commercial outdoor benches for parks, schools, campuses, plazas, and resorts—durable materials, multiple mounts, and low-maintenance options.",
+    "heroImage": "/images/categories/benches-hero.png",
+    "images": [
+      {
+        "src": "/images/galleries/benches/bench-wood-metal-arms.png",
+        "alt": "Benches — wood slat bench with metal arms and back",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "BN-01",
+        "name": "Aus"
+      },
+      {
+        "src": "/images/galleries/benches/p-backlessvs1.png",
+        "alt": "Benches — backless VS1",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "BN-02",
+        "name": "Backless"
+      },
+      {
+        "src": "/images/galleries/benches/p-evavs1.png",
+        "alt": "Benches — Eva VS1",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "BN-03",
+        "name": "Eva"
+      },
+      {
+        "src": "/images/galleries/benches/p-lilyvs1.png",
+        "alt": "Benches — Lily VS1",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "BN-04",
+        "name": "LF-L1"
+      },
+      {
+        "src": "/images/galleries/benches/p-lilyvs2.png",
+        "alt": "Benches — Lily VS2",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "BN-05",
+        "name": "LF-L2"
+      },
+      {
+        "src": "/images/galleries/benches/p-lilyvs3.png",
+        "alt": "Benches — Lily VS3",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "BN-06",
+        "name": "LF-L3"
+      },
+      {
+        "src": "/images/galleries/benches/p-raillinklf-1.png",
+        "alt": "Benches — Rail Link LF 1",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "BN-07",
+        "name": "Rail Link"
+      },
+      {
+        "src": "/images/galleries/benches/p-benchformplanterlf-1.png",
+        "alt": "Benches — Benchform Planter LF 1",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "BN-08",
+        "name": "Planter"
+      },
+      {
+        "src": "/images/galleries/benches/p-benchformslf-1.png",
+        "alt": "Benches — Benchforms LF 1",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "BN-09",
+        "name": "Benchforms"
+      },
+      {
+        "src": "/images/galleries/benches/p-benchlf2-2.png",
+        "alt": "Benches — Bench LF2 2",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "BN-10",
+        "name": "LF2"
+      },
+      {
+        "src": "/images/galleries/benches/p-steelsvs1.png",
+        "alt": "Benches — Steel SVS1",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "BN-11",
+        "name": "Steel"
+      },
+      {
+        "src": "/images/galleries/benches/p-terracebenchlf-1.png",
+        "alt": "Benches — Terrace Bench LF 1",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "BN-12",
+        "name": "Terrace"
+      },
+      {
+        "src": "/images/galleries/benches/p-boothlf2.png",
+        "alt": "Benches — Booth LF2 with tables",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "BN-13",
+        "name": "Booth"
+      },
+      {
+        "src": "/images/galleries/benches/bench-geometric-tree-surround.png",
+        "alt": "Benches — geometric green expanded-metal tree surround bench",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "BN-14",
+        "name": "Tree Surround"
+      }
+    ],
+    "sections": [
+      {
+        "id": "recycled-plastic",
+        "title": "Recycled Plastic",
+        "description": "Highly durable weather resistance, no maintenance, and a reasonable cost for parks, schools, and public spaces.",
+        "layout": "aside-intro",
+        "images": [
+          {
+            "src": "/images/galleries/benches/bench-willow-recycled-plastic.png",
+            "alt": "Benches — Willow recycled plastic cedar-tone bench",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "BN-15",
+            "name": "PP-W"
+          },
+          {
+            "src": "/images/galleries/benches/bench-recycled-plastic-green-framed.png",
+            "alt": "Benches — recycled plastic long bench in green with black frame",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "BN-16",
+            "name": "PP-GR"
+          },
+          {
+            "src": "/images/galleries/benches/bench-recycled-plastic-cedar-ada.png",
+            "alt": "Benches — recycled plastic cedar-tone ADA bench with black frame",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "BN-17",
+            "name": "Cedar ADA"
+          },
+          {
+            "src": "/images/galleries/benches/bench-recycled-charleston.png",
+            "alt": "Benches — Charleston-style recycled plastic wood-look bench with black frame",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "BN-18",
+            "name": "PP-C"
+          },
+          {
+            "src": "/images/galleries/benches/bench-recycled-uls1.png",
+            "alt": "Benches — UL-S1 recycled plastic pedestal bench",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "BN-19",
+            "name": "UL-S1",
+            "imageFit": "contain",
+            "imageScale": 0.62
+          },
+          {
+            "src": "/images/galleries/benches/bench-recycled-woodlook-ultra.png",
+            "alt": "Benches — recycled plastic wood-look bench with contoured black frame",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "BN-20",
+            "name": "UL-2"
+          }
+        ]
+      }
+    ],
+    "overview": "Commercial outdoor benches for parks, schools, campuses, plazas, resorts, and public gathering spaces—built for heavy use and long service life. Materials include recycled plastic, wood, powder-coated steel, thermoplastic coating, aluminum, and thermally modified ash, with low-maintenance options for harsh outdoor climates. Choose backed or backless designs in multiple lengths and colors, with portable, wall-mounted, surface-mount, or inground installation."
+  },
+  {
+    "slug": "litter-receptacles",
+    "name": "Litter Receptacles",
+    "tier": "essential",
+    "description": "Attractive trash and recycling receptacles for public spaces, resorts, and municipal environments.",
+    "heroImage": "/images/categories/waste-receptacles.png",
+    "images": [
+      {
+        "src": "/images/galleries/waste-receptacles/p-litterrecyclevs4.png",
+        "alt": "Litter Receptacles — Litter Recycle VS4",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/p-littersteelsvs2.png",
+        "alt": "Litter Receptacles — Litter Steel SVS2",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/p-littersteelsvs3.png",
+        "alt": "Litter Receptacles — Litter Steel SVS3",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/p-litterwoodvs1.png",
+        "alt": "Litter Receptacles — Litter Wood VS1",
+        "source": "parkezza",
+        "tier": "essential"
+      }
+    ]
+  },
+  {
+    "slug": "shade-structures",
+    "name": "Shade Structures",
+    "tier": "signature",
+    "description": "Engineered shade canopies and structures for playgrounds, pools, dining, and outdoor gathering.",
+    "heroImage": "/images/categories/shade-structures.png",
+    "images": [
+      {
+        "src": "/images/galleries/shade-structures/hip-downcurve-barrel-vault.png",
+        "alt": "Shade Structures — hip downcurve barrel vault",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/hip-dual-pavilions-park.png",
+        "alt": "Shade Structures — hip dual pavilions park",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/hip-single-post-playground.png",
+        "alt": "Shade Structures — hip single post playground",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/hip-tiered-clerestory.png",
+        "alt": "Shade Structures — hip tiered clerestory",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/roof-styles-overview.png",
+        "alt": "Shade Structures — roof styles overview",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shade-01.png",
+        "alt": "Shade Structures — shade 01",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shade-02.png",
+        "alt": "Shade Structures — shade 02",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shade-03.png",
+        "alt": "Shade Structures — shade 03",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shade-04.png",
+        "alt": "Shade Structures — shade 04",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shade-05.png",
+        "alt": "Shade Structures — shade 05",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shade-06.png",
+        "alt": "Shade Structures — shade 06",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shade-07.png",
+        "alt": "Shade Structures — shade 07",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/finished-projects-shade-structure1.png",
+        "alt": "Shade Structures — finished projects shade structure1",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shadestructure-pic1.png",
+        "alt": "Shade Structures — shadestructure pic1",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shadestructure-pic2.png",
+        "alt": "Shade Structures — shadestructure pic2",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shadestructure-pic3.png",
+        "alt": "Shade Structures — shadestructure pic3",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shadestructure-pic4.png",
+        "alt": "Shade Structures — shadestructure pic4",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shadestructure-pic5.png",
+        "alt": "Shade Structures — shadestructure pic5",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/shade-structures/shadestructure-pic6.png",
+        "alt": "Shade Structures — shadestructure pic6",
+        "source": "pics",
+        "tier": "essential"
+      }
+    ]
+  },
+  {
+    "slug": "bollards",
+    "name": "Bollards",
+    "tier": "essential",
+    "description": "Security and perimeter bollards for traffic calming, site delineation, and architectural streetscapes.",
+    "heroImage": "/images/categories/bollards.png",
+    "images": [
+      {
+        "src": "/images/galleries/bollards/p-bollardsz-1-3.png",
+        "alt": "Bollards — Bollards Z 1 3",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/p-bollardsz-1light.png",
+        "alt": "Bollards — Bollards Z 1light",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/p-bollardsz-2light.png",
+        "alt": "Bollards — Bollards Z 2light",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/p-bollardsz-3light.png",
+        "alt": "Bollards — Bollards Z 3light",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/p-bollardsz-4-5.png",
+        "alt": "Bollards — Bollards Z 4 5",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/p-bollardsz-4light.png",
+        "alt": "Bollards — Bollards Z 4light",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/p-bollardsz-5light.png",
+        "alt": "Bollards — Bollards Z 5light",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/crash-rated.png",
+        "alt": "Bollards — crash rated",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/lighted-security.png",
+        "alt": "Bollards — lighted security",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/removable.png",
+        "alt": "Bollards — removable",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/retractable.png",
+        "alt": "Bollards — retractable",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/shallow-mount.png",
+        "alt": "Bollards — shallow mount",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bollards/traffic.png",
+        "alt": "Bollards — traffic",
+        "source": "zenon",
+        "tier": "essential"
+      }
+    ]
+  },
+  {
+    "slug": "dog-waste-stations",
+    "name": "Dog Waste Stations",
+    "tier": "essential",
+    "description": "Dog waste stations, dispensers, agility equipment, and site amenities for dog parks and trails.",
+    "heroImage": "/images/categories/dog-park-stations.png",
+    "images": [
+      {
+        "src": "/images/galleries/dog-park-stations/hero-stations-no-model-number.png",
+        "alt": "Dog Waste Stations — square can, mesh can, and no can models",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/hero-trail-proven-recycled-wood.png",
+        "alt": "Trail Proven recycled wood-look dog waste station for trails and trailheads",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-0ff701b165f4405aeaa1ae51b40892a014a5bf1f.png",
+        "alt": "Recycled Dog Jump BARK-424",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-146f2299cc97b81300714ee32db4820ab409cfe4.png",
+        "alt": "Steel Teeter Totter PBARK-440",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-1924f65474a4710abead3f02b923341199fa53c4.png",
+        "alt": "Dog Waste Stations — img 1924f65474a4710abead3f02b923341199fa53c4",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-1f3c975feb22b0023fecb56d22b6019dff55bfc2.png",
+        "alt": "Doggie Crawl Tunnel PBARK-491",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-26c4053ec7cdb72843b2e829a53df99a5da346b7.png",
+        "alt": "Doggie Crawl Tunnel PBark-491",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-39e95634366587a98c38598115123f30cb0c3f76.png",
+        "alt": "Pic Post",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-4023f3f7baed0bc82785ca6fd09e9fb3f736b260.png",
+        "alt": "Steel Weave Posts PBARK-460",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-59dbdaf11d4d8468c088f64b611b986338cfca0d.png",
+        "alt": "Doggie Waste Bag Options",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-7308b64bbbff0a506dadb63768457d7a25af936f.png",
+        "alt": "Recycled Intermediate Agility Kit BARK-KIT01",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-8798df18adcb30495a73e232b2d88c9d6e9416fa.png",
+        "alt": "Recycled Novice Agility Kit BARK-KIT02",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-9073c7e00afa2dd610152ae186fc2d8d6a5f4bde.png",
+        "alt": "ONEpul and MittN Dog Park Stations",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-9386e545fe5c2fe2d37de129e59074cdc516ce53.png",
+        "alt": "Recycled Hilltop Challenge BARK-425",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-99338f1c934a1b6b44522a106d8775b7ced9e883.jpg",
+        "alt": "Dog Waste Stations — img 99338f1c934a1b6b44522a106d8775b7ced9e883",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-9e23a3f52f87b083db2963626b4187e3a8652132.png",
+        "alt": "Leash Post and Pooch Bench",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-a199e20adb4e1f53f40e0dd9f137244aba650bde.png",
+        "alt": "Dog Waste Stations — img a199e20adb4e1f53f40e0dd9f137244aba650bde",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-a39981776f8e6d9656b9f0358683c5b1be7e7c15.png",
+        "alt": "Station Dispensers with Model Numbers",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-b77ed03c41f5b71ec49bd29284cd556506a9aaf9.png",
+        "alt": "Dog Waste Stations — img b77ed03c41f5b71ec49bd29284cd556506a9aaf9",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-c31e3331b9500af663e759e751d225a208c1d599.png",
+        "alt": "Steel Dog Walk PBARK-410 Natural Green",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-d9750f2724e7d9989d6ba7caa5a42eb126cb85a1.png",
+        "alt": "Steel Dog Walk PBARK-410 Playful Red Blue",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-e3f2f9b5af6a10e1a85c116a5c81c5413a3c6453.jpg",
+        "alt": "King of the Hill PBark-400",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-e542079bd63801be5ea3bdb21459c5baa5a1f85b.png",
+        "alt": "Dispenser Options and Dimensions",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-ef45b2b376bec73c4224a805622a79d643b8ce1f.jpg",
+        "alt": "Rover Jump Over PBark-450",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/img-fe40f8d0bfee21e5cf929cd6bece25a295d2ce1f.jpg",
+        "alt": "Trail Proven Recycled Dog Waste Station",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/liners-13-gal-trash-liner.png",
+        "alt": "13 Gal Trash Liner",
+        "source": "dogparkstations",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/dog-park-stations/liners-compostable-liner.png",
+        "alt": "Compostable Liner",
+        "source": "dogparkstations",
+        "tier": "essential"
+      }
+    ]
+  },
+  {
+    "slug": "umbrellas",
+    "name": "Commercial Umbrellas",
+    "tier": "signature",
+    "description": "Wind-rated commercial patio umbrellas, cantilever systems, and shade for resorts and hospitality.",
+    "heroImage": "/images/categories/umbrellas.png",
+    "images": [
+      {
+        "src": "/images/galleries/umbrellas/cantilever-pool-zc-t1.webp",
+        "alt": "Commercial Umbrellas — cantilever pool shade",
+        "source": "heavydutyumbrellas",
+        "tier": "signature"
+      },
+      {
+        "src": "/images/galleries/umbrellas/fiberglass-market-zc-t24.webp",
+        "alt": "Commercial Umbrellas — fiberglass market umbrella",
+        "source": "heavydutyumbrellas",
+        "tier": "signature"
+      },
+      {
+        "src": "/images/galleries/umbrellas/community-umbrellas-zc-t11.webp",
+        "alt": "Commercial Umbrellas — community shade umbrellas",
+        "source": "heavydutyumbrellas",
+        "tier": "signature"
+      }
+    ],
+    "sisterSite": {
+      "url": "https://heavydutyumbrellas.com",
+      "label": "View full umbrella catalog at heavydutyumbrellas.com"
+    }
+  },
+  {
+    "slug": "picnic-tables",
+    "name": "Picnic Tables",
+    "tier": "essential",
+    "description": "Heavy-duty picnic tables for parks, recreation centers, and outdoor dining — ADA configurations available.",
+    "heroImage": "/images/categories/picnic-tables.png",
+    "images": [
+      {
+        "src": "/images/galleries/picnic-tables/p-picnicvs1.png",
+        "alt": "Picnic Tables — Picnic VS1",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/p-picnicvs2.png",
+        "alt": "Picnic Tables — Picnic VS2",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/p-picnicvs3.png",
+        "alt": "Picnic Tables — Picnic VS3",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/p-picnicvs4.png",
+        "alt": "Picnic Tables — Picnic VS4",
+        "source": "parkezza",
+        "tier": "essential"
+      }
+    ]
+  },
+  {
+    "slug": "pergolas-gazebos",
+    "name": "Pergolas & Gazebos",
+    "tier": "signature",
+    "description": "Architectural pergolas and gazebos for resorts, golf courses, and distinguished outdoor environments.",
+    "heroImage": "/images/categories/pergolas-gazebos.png",
+    "images": [
+      {
+        "src": "/images/galleries/pergolas-gazebos/pergola-arched-arbor-park.png",
+        "alt": "Pergolas & Gazebos — pergola arched arbor park",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/pergola-cantilever-picnic-row.png",
+        "alt": "Pergolas & Gazebos — pergola cantilever picnic row",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/pergola-curved-plaza.png",
+        "alt": "Pergolas & Gazebos — pergola curved plaza",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg01.png",
+        "alt": "Pergolas & Gazebos — zc pg01",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg02.png",
+        "alt": "Pergolas & Gazebos — zc pg02",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg03.png",
+        "alt": "Pergolas & Gazebos — zc pg03",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg04.png",
+        "alt": "Pergolas & Gazebos — zc pg04",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg05.png",
+        "alt": "Pergolas & Gazebos — zc pg05",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg06.png",
+        "alt": "Pergolas & Gazebos — zc pg06",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg07.png",
+        "alt": "Pergolas & Gazebos — zc pg07",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg08.png",
+        "alt": "Pergolas & Gazebos — zc pg08",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg09.png",
+        "alt": "Pergolas & Gazebos — zc pg09",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg10.png",
+        "alt": "Pergolas & Gazebos — zc pg10",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg11.png",
+        "alt": "Pergolas & Gazebos — zc pg11",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg12.png",
+        "alt": "Pergolas & Gazebos — zc pg12",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg13.png",
+        "alt": "Pergolas & Gazebos — zc pg13",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg14.png",
+        "alt": "Pergolas & Gazebos — zc pg14",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg15.png",
+        "alt": "Pergolas & Gazebos — zc pg15",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg16.png",
+        "alt": "Pergolas & Gazebos — zc pg16",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg17.png",
+        "alt": "Pergolas & Gazebos — zc pg17",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/pergolas-gazebos/zc-pg18.png",
+        "alt": "Pergolas & Gazebos — zc pg18",
+        "source": "zenon",
+        "tier": "essential"
+      }
+    ]
+  },
+  {
+    "slug": "bike-racks",
+    "name": "Bike Racks",
+    "tier": "essential",
+    "description": "Secure bicycle parking from loop racks to decorative designs for campuses and streetscapes.",
+    "heroImage": "/images/categories/bike-racks-hero.png",
+    "images": [
+      {
+        "src": "/images/galleries/bike-racks/loop-racks-commercial.png",
+        "alt": "Bike Racks — commercial loop racks on a plaza",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/bike-racks/loop-racks-plaza.png",
+        "alt": "Bike Racks — sculptural loop racks along a walkway",
+        "source": "parkezza",
+        "tier": "essential"
+      }
+    ]
+  },
+  {
+    "slug": "flagpoles",
+    "name": "Flagpoles",
+    "tier": "essential",
+    "description": "Standard, Premium, and Heavy Duty Flagpoles. Internal and External Halyards, Vanguard. Flags, all sizes. Heights 20 ft – 70 ft. Butt diameters 3\" – 12\".",
+    "highlights": [
+      "Standard, Premium, Heavy Duty",
+      "Internal & External Halyards",
+      "Vanguard",
+      "Flags, all sizes",
+      "20 ft – 70 ft",
+      "Butt diameters 3\" – 12\""
+    ],
+    "imageFit": "contain",
+    "heroImage": "/images/categories/flagpoles-hero.png",
+    "images": [
+      {
+        "src": "/images/galleries/flagpoles/flagpole-commercial.png",
+        "alt": "Flagpoles — commercial aluminum flagpole with American flag",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/flagpoles/flagpole-external-halyard.png",
+        "alt": "Flagpoles — external halyard flagpole with gold ball finial",
+        "source": "parkezza",
+        "tier": "essential"
+      }
+    ]
+  },
+  {
+    "slug": "tree-guards",
+    "name": "Tree Guards",
+    "tier": "essential",
+    "description": "Decorative tree grates and guards that protect root zones while completing the streetscape.",
+    "heroImage": "/images/categories/tree-grates.png",
+    "images": [
+      {
+        "src": "/images/galleries/tree-grates/p-treeguardvs1.png",
+        "alt": "Tree Guards — Treeguard VS1",
+        "source": "parkezza",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/o-trg-01.png",
+        "alt": "Tree Guards — o trg 01",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/o-trg-02.png",
+        "alt": "Tree Guards — o trg 02",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/o-trg-03.png",
+        "alt": "Tree Guards — o trg 03",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/o-trg-06.png",
+        "alt": "Tree Guards — o trg 06",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/o-trg-15.png",
+        "alt": "Tree Guards — o trg 15",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/o-trg-20.png",
+        "alt": "Tree Guards — o trg 20",
+        "source": "zenon",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/tree-grate1.png",
+        "alt": "Tree Guards — tree grate1",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/tree-grate2.png",
+        "alt": "Tree Guards — tree grate2",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/tree-grate3.png",
+        "alt": "Tree Guards — tree grate3",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/tree-grate4.png",
+        "alt": "Tree Guards — tree grate4",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/tree-grate5.png",
+        "alt": "Tree Guards — tree grate5",
+        "source": "pics",
+        "tier": "essential"
+      },
+      {
+        "src": "/images/galleries/tree-grates/tree-grate6.png",
+        "alt": "Tree Guards — tree grate6",
+        "source": "pics",
+        "tier": "essential"
+      }
+    ]
+  }
+]

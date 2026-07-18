@@ -1,0 +1,37 @@
+# Netlify auto-detects Next.js and applies the OpenNext adapter.
+# Build/publish values match Netlify's Next.js defaults.
+
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# Domain aliases (add in Netlify UI, then these redirects apply):
+# - heavydutyumbrellas.com / www.heavydutyumbrellas.com
+# - dogparkstations.com / www.dogparkstations.com
+
+[[redirects]]
+  from = "https://heavydutyumbrellas.com/*"
+  to = "https://parkezza.com/galleries/umbrellas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.heavydutyumbrellas.com/*"
+  to = "https://parkezza.com/galleries/umbrellas"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://dogparkstations.com/*"
+  to = "https://parkezza.com/galleries/dog-waste-stations"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://www.dogparkstations.com/*"
+  to = "https://parkezza.com/galleries/dog-waste-stations"
+  status = 301
+  force = true
