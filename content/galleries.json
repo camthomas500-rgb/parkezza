@@ -185,7 +185,7 @@
     "slug": "litter-receptacles",
     "name": "Litter Receptacles",
     "tier": "essential",
-    "description": "Attractive trash and recycling receptacles for public spaces, resorts, and municipal environments.",
+    "description": "Trash receptacles designed to match our benches in style, finish, and materials — for parks, resorts, campuses, and municipal sites.",
     "heroImage": "/images/categories/waste-receptacles.png",
     "images": [
       {
@@ -267,10 +267,16 @@
       {
         "id": "ul-s-series",
         "title": "UL-S Series",
-        "callout": "Matching benches available.",
         "description": "Coordinate litter receptacles with UL-S seating for a complete, unified site package — perforated steel and recycled-plastic units for parks, campuses, and streetscapes.",
-        "layout": "default",
+        "layout": "aside-intro",
         "images": [
+          {
+            "src": "/images/galleries/waste-receptacles/pl-ul-s5.png",
+            "alt": "Litter Receptacles — PL-UL-S5 wood-slat receptacle with black trim",
+            "source": "parkezza",
+            "tier": "essential",
+            "name": "PL-UL-S5"
+          },
           {
             "src": "/images/galleries/waste-receptacles/pl-ul-s1.png",
             "alt": "Litter Receptacles — PL-UL-S1 blue perforated recycling receptacle",
@@ -300,13 +306,6 @@
             "source": "parkezza",
             "tier": "essential",
             "name": "PL-UL-S4"
-          },
-          {
-            "src": "/images/galleries/waste-receptacles/pl-ul-s5.png",
-            "alt": "Litter Receptacles — PL-UL-S5 wood-slat receptacle with black trim",
-            "source": "parkezza",
-            "tier": "essential",
-            "name": "PL-UL-S5"
           }
         ]
       },
@@ -340,7 +339,7 @@
         ]
       }
     ],
-    "overview": "Commercial litter receptacles and recycling units for parks, plazas, resorts, campuses, and municipal streetscapes. Choose steel, wood, dual-stream, and multi-stream configurations. Coordinate finishes with benches and site furnishings for a complete outdoor package."
+    "overview": "Commercial litter receptacles and recycling units for parks, plazas, resorts, campuses, and municipal streetscapes. Spec steel, wood, dual-stream, and multi-stream models that pair with our benches in style, finish, and materials for a cohesive outdoor package."
   },
   {
     "slug": "shade-structures",
