@@ -249,10 +249,24 @@ function QuoteFormFallback() {
   );
 }
 
+function inquiryHeadline(gallery: Gallery): string {
+  if (gallery.slug === "benches") return "Interested in a specific bench?";
+  if (gallery.slug === "litter-receptacles") {
+    return "Interested in a specific litter receptacle?";
+  }
+  return `Interested in ${gallery.name.toLowerCase()}?`;
+}
+
 export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const contain = gallery.imageFit === "contain";
-  const showInquiry = gallery.slug === "benches";
+  const hasLabeledProducts =
+    gallery.images.some((image) => Boolean(image.id)) ||
+    (gallery.sections?.some((section) =>
+      section.images.some((image) => Boolean(image.id))
+    ) ??
+      false);
+  const showInquiry = hasLabeledProducts;
   const inquiryItems = showInquiry ? getGalleryInquiryItems(gallery) : [];
 
   const usesAnchorAside = gallery.sections?.some(
@@ -333,36 +347,34 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
             {gallery.sisterSite.label} →
           </a>
         </div>
-      ) : showInquiry ? (
-        <div id="quote" className="mt-16 scroll-mt-24">
-          <div className="mb-8 text-center">
-            <p className="font-display text-2xl text-charcoal">
-              Interested in a specific bench?
-            </p>
-          </div>
-          <div className="mx-auto max-w-3xl">
-            <Suspense fallback={<QuoteFormFallback />}>
-              <QuoteForm
-                defaultCategory="benches"
-                specificItems={inquiryItems}
-              />
-            </Suspense>
-          </div>
-        </div>
-      ) : (
-        <div className="mt-12 rounded-2xl border border-border bg-white/60 p-8 text-center">
+      ) : null}
+
+      <div id="quote" className="mt-16 scroll-mt-24">
+        <div className="mb-8 text-center">
           <p className="font-display text-2xl text-charcoal">
-            Interested in {gallery.name.toLowerCase()}?
+            {inquiryHeadline(gallery)}
           </p>
-          <p className="mt-2 text-muted-foreground">
-            Share quantities, finishes, and your project timeline — we will
-            respond with options and pricing.
-          </p>
+          {!showInquiry && (
+            <p className="mt-2 text-muted-foreground">
+              Share quantities, finishes, and your project timeline — we will
+              respond with options and pricing.
+            </p>
+          )}
+        </div>
+        <div className="mx-auto max-w-3xl">
+          <Suspense fallback={<QuoteFormFallback />}>
+            <QuoteForm
+              defaultCategory={gallery.slug}
+              specificItems={showInquiry ? inquiryItems : undefined}
+            />
+          </Suspense>
+        </div>
+        {!showInquiry && (
           <div className="mt-6 flex justify-center">
             <LetsTalk variant="inline" />
           </div>
-        </div>
-      )}
+        )}
+      </div>
 
       {lightboxIndex !== null && (
         <Lightbox

@@ -142,11 +142,13 @@ export function getGalleryInquiryItems(gallery: Gallery): {
   const prefix =
     gallery.slug === "benches"
       ? "BN"
-      : gallery.slug
-          .split("-")
-          .map((w) => w[0]?.toUpperCase() ?? "")
-          .join("")
-          .slice(0, 3) || "ITEM";
+      : gallery.slug === "litter-receptacles"
+        ? "LR"
+        : gallery.slug
+            .split("-")
+            .map((w) => w[0]?.toUpperCase() ?? "")
+            .join("")
+            .slice(0, 3) || "ITEM";
 
   return images.map((image, index) => {
     const id =

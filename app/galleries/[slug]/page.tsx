@@ -4,7 +4,6 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { getGallery, getGallerySlugs } from "@/lib/content";
-import { cn } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -37,28 +36,26 @@ export default async function GalleryPage({ params }: PageProps) {
   const gallery = getGallery(slug);
   if (!gallery) notFound();
 
-  const compact = slug === "benches" || slug === "umbrellas";
+  // Compact heroes on all galleries — less vertical scroll before products.
+  const containHero = gallery.imageFit === "contain";
 
   return (
     <div>
       <section
         className={
-          gallery.imageFit === "contain"
+          containHero
             ? "relative overflow-hidden bg-charcoal"
-            : cn(
-                "relative overflow-hidden bg-charcoal",
-                compact ? "h-44 sm:h-52" : "h-64 sm:h-80"
-              )
+            : "relative h-40 overflow-hidden bg-charcoal sm:h-48"
         }
       >
-        {gallery.imageFit === "contain" ? (
-          <div className="mx-auto grid max-w-7xl gap-8 px-4 py-10 sm:grid-cols-[minmax(0,220px)_1fr] sm:px-6 lg:px-8 lg:py-14">
-            <div className="relative mx-auto aspect-[3/4] w-full max-w-[220px] overflow-hidden rounded-xl bg-[#c8dceb]">
+        {containHero ? (
+          <div className="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:grid-cols-[minmax(0,160px)_1fr] sm:px-6 sm:py-8 lg:px-8">
+            <div className="relative mx-auto aspect-[3/4] w-full max-w-[160px] overflow-hidden rounded-xl bg-[#c8dceb]">
               <Image
                 src={gallery.heroImage}
                 alt={gallery.name}
                 fill
-                className="object-contain object-center p-3"
+                className="object-contain object-center p-2"
                 priority
               />
             </div>
@@ -69,10 +66,12 @@ export default async function GalleryPage({ params }: PageProps) {
               >
                 ← Home
               </Link>
-              <h1 className="mt-3 font-display text-4xl md:text-5xl">
+              <h1 className="mt-2 font-display text-3xl md:text-4xl">
                 {gallery.name}
               </h1>
-              <p className="mt-3 max-w-2xl text-ivory/80">{gallery.description}</p>
+              <p className="mt-1.5 max-w-2xl text-sm text-ivory/80">
+                {gallery.description}
+              </p>
             </div>
           </div>
         ) : (
@@ -85,27 +84,17 @@ export default async function GalleryPage({ params }: PageProps) {
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />
-            <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-end px-4 pb-6 sm:px-6 lg:px-8">
+            <div className="relative mx-auto flex h-full max-w-7xl flex-col justify-end px-4 pb-4 sm:px-6 lg:px-8">
               <Link
                 href="/"
                 className="text-sm text-ivory/70 hover:text-ivory"
               >
                 ← Home
               </Link>
-              <h1
-                className={cn(
-                  "mt-2 font-display text-ivory",
-                  compact ? "text-3xl md:text-4xl" : "mt-3 text-4xl md:text-5xl"
-                )}
-              >
+              <h1 className="mt-1.5 font-display text-3xl text-ivory md:text-4xl">
                 {gallery.name}
               </h1>
-              <p
-                className={cn(
-                  "max-w-2xl text-ivory/80",
-                  compact ? "mt-1.5 text-sm" : "mt-3"
-                )}
-              >
+              <p className="mt-1 max-w-2xl text-sm text-ivory/80">
                 {gallery.description}
               </p>
             </div>
@@ -113,23 +102,13 @@ export default async function GalleryPage({ params }: PageProps) {
         )}
       </section>
 
-      <div
-        className={cn(
-          "mx-auto max-w-7xl px-4 sm:px-6 lg:px-8",
-          compact ? "py-6" : "py-14"
-        )}
-      >
+      <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         {gallery.overview && (
-          <div className={compact ? "mb-5" : "mb-10"}>
+          <div className="mb-5">
             {gallery.overview.split(/(?<=\.)\s+/).filter(Boolean).map((sentence) => (
               <p
                 key={sentence}
-                className={cn(
-                  "text-muted-foreground",
-                  compact
-                    ? "mt-1.5 text-sm leading-snug first:mt-0"
-                    : "mt-3 text-base leading-relaxed first:mt-0 md:text-lg"
-                )}
+                className="mt-1.5 text-sm leading-snug text-muted-foreground first:mt-0"
               >
                 {sentence}
               </p>
@@ -137,7 +116,7 @@ export default async function GalleryPage({ params }: PageProps) {
           </div>
         )}
         {gallery.highlights && gallery.highlights.length > 0 && (
-          <ul className={cn("flex flex-wrap gap-2", compact ? "mb-5" : "mb-10")}>
+          <ul className="mb-5 flex flex-wrap gap-2">
             {gallery.highlights.map((item) => (
               <li
                 key={item}
@@ -147,13 +126,6 @@ export default async function GalleryPage({ params }: PageProps) {
               </li>
             ))}
           </ul>
-        )}
-        {!compact && (
-          <p className="mb-8 text-sm text-muted-foreground">
-            {gallery.images.length +
-              (gallery.sections?.reduce((n, s) => n + s.images.length, 0) ?? 0)}{" "}
-            images
-          </p>
         )}
         <GalleryGrid gallery={gallery} />
       </div>

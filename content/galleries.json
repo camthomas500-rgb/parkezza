@@ -190,29 +190,88 @@
     "images": [
       {
         "src": "/images/galleries/waste-receptacles/p-litterrecyclevs4.png",
-        "alt": "Litter Receptacles — Litter Recycle VS4",
+        "alt": "Litter Receptacles — Recycle VS4 dual-stream receptacle",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "id": "LR-01",
+        "name": "Recycle VS4"
       },
       {
         "src": "/images/galleries/waste-receptacles/p-littersteelsvs2.png",
-        "alt": "Litter Receptacles — Litter Steel SVS2",
+        "alt": "Litter Receptacles — Steel SVS2 receptacle",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "id": "LR-02",
+        "name": "Steel SVS2"
       },
       {
         "src": "/images/galleries/waste-receptacles/p-littersteelsvs3.png",
-        "alt": "Litter Receptacles — Litter Steel SVS3",
+        "alt": "Litter Receptacles — Steel SVS3 receptacle",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "id": "LR-03",
+        "name": "Steel SVS3"
       },
       {
         "src": "/images/galleries/waste-receptacles/p-litterwoodvs1.png",
-        "alt": "Litter Receptacles — Litter Wood VS1",
+        "alt": "Litter Receptacles — Wood VS1 receptacle",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "id": "LR-04",
+        "name": "Wood VS1"
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/p-bench-litter-sets-lf1-2.png",
+        "alt": "Litter Receptacles — coordinated bench and litter set",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "LR-05",
+        "name": "Bench & Litter Set"
       }
-    ]
+    ],
+    "sections": [
+      {
+        "id": "multi-stream-specialty",
+        "title": "Multi-Stream & Specialty",
+        "description": "Wood-slat, high-capacity, and multi-stream recycling configurations for plazas, campuses, and hospitality entries.",
+        "layout": "aside-intro",
+        "images": [
+          {
+            "src": "/images/galleries/waste-receptacles/receptacle-zc-m1-wood-slats.png",
+            "alt": "Litter Receptacles — wood-slat specialty receptacle",
+            "source": "zenon",
+            "tier": "signature",
+            "id": "LR-06",
+            "name": "ZC-M1 Wood Slats"
+          },
+          {
+            "src": "/images/galleries/waste-receptacles/receptacle-zc-m2-triple-stream.png",
+            "alt": "Litter Receptacles — triple-stream recycling receptacle",
+            "source": "zenon",
+            "tier": "signature",
+            "id": "LR-07",
+            "name": "ZC-M2 Triple Stream"
+          },
+          {
+            "src": "/images/galleries/waste-receptacles/receptacle-zc-m3-triple-charcoal.png",
+            "alt": "Litter Receptacles — triple-stream charcoal receptacle",
+            "source": "zenon",
+            "tier": "signature",
+            "id": "LR-08",
+            "name": "ZC-M3 Triple Charcoal"
+          },
+          {
+            "src": "/images/galleries/waste-receptacles/receptacle-zc-m4-large-volume-wood.png",
+            "alt": "Litter Receptacles — large-volume wood receptacle",
+            "source": "zenon",
+            "tier": "signature",
+            "id": "LR-09",
+            "name": "ZC-M4 Large Volume"
+          }
+        ]
+      }
+    ],
+    "overview": "Commercial litter receptacles and recycling units for parks, plazas, resorts, campuses, and municipal streetscapes. Choose steel, wood, and dual- or multi-stream configurations with liners suited to heavy public use. Coordinate finishes with benches and site furnishings for a complete outdoor package."
   },
   {
     "slug": "shade-structures",
