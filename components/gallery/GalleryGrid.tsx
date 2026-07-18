@@ -171,7 +171,7 @@ function SectionBlock({
               </h2>
             )}
             {section.description && (
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground md:text-lg">
+              <p className="mt-3 w-full text-sm leading-snug text-muted-foreground">
                 {section.description}
               </p>
             )}
@@ -216,7 +216,7 @@ function SectionBlock({
               </h2>
             )}
             {section.description && (
-              <p className="mt-3 max-w-xl text-lg leading-relaxed text-muted-foreground">
+              <p className="mt-3 w-full text-sm leading-snug text-muted-foreground">
                 {section.description}
               </p>
             )}
@@ -248,7 +248,7 @@ function SectionBlock({
           <h2 className="font-display text-3xl text-charcoal">{section.title}</h2>
         )}
         {section.description && (
-          <p className="mt-3 max-w-2xl text-muted-foreground">
+          <p className="mt-3 w-full text-sm leading-snug text-muted-foreground">
             {section.description}
           </p>
         )}

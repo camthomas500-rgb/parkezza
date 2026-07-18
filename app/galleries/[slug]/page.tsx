@@ -104,16 +104,9 @@ export default async function GalleryPage({ params }: PageProps) {
 
       <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
         {gallery.overview && (
-          <div className="mb-5">
-            {gallery.overview.split(/(?<=\.)\s+/).filter(Boolean).map((sentence) => (
-              <p
-                key={sentence}
-                className="mt-1.5 text-sm leading-snug text-muted-foreground first:mt-0"
-              >
-                {sentence}
-              </p>
-            ))}
-          </div>
+          <p className="mb-5 w-full text-sm leading-snug text-muted-foreground">
+            {gallery.overview}
+          </p>
         )}
         {gallery.highlights && gallery.highlights.length > 0 && (
           <ul className="mb-5 flex flex-wrap gap-2">
