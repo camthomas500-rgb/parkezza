@@ -210,6 +210,31 @@
         "name": "PL-VS2"
       },
       {
+        "src": "/images/galleries/waste-receptacles/pl-vs3.png",
+        "alt": "Litter Receptacles — PL-VS3 wood-slat receptacle with black metal door",
+        "source": "parkezza",
+        "tier": "essential",
+        "name": "PL-VS3"
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/pl-vs4.png",
+        "alt": "Litter Receptacles — PL-VS4 dark flared-slat receptacle",
+        "source": "parkezza",
+        "tier": "essential",
+        "name": "PL-VS4",
+        "imageFit": "contain",
+        "imageScale": 0.78
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/pl-vs5.png",
+        "alt": "Litter Receptacles — PL-VS5 bronze flared-slat receptacle",
+        "source": "parkezza",
+        "tier": "essential",
+        "name": "PL-VS5",
+        "imageFit": "contain",
+        "imageScale": 0.72
+      },
+      {
         "src": "/images/galleries/waste-receptacles/p-littersteelsvs2.png",
         "alt": "Litter Receptacles — Steel SVS2 receptacle",
         "source": "parkezza",
@@ -287,6 +312,13 @@
             "source": "parkezza",
             "tier": "essential",
             "name": "PL-KC2"
+          },
+          {
+            "src": "/images/galleries/waste-receptacles/pl-kc-55-gallon.png",
+            "alt": "Litter Receptacles — KC series 55 gallon cylindrical receptacle",
+            "source": "parkezza",
+            "tier": "essential",
+            "name": "55 Gallon"
           }
         ]
       }
