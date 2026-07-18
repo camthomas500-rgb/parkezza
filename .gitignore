@@ -42,3 +42,7 @@ next-env.d.ts
 
 # Local Netlify folder
 .netlify
+
+# Local working docs / extract folders (not for deploy)
+*.docx
+_litter-doc-extract/

@@ -189,89 +189,81 @@
     "heroImage": "/images/categories/waste-receptacles.png",
     "images": [
       {
-        "src": "/images/galleries/waste-receptacles/p-litterrecyclevs4.png",
-        "alt": "Litter Receptacles — Recycle VS4 dual-stream receptacle",
+        "src": "/images/galleries/waste-receptacles/pl-vs1.png",
+        "alt": "Litter Receptacles — PL-VS1 black flared-slat receptacle",
         "source": "parkezza",
         "tier": "essential",
         "id": "LR-01",
-        "name": "Recycle VS4"
+        "name": "PL-VS1"
       },
       {
-        "src": "/images/galleries/waste-receptacles/p-littersteelsvs2.png",
-        "alt": "Litter Receptacles — Steel SVS2 receptacle",
+        "src": "/images/galleries/waste-receptacles/pl-vs2.png",
+        "alt": "Litter Receptacles — PL-VS2 blue dual-stream recycle receptacle",
         "source": "parkezza",
         "tier": "essential",
         "id": "LR-02",
-        "name": "Steel SVS2"
-      },
-      {
-        "src": "/images/galleries/waste-receptacles/p-littersteelsvs3.png",
-        "alt": "Litter Receptacles — Steel SVS3 receptacle",
-        "source": "parkezza",
-        "tier": "essential",
-        "id": "LR-03",
-        "name": "Steel SVS3"
-      },
-      {
-        "src": "/images/galleries/waste-receptacles/p-litterwoodvs1.png",
-        "alt": "Litter Receptacles — Wood VS1 receptacle",
-        "source": "parkezza",
-        "tier": "essential",
-        "id": "LR-04",
-        "name": "Wood VS1"
-      },
-      {
-        "src": "/images/galleries/waste-receptacles/p-bench-litter-sets-lf1-2.png",
-        "alt": "Litter Receptacles — coordinated bench and litter set",
-        "source": "parkezza",
-        "tier": "signature",
-        "id": "LR-05",
-        "name": "Bench & Litter Set"
+        "name": "PL-VS2"
       }
     ],
     "sections": [
       {
-        "id": "multi-stream-specialty",
-        "title": "Multi-Stream & Specialty",
-        "description": "Wood-slat, high-capacity, and multi-stream recycling configurations for plazas, campuses, and hospitality entries.",
+        "id": "ul-s-series",
+        "title": "UL-S Series",
+        "description": "Perforated steel and recycled-plastic litter and multi-stream recycling units for parks, campuses, and streetscapes.",
         "layout": "aside-intro",
         "images": [
           {
-            "src": "/images/galleries/waste-receptacles/receptacle-zc-m1-wood-slats.png",
-            "alt": "Litter Receptacles — wood-slat specialty receptacle",
-            "source": "zenon",
-            "tier": "signature",
+            "src": "/images/galleries/waste-receptacles/pl-ul-s1.png",
+            "alt": "Litter Receptacles — PL-UL-S1 blue perforated recycling receptacle",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "LR-03",
+            "name": "PL-UL-S1"
+          },
+          {
+            "src": "/images/galleries/waste-receptacles/pl-ul-s2.png",
+            "alt": "Litter Receptacles — PL-UL-S2 green plastic recycle receptacle",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "LR-04",
+            "name": "PL-UL-S2"
+          },
+          {
+            "src": "/images/galleries/waste-receptacles/pl-ul-s3.png",
+            "alt": "Litter Receptacles — PL-UL-S3 triple-stream plastic, cans, and trash station",
+            "source": "parkezza",
+            "tier": "essential",
+            "id": "LR-05",
+            "name": "PL-UL-S3"
+          }
+        ]
+      },
+      {
+        "id": "kc-series",
+        "title": "KC Series",
+        "description": "Square recycled-plastic receptacles with covered and swing-lid options for plazas and hospitality sites.",
+        "layout": "default",
+        "images": [
+          {
+            "src": "/images/galleries/waste-receptacles/pl-kc1.png",
+            "alt": "Litter Receptacles — PL-KC1 brown square receptacle with rain bonnet",
+            "source": "parkezza",
+            "tier": "essential",
             "id": "LR-06",
-            "name": "ZC-M1 Wood Slats"
+            "name": "PL-KC1"
           },
           {
-            "src": "/images/galleries/waste-receptacles/receptacle-zc-m2-triple-stream.png",
-            "alt": "Litter Receptacles — triple-stream recycling receptacle",
-            "source": "zenon",
-            "tier": "signature",
+            "src": "/images/galleries/waste-receptacles/pl-kc2.png",
+            "alt": "Litter Receptacles — PL-KC2 blue square receptacle with swing lid",
+            "source": "parkezza",
+            "tier": "essential",
             "id": "LR-07",
-            "name": "ZC-M2 Triple Stream"
-          },
-          {
-            "src": "/images/galleries/waste-receptacles/receptacle-zc-m3-triple-charcoal.png",
-            "alt": "Litter Receptacles — triple-stream charcoal receptacle",
-            "source": "zenon",
-            "tier": "signature",
-            "id": "LR-08",
-            "name": "ZC-M3 Triple Charcoal"
-          },
-          {
-            "src": "/images/galleries/waste-receptacles/receptacle-zc-m4-large-volume-wood.png",
-            "alt": "Litter Receptacles — large-volume wood receptacle",
-            "source": "zenon",
-            "tier": "signature",
-            "id": "LR-09",
-            "name": "ZC-M4 Large Volume"
+            "name": "PL-KC2"
           }
         ]
       }
     ],
-    "overview": "Commercial litter receptacles and recycling units for parks, plazas, resorts, campuses, and municipal streetscapes. Choose steel, wood, and dual- or multi-stream configurations with liners suited to heavy public use. Coordinate finishes with benches and site furnishings for a complete outdoor package."
+    "overview": "Commercial litter receptacles and recycling units for parks, plazas, resorts, campuses, and municipal streetscapes. Spec by series using manufacturer model labels (PL-VS, PL-UL-S, PL-KC) for consistent project quotes. Coordinate finishes with benches and site furnishings for a complete outdoor package."
   },
   {
     "slug": "shade-structures",
