@@ -34,6 +34,7 @@ function ImageTile({
   const modelName = image.name ?? (image.id ? getImageLabel(image) : null);
   const useContain = image.imageFit === "contain" || contain || productFit;
   const scale = image.imageScale ?? (productFit ? 0.82 : 1);
+  const showLabel = Boolean(image.id || modelName);
 
   return (
     <div className={cn("group relative", className)}>
@@ -84,15 +85,21 @@ function ImageTile({
           />
         )}
       </button>
-      {image.id &&
+      {showLabel &&
         (inquireHref ? (
           <Link
             href={inquireHref}
             className="mt-2 inline-flex items-center gap-1 text-sm text-charcoal hover:text-accent"
           >
-            <span className="font-semibold tracking-wide">{image.id}</span>
-            {modelName && (
-              <span className="text-muted-foreground"> · {modelName}</span>
+            {image.id ? (
+              <>
+                <span className="font-semibold tracking-wide">{image.id}</span>
+                {modelName && (
+                  <span className="text-muted-foreground"> · {modelName}</span>
+                )}
+              </>
+            ) : (
+              <span className="font-semibold tracking-wide">{modelName}</span>
             )}
             <span aria-hidden="true" className="text-accent">
               →
@@ -100,9 +107,15 @@ function ImageTile({
           </Link>
         ) : (
           <p className="mt-2 text-sm text-charcoal">
-            <span className="font-semibold tracking-wide">{image.id}</span>
-            {modelName && (
-              <span className="text-muted-foreground"> · {modelName}</span>
+            {image.id ? (
+              <>
+                <span className="font-semibold tracking-wide">{image.id}</span>
+                {modelName && (
+                  <span className="text-muted-foreground"> · {modelName}</span>
+                )}
+              </>
+            ) : (
+              <span className="font-semibold tracking-wide">{modelName}</span>
             )}
           </p>
         ))}
@@ -277,9 +290,9 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   const productFit = gallery.slug === "litter-receptacles";
   const contain = gallery.imageFit === "contain" && !productFit;
   const hasLabeledProducts =
-    gallery.images.some((image) => Boolean(image.id)) ||
+    gallery.images.some((image) => Boolean(image.id || image.name)) ||
     (gallery.sections?.some((section) =>
-      section.images.some((image) => Boolean(image.id))
+      section.images.some((image) => Boolean(image.id || image.name))
     ) ??
       false);
   const showInquiry = hasLabeledProducts;
@@ -315,8 +328,10 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   }
 
   function inquireFor(image: GalleryImage) {
-    if (!showInquiry || !image.id) return undefined;
-    return `?item=${encodeURIComponent(image.id)}#quote`;
+    if (!showInquiry) return undefined;
+    const key = image.id || image.name;
+    if (!key) return undefined;
+    return `?item=${encodeURIComponent(key)}#quote`;
   }
 
   return (

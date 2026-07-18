@@ -142,18 +142,21 @@ export function getGalleryInquiryItems(gallery: Gallery): {
   const prefix =
     gallery.slug === "benches"
       ? "BN"
-      : gallery.slug === "litter-receptacles"
-        ? "LR"
-        : gallery.slug
-            .split("-")
-            .map((w) => w[0]?.toUpperCase() ?? "")
-            .join("")
-            .slice(0, 3) || "ITEM";
+      : gallery.slug
+          .split("-")
+          .map((w) => w[0]?.toUpperCase() ?? "")
+          .join("")
+          .slice(0, 3) || "ITEM";
 
   return images.map((image, index) => {
-    const id =
-      image.id ?? `${prefix}-${String(index + 1).padStart(2, "0")}`;
     const name = getImageLabel(image);
-    return { id, label: `${id} — ${name}` };
+    if (image.id) {
+      return { id: image.id, label: `${image.id} — ${name}` };
+    }
+    if (image.name) {
+      return { id: image.name, label: image.name };
+    }
+    const generated = `${prefix}-${String(index + 1).padStart(2, "0")}`;
+    return { id: generated, label: `${generated} — ${name}` };
   });
 }
