@@ -196,6 +196,20 @@
         "name": "Recycle VS4"
       },
       {
+        "src": "/images/galleries/waste-receptacles/pl-vs1.png",
+        "alt": "Litter Receptacles — PL-VS1 black flared-slat receptacle",
+        "source": "parkezza",
+        "tier": "essential",
+        "name": "PL-VS1"
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/pl-vs2.png",
+        "alt": "Litter Receptacles — PL-VS2 blue dual-stream recycle receptacle",
+        "source": "parkezza",
+        "tier": "essential",
+        "name": "PL-VS2"
+      },
+      {
         "src": "/images/galleries/waste-receptacles/p-littersteelsvs2.png",
         "alt": "Litter Receptacles — Steel SVS2 receptacle",
         "source": "parkezza",
@@ -218,35 +232,13 @@
       },
       {
         "src": "/images/galleries/waste-receptacles/receptacle-zc-m1-wood-slats.png",
-        "alt": "Litter Receptacles — wood-slat specialty receptacle",
+        "alt": "Litter Receptacles — Wood VS2 wood-slat receptacle",
         "source": "zenon",
         "tier": "signature",
-        "name": "ZC-M1 Wood Slats"
+        "name": "Wood VS2"
       }
     ],
     "sections": [
-      {
-        "id": "vs-series",
-        "title": "VS Series",
-        "description": "Flared-slat and dual-stream receptacles for parks, plazas, and campus entries.",
-        "layout": "aside-intro",
-        "images": [
-          {
-            "src": "/images/galleries/waste-receptacles/pl-vs1.png",
-            "alt": "Litter Receptacles — PL-VS1 black flared-slat receptacle",
-            "source": "parkezza",
-            "tier": "essential",
-            "name": "PL-VS1"
-          },
-          {
-            "src": "/images/galleries/waste-receptacles/pl-vs2.png",
-            "alt": "Litter Receptacles — PL-VS2 blue dual-stream recycle receptacle",
-            "source": "parkezza",
-            "tier": "essential",
-            "name": "PL-VS2"
-          }
-        ]
-      },
       {
         "id": "ul-s-series",
         "title": "UL-S Series",
