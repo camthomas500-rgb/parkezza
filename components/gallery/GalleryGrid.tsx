@@ -316,7 +316,7 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   const gridClass = cn(
     "grid gap-4",
     productFit
-      ? "mx-auto max-w-4xl sm:grid-cols-2 lg:grid-cols-3"
+      ? "mx-auto max-w-6xl sm:grid-cols-2 lg:grid-cols-4"
       : contain
         ? "mx-auto max-w-3xl sm:grid-cols-2 lg:grid-cols-2"
         : "sm:grid-cols-2 lg:grid-cols-3"
