@@ -165,16 +165,19 @@ function SectionBlock({
             inquireHref={inquireFor?.(featured)}
           />
           <div className="flex flex-col justify-center rounded-xl border border-border bg-white/70 px-6 py-6">
-            {section.title && (
-              <h2 className="font-display text-3xl text-charcoal md:text-4xl">
-                {section.title}
-              </h2>
-            )}
-            {section.description && (
-              <p className="mt-3 w-full text-sm leading-snug text-muted-foreground">
-                {section.description}
-              </p>
-            )}
+        {section.title && (
+          <h2 className="font-display text-3xl text-charcoal">{section.title}</h2>
+        )}
+        {section.callout && (
+          <p className="mt-3 w-full text-base font-semibold tracking-wide text-accent md:text-lg">
+            {section.callout}
+          </p>
+        )}
+        {section.description && (
+          <p className="mt-2 w-full text-sm leading-snug text-muted-foreground">
+            {section.description}
+          </p>
+        )}
           </div>
         </div>
 
@@ -202,24 +205,33 @@ function SectionBlock({
     return (
       <section className="mt-8 border-t border-border pt-8">
         <div className="grid items-center gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          <ImageTile
-            image={featured}
-            contain={contain}
-            productFit={productFit}
-            onOpen={() => onOpenImage(featured.src)}
-            inquireHref={inquireFor?.(featured)}
-          />
+          <div
+            className={cn(
+              productFit && "w-1/3 min-w-[7rem] max-w-[9.5rem] justify-self-start"
+            )}
+          >
+            <ImageTile
+              image={featured}
+              contain={contain}
+              productFit={productFit}
+              onOpen={() => onOpenImage(featured.src)}
+              inquireHref={inquireFor?.(featured)}
+            />
+          </div>
           <div className="flex flex-col justify-center sm:col-span-1 lg:col-span-2 lg:pl-4">
-            {section.title && (
-              <h2 className="font-display text-3xl text-charcoal md:text-4xl">
-                {section.title}
-              </h2>
-            )}
-            {section.description && (
-              <p className="mt-3 w-full text-sm leading-snug text-muted-foreground">
-                {section.description}
-              </p>
-            )}
+        {section.title && (
+          <h2 className="font-display text-3xl text-charcoal">{section.title}</h2>
+        )}
+        {section.callout && (
+          <p className="mt-3 w-full text-base font-semibold tracking-wide text-accent md:text-lg">
+            {section.callout}
+          </p>
+        )}
+        {section.description && (
+          <p className="mt-2 w-full text-sm leading-snug text-muted-foreground">
+            {section.description}
+          </p>
+        )}
           </div>
         </div>
 

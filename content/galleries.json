@@ -190,24 +190,24 @@
     "images": [
       {
         "src": "/images/galleries/waste-receptacles/p-litterrecyclevs4.png",
-        "alt": "Litter Receptacles — Recycle VS4 dual-stream receptacle",
+        "alt": "Litter Receptacles — PL-VS4 dual-stream receptacle",
         "source": "parkezza",
         "tier": "essential",
-        "name": "Recycle VS4"
+        "name": "PL-VS4"
       },
       {
         "src": "/images/galleries/waste-receptacles/pl-vs1.png",
-        "alt": "Litter Receptacles — PL-VS1 black flared-slat receptacle",
+        "alt": "Litter Receptacles — PL-VS5 black flared-slat receptacle",
         "source": "parkezza",
         "tier": "essential",
-        "name": "PL-VS1"
+        "name": "PL-VS5"
       },
       {
         "src": "/images/galleries/waste-receptacles/pl-vs2.png",
-        "alt": "Litter Receptacles — PL-VS2 blue dual-stream recycle receptacle",
+        "alt": "Litter Receptacles — PL-VS6 blue dual-stream recycle receptacle",
         "source": "parkezza",
         "tier": "essential",
-        "name": "PL-VS2"
+        "name": "PL-VS6"
       },
       {
         "src": "/images/galleries/waste-receptacles/pl-vs3.png",
@@ -218,49 +218,63 @@
       },
       {
         "src": "/images/galleries/waste-receptacles/p-littersteelsvs2.png",
-        "alt": "Litter Receptacles — Steel SVS2 receptacle",
+        "alt": "Litter Receptacles — PL-SVS2 receptacle",
         "source": "parkezza",
         "tier": "essential",
-        "name": "Steel SVS2"
+        "name": "PL-SVS2"
       },
       {
         "src": "/images/galleries/waste-receptacles/p-littersteelsvs3.png",
-        "alt": "Litter Receptacles — Steel SVS3 receptacle",
+        "alt": "Litter Receptacles — PL-SVS3 receptacle",
         "source": "parkezza",
         "tier": "essential",
-        "name": "Steel SVS3"
+        "name": "PL-SVS3"
       },
       {
         "src": "/images/galleries/waste-receptacles/p-litterwoodvs1.png",
-        "alt": "Litter Receptacles — Wood VS1 receptacle",
+        "alt": "Litter Receptacles — PL-VS1 receptacle",
         "source": "parkezza",
         "tier": "essential",
-        "name": "Wood VS1"
+        "name": "PL-VS1"
       },
       {
         "src": "/images/galleries/waste-receptacles/receptacle-zc-m1-wood-slats.png",
-        "alt": "Litter Receptacles — Wood VS2 wood-slat receptacle",
+        "alt": "Litter Receptacles — PL-VS2 wood-slat receptacle",
         "source": "zenon",
         "tier": "signature",
-        "name": "Wood VS2"
+        "name": "PL-VS2"
       },
       {
         "src": "/images/galleries/waste-receptacles/pl-vs4.png",
-        "alt": "Litter Receptacles — PL-VS4 dark flared-slat receptacle",
+        "alt": "Litter Receptacles — PL-VS7 dark flared-slat receptacle",
         "source": "parkezza",
         "tier": "essential",
-        "name": "PL-VS4",
+        "name": "PL-VS7",
         "imageFit": "contain",
         "imageScale": 0.78
       },
       {
         "src": "/images/galleries/waste-receptacles/pl-vs5.png",
-        "alt": "Litter Receptacles — PL-VS5 bronze flared-slat receptacle",
+        "alt": "Litter Receptacles — PL-VS8 bronze flared-slat receptacle",
         "source": "parkezza",
         "tier": "essential",
-        "name": "PL-VS5",
+        "name": "PL-VS8",
         "imageFit": "contain",
         "imageScale": 0.72
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/pl-lf1.png",
+        "alt": "Litter Receptacles — PL-LF1 red perforated receptacle",
+        "source": "parkezza",
+        "tier": "signature",
+        "name": "PL-LF1"
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/pl-lf2.png",
+        "alt": "Litter Receptacles — PL-LF2 dual-stream stainless recycling unit",
+        "source": "parkezza",
+        "tier": "signature",
+        "name": "PL-LF2"
       }
     ],
     "sections": [
@@ -275,7 +289,9 @@
             "alt": "Litter Receptacles — PL-UL-S5 wood-slat receptacle with black trim",
             "source": "parkezza",
             "tier": "essential",
-            "name": "PL-UL-S5"
+            "name": "PL-UL-S5",
+            "imageFit": "contain",
+            "imageScale": 0.92
           },
           {
             "src": "/images/galleries/waste-receptacles/pl-ul-s1.png",
@@ -331,15 +347,15 @@
           },
           {
             "src": "/images/galleries/waste-receptacles/pl-kc-55-gallon.png",
-            "alt": "Litter Receptacles — KC series 55 gallon cylindrical receptacle",
+            "alt": "Litter Receptacles — PL-55 Gallon cylindrical receptacle",
             "source": "parkezza",
             "tier": "essential",
-            "name": "55 Gallon"
+            "name": "PL-55 Gallon"
           }
         ]
       }
     ],
-    "overview": "Commercial litter receptacles and recycling units for parks, plazas, resorts, campuses, and municipal streetscapes. Spec steel, wood, dual-stream, and multi-stream models that pair with our benches in style, finish, and materials for a cohesive outdoor package."
+    "overview": "Commercial litter receptacles and recycling units for parks, plazas, resorts, campuses, and municipal streetscapes. Spec steel, recycled plastic \"wood\", dual-stream, and multi-stream models that pair with our benches in style, finish, and materials for a cohesive outdoor package."
   },
   {
     "slug": "shade-structures",
