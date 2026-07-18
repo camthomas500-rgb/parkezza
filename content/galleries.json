@@ -485,85 +485,81 @@
     "name": "Bollards",
     "tier": "essential",
     "description": "Security and perimeter bollards for traffic calming, site delineation, and architectural streetscapes.",
-    "heroImage": "/images/categories/bollards.png",
+    "heroImage": "/images/categories/bollards-hero.png",
+    "imageFit": "contain",
+    "overview": "Architectural and security bollards for campuses, streetscapes, plazas, and facility entries. Spec lighted, removable, and retractable models that pair with our site furnishings in finish and form.",
     "images": [
       {
-        "src": "/images/galleries/bollards/p-bollardsz-1-3.png",
-        "alt": "Bollards — Bollards Z 1 3",
-        "source": "parkezza",
-        "tier": "essential"
-      },
-      {
         "src": "/images/galleries/bollards/p-bollardsz-1light.png",
-        "alt": "Bollards — Bollards Z 1light",
+        "alt": "Bollards — lighted modern cylindrical bollard",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "name": "Lighted Z-1",
+        "imageFit": "contain",
+        "imageScale": 0.55
       },
       {
         "src": "/images/galleries/bollards/p-bollardsz-2light.png",
-        "alt": "Bollards — Bollards Z 2light",
+        "alt": "Bollards — lighted fluted bollard with dome cap",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "name": "Lighted Z-2",
+        "imageFit": "contain",
+        "imageScale": 0.55
       },
       {
         "src": "/images/galleries/bollards/p-bollardsz-3light.png",
-        "alt": "Bollards — Bollards Z 3light",
+        "alt": "Bollards — lighted sculptural wishbone bollard",
         "source": "parkezza",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/bollards/p-bollardsz-4-5.png",
-        "alt": "Bollards — Bollards Z 4 5",
-        "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "name": "Lighted Z-3",
+        "imageFit": "contain",
+        "imageScale": 0.55
       },
       {
         "src": "/images/galleries/bollards/p-bollardsz-4light.png",
-        "alt": "Bollards — Bollards Z 4light",
+        "alt": "Bollards — lighted open-frame rectangular bollard",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "name": "Lighted Z-4",
+        "imageFit": "contain",
+        "imageScale": 0.55
       },
       {
         "src": "/images/galleries/bollards/p-bollardsz-5light.png",
-        "alt": "Bollards — Bollards Z 5light",
+        "alt": "Bollards — lighted solid rectangular bollard",
         "source": "parkezza",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/bollards/crash-rated.png",
-        "alt": "Bollards — crash rated",
-        "source": "zenon",
-        "tier": "essential"
+        "tier": "essential",
+        "name": "Lighted Z-5",
+        "imageFit": "contain",
+        "imageScale": 0.55
       },
       {
         "src": "/images/galleries/bollards/lighted-security.png",
-        "alt": "Bollards — lighted security",
+        "alt": "Bollards — lighted security bollard with dual light rings",
         "source": "zenon",
-        "tier": "essential"
+        "tier": "essential",
+        "name": "Lighted Security",
+        "imageFit": "contain",
+        "imageScale": 0.65
       },
       {
         "src": "/images/galleries/bollards/removable.png",
-        "alt": "Bollards — removable",
+        "alt": "Bollards — removable stainless bollards",
         "source": "zenon",
-        "tier": "essential"
+        "tier": "essential",
+        "name": "Removable",
+        "imageFit": "contain",
+        "imageScale": 0.7
       },
       {
         "src": "/images/galleries/bollards/retractable.png",
-        "alt": "Bollards — retractable",
+        "alt": "Bollards — retractable stainless bollards",
         "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/bollards/shallow-mount.png",
-        "alt": "Bollards — shallow mount",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/bollards/traffic.png",
-        "alt": "Bollards — traffic",
-        "source": "zenon",
-        "tier": "essential"
+        "tier": "essential",
+        "name": "Retractable",
+        "imageFit": "contain",
+        "imageScale": 0.7
       }
     ]
   },

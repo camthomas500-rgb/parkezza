@@ -57,7 +57,6 @@ export function Footer() {
       </div>
       <div className="border-t border-white/10 py-6">
         <div className="mx-auto flex max-w-7xl flex-col items-center gap-3 px-4 sm:px-6 lg:px-8">
-          <LetsTalk variant="footer" />
           <p className="text-center text-xs text-ivory/50">
             © {new Date().getFullYear()} Parkezza. All rights reserved.
           </p>

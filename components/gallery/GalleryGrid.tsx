@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { Lightbox } from "@/components/gallery/Lightbox";
 import { QuoteForm } from "@/components/quote/QuoteForm";
-import { LetsTalk } from "@/components/layout/LetsTalk";
 import {
   getGalleryInquiryItems,
   getImageLabel,
@@ -299,12 +298,16 @@ function inquiryHeadline(gallery: Gallery): string {
   if (gallery.slug === "litter-receptacles") {
     return "Interested in a specific litter receptacle?";
   }
+  if (gallery.slug === "bollards") {
+    return "Interested in a specific bollard?";
+  }
   return `Interested in ${gallery.name.toLowerCase()}?`;
 }
 
 export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
-  const productFit = gallery.slug === "litter-receptacles";
+  const productFit =
+    gallery.slug === "litter-receptacles" || gallery.slug === "bollards";
   const contain = gallery.imageFit === "contain" && !productFit;
   const hasLabeledProducts =
     gallery.images.some((image) => Boolean(image.id || image.name)) ||
@@ -333,7 +336,9 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   const gridClass = cn(
     "grid gap-4",
     productFit
-      ? "mx-auto max-w-6xl sm:grid-cols-2 lg:grid-cols-4"
+      ? gallery.slug === "bollards"
+        ? "mx-auto max-w-3xl sm:grid-cols-2 lg:grid-cols-4"
+        : "mx-auto max-w-6xl sm:grid-cols-2 lg:grid-cols-4"
       : contain
         ? "mx-auto max-w-3xl sm:grid-cols-2 lg:grid-cols-2"
         : "sm:grid-cols-2 lg:grid-cols-3"
@@ -421,11 +426,6 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
             />
           </Suspense>
         </div>
-        {!showInquiry && (
-          <div className="mt-6 flex justify-center">
-            <LetsTalk variant="inline" />
-          </div>
-        )}
       </div>
 
       {lightboxIndex !== null && (

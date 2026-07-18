@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { MARKETS } from "@/lib/content";
 
 export function MarketsSection() {
@@ -17,22 +16,14 @@ export function MarketsSection() {
           {MARKETS.map((market) => (
             <article
               key={market.title}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6"
+              className="rounded-2xl border border-bronze/35 border-t-4 border-t-bronze bg-ivory p-6 text-charcoal"
             >
               <h3 className="font-display text-xl">{market.title}</h3>
-              <p className="mt-3 text-sm leading-relaxed text-ivory/75">
+              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
                 {market.description}
               </p>
             </article>
           ))}
-        </div>
-        <div className="mt-10">
-          <Link
-            href="/markets"
-            className="text-sm font-medium text-bronze hover:text-white"
-          >
-            Learn more about our markets →
-          </Link>
         </div>
       </div>
     </section>

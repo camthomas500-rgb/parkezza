@@ -14,14 +14,10 @@ export function CategoryGrid() {
           <Link
             key={gallery.slug}
             href={`/galleries/${gallery.slug}`}
-            className="group overflow-hidden rounded-2xl border border-border bg-white shadow-sm transition-shadow hover:shadow-lg"
+            className="group flex h-full flex-col overflow-hidden rounded-2xl border border-bronze/35 bg-white transition-shadow hover:shadow-md"
           >
-            <div
-              className={cn(
-                "relative overflow-hidden",
-                contain ? "aspect-[3/4] bg-[#c8dceb]" : "aspect-[4/3] bg-stone"
-              )}
-            >
+            <div className="h-1 shrink-0 bg-bronze" aria-hidden />
+            <div className="relative aspect-[4/3] overflow-hidden bg-stone">
               <Image
                 src={gallery.heroImage}
                 alt={gallery.name}
@@ -29,15 +25,15 @@ export function CategoryGrid() {
                 className={cn(
                   "transition-transform duration-500 group-hover:scale-105",
                   contain
-                    ? "object-contain object-center p-3"
-                    : "object-cover"
+                    ? "object-contain object-[center_40%] p-3"
+                    : "object-cover object-center"
                 )}
                 sizes="(max-width: 768px) 100vw, 25vw"
               />
             </div>
-            <div className="p-5">
+            <div className="flex flex-1 flex-col p-5">
               <h3 className="font-display text-xl text-charcoal">{gallery.name}</h3>
-              <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-2 line-clamp-2 flex-1 text-sm leading-relaxed text-muted-foreground">
                 {gallery.description}
               </p>
               <span className="mt-4 inline-block text-sm font-medium text-accent group-hover:underline">
