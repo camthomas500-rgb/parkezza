@@ -19,6 +19,8 @@ export interface GallerySection {
   id: string;
   title?: string;
   description?: string;
+  /** Short emphasis line above the description (e.g. Matching benches available.) */
+  callout?: string;
   /** 
    * default: title above grid
    * aside-intro: first image left, title/copy right

@@ -267,7 +267,8 @@
       {
         "id": "ul-s-series",
         "title": "UL-S Series",
-        "description": "Perforated steel and recycled-plastic litter and multi-stream recycling units for parks, campuses, and streetscapes.",
+        "callout": "Matching benches available.",
+        "description": "Coordinate litter receptacles with UL-S seating for a complete, unified site package — perforated steel and recycled-plastic units for parks, campuses, and streetscapes.",
         "layout": "default",
         "images": [
           {
@@ -289,7 +290,23 @@
             "alt": "Litter Receptacles — PL-UL-S3 triple-stream plastic, cans, and trash station",
             "source": "parkezza",
             "tier": "essential",
-            "name": "PL-UL-S3"
+            "name": "PL-UL-S3",
+            "imageFit": "contain",
+            "imageScale": 0.94
+          },
+          {
+            "src": "/images/galleries/waste-receptacles/pl-ul-s4.png",
+            "alt": "Litter Receptacles — PL-UL-S4 black perforated receptacle with rain hood",
+            "source": "parkezza",
+            "tier": "essential",
+            "name": "PL-UL-S4"
+          },
+          {
+            "src": "/images/galleries/waste-receptacles/pl-ul-s5.png",
+            "alt": "Litter Receptacles — PL-UL-S5 wood-slat receptacle with black trim",
+            "source": "parkezza",
+            "tier": "essential",
+            "name": "PL-UL-S5"
           }
         ]
       },

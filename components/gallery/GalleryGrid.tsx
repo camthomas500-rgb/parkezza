@@ -247,8 +247,13 @@ function SectionBlock({
         {section.title && (
           <h2 className="font-display text-3xl text-charcoal">{section.title}</h2>
         )}
+        {section.callout && (
+          <p className="mt-3 w-full text-base font-semibold tracking-wide text-accent md:text-lg">
+            {section.callout}
+          </p>
+        )}
         {section.description && (
-          <p className="mt-3 w-full text-sm leading-snug text-muted-foreground">
+          <p className="mt-2 w-full text-sm leading-snug text-muted-foreground">
             {section.description}
           </p>
         )}
