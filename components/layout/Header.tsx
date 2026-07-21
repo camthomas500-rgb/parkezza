@@ -20,15 +20,16 @@ export function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-charcoal text-ivory">
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:h-24 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0 rounded-md bg-white px-3 py-2">
+      <div className="mx-auto flex h-28 max-w-7xl items-center justify-between gap-4 px-4 sm:h-32 sm:px-6 lg:px-8">
+        <Link href="/" className="shrink-0">
           <Image
-            src="/logo-parkezza.png"
+            src="/logo-parkezza-dark.png?v=size2x"
             alt="Parkezza"
-            width={280}
-            height={90}
-            className="h-12 w-auto sm:h-14 md:h-16"
+            width={560}
+            height={180}
+            className="h-24 w-auto sm:h-28 md:h-32"
             priority
+            unoptimized
           />
         </Link>
 

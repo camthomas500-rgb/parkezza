@@ -80,7 +80,11 @@ export default async function GalleryPage({ params }: PageProps) {
               src={gallery.heroImage}
               alt={gallery.name}
               fill
-              className="object-cover opacity-60"
+              className={
+                gallery.slug === "shade-structures"
+                  ? "object-cover object-[center_30%] opacity-60"
+                  : "object-cover opacity-60"
+              }
               priority
             />
             <div className="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent" />

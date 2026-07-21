@@ -7,13 +7,14 @@ export function Footer() {
     <footer className="border-t border-border bg-charcoal text-ivory">
       <div className="mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
-          <Link href="/" className="inline-block rounded-md bg-white px-3 py-2">
+          <Link href="/" className="inline-block">
             <Image
-              src="/logo-parkezza.png"
+              src="/logo-parkezza-dark.png?v=size2x"
               alt="Parkezza"
-              width={260}
-              height={84}
-              className="h-12 w-auto sm:h-14"
+              width={520}
+              height={168}
+              className="h-24 w-auto sm:h-28"
+              unoptimized
             />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ivory/75">

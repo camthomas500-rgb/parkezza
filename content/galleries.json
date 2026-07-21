@@ -361,122 +361,111 @@
     "slug": "shade-structures",
     "name": "Shade Structures",
     "tier": "signature",
-    "description": "Engineered shade canopies and structures for playgrounds, pools, dining, and outdoor gathering.",
+    "description": "Parks and Recreation, Small dog park structures, Tiered Hip Roof, Hip Roof Shelters, Arch Roof Shelters, Gable Roof Shelters, Octagon roof shelters, Wood trellis, Covered walkway, Kite Hip Sail, Triangle 3 post fabric sail, and Hybar 4 post fabric sail.",
     "heroImage": "/images/categories/shade-structures.png",
     "images": [
       {
-        "src": "/images/galleries/shade-structures/hip-downcurve-barrel-vault.png",
-        "alt": "Shade Structures — hip downcurve barrel vault",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/parks-and-recreation.png",
+        "alt": "Shade Structures — Parks and Recreation",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-01",
+        "name": "Parks and Recreation"
       },
       {
-        "src": "/images/galleries/shade-structures/hip-dual-pavilions-park.png",
-        "alt": "Shade Structures — hip dual pavilions park",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/small-dog-park-structures.png",
+        "alt": "Shade Structures — Small dog park structures",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-02",
+        "name": "Small dog park structures"
       },
       {
-        "src": "/images/galleries/shade-structures/hip-single-post-playground.png",
-        "alt": "Shade Structures — hip single post playground",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/tiered-hip-roof.png",
+        "alt": "Shade Structures — Tiered Hip Roof",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-03",
+        "name": "Tiered Hip Roof"
       },
       {
-        "src": "/images/galleries/shade-structures/hip-tiered-clerestory.png",
-        "alt": "Shade Structures — hip tiered clerestory",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/hip-roof-shelters.png",
+        "alt": "Shade Structures",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-04"
       },
       {
-        "src": "/images/galleries/shade-structures/roof-styles-overview.png",
-        "alt": "Shade Structures — roof styles overview",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/arch-roof-shelters.png",
+        "alt": "Shade Structures — Hip Roof Shelters",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-05",
+        "name": "Hip Roof Shelters"
       },
       {
-        "src": "/images/galleries/shade-structures/shade-01.png",
-        "alt": "Shade Structures — shade 01",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/gable-roof-shelters.png",
+        "alt": "Shade Structures — Arch Roof Shelters",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-06",
+        "name": "Arch Roof Shelters"
       },
       {
-        "src": "/images/galleries/shade-structures/shade-02.png",
-        "alt": "Shade Structures — shade 02",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/octagon-roof-shelters.png",
+        "alt": "Shade Structures — Gable Roof Shelters",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-07",
+        "name": "Gable Roof Shelters"
       },
       {
-        "src": "/images/galleries/shade-structures/shade-03.png",
-        "alt": "Shade Structures — shade 03",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/wood-trellis.png",
+        "alt": "Shade Structures — Octagon roof shelters",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-08",
+        "name": "Octagon roof shelters"
       },
       {
-        "src": "/images/galleries/shade-structures/shade-04.png",
-        "alt": "Shade Structures — shade 04",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/covered-walkway.png",
+        "alt": "Shade Structures — Wood trellis",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-09",
+        "name": "Wood trellis"
       },
       {
-        "src": "/images/galleries/shade-structures/shade-05.png",
-        "alt": "Shade Structures — shade 05",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/kite-hip-sail.png",
+        "alt": "Shade Structures — Covered walkway",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-10",
+        "name": "Covered walkway"
       },
       {
-        "src": "/images/galleries/shade-structures/shade-06.png",
-        "alt": "Shade Structures — shade 06",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/triangle-3-post-fabric-sail.png",
+        "alt": "Shade Structures — Kite Hip Sail",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-11",
+        "name": "Kite Hip Sail"
       },
       {
-        "src": "/images/galleries/shade-structures/shade-07.png",
-        "alt": "Shade Structures — shade 07",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/hybar-4-post-fabric-sail.png",
+        "alt": "Shade Structures — Triangle 3 post fabric sail",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-12",
+        "name": "Triangle 3 post fabric sail"
       },
       {
-        "src": "/images/galleries/shade-structures/finished-projects-shade-structure1.png",
-        "alt": "Shade Structures — finished projects shade structure1",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/shade-structures/shadestructure-pic1.png",
-        "alt": "Shade Structures — shadestructure pic1",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/shade-structures/shadestructure-pic2.png",
-        "alt": "Shade Structures — shadestructure pic2",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/shade-structures/shadestructure-pic3.png",
-        "alt": "Shade Structures — shadestructure pic3",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/shade-structures/shadestructure-pic4.png",
-        "alt": "Shade Structures — shadestructure pic4",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/shade-structures/shadestructure-pic5.png",
-        "alt": "Shade Structures — shadestructure pic5",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/shade-structures/shadestructure-pic6.png",
-        "alt": "Shade Structures — shadestructure pic6",
-        "source": "pics",
-        "tier": "essential"
+        "src": "/images/galleries/shade-structures/hybar-4-post-fabric-sail-2.png",
+        "alt": "Shade Structures — Hybar 4 post fabric sail",
+        "source": "poligon",
+        "tier": "signature",
+        "id": "SS-13",
+        "name": "Hybar 4 post fabric sail"
       }
     ]
   },

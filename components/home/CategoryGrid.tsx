@@ -26,7 +26,9 @@ export function CategoryGrid() {
                   "transition-transform duration-500 group-hover:scale-105",
                   contain
                     ? "object-contain object-[center_40%] p-3"
-                    : "object-cover object-center"
+                    : gallery.slug === "shade-structures"
+                      ? "object-cover object-[center_35%]"
+                      : "object-cover object-center"
                 )}
                 sizes="(max-width: 768px) 100vw, 25vw"
               />
