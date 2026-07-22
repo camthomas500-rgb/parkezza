@@ -17,15 +17,22 @@ export function CategoryGrid() {
             className="group flex h-full flex-col overflow-hidden rounded-2xl border border-bronze/35 bg-white transition-shadow hover:shadow-md"
           >
             <div className="h-1 shrink-0 bg-bronze" aria-hidden />
-            <div className="relative aspect-[4/3] overflow-hidden bg-stone">
+            <div
+              className={cn(
+                "relative aspect-[4/3] overflow-hidden",
+                contain || gallery.slug === "dog-waste-stations"
+                  ? "bg-white"
+                  : "bg-stone"
+              )}
+            >
               <Image
                 src={gallery.heroImage}
                 alt={gallery.name}
                 fill
                 className={cn(
                   "transition-transform duration-500 group-hover:scale-105",
-                  contain
-                    ? "object-contain object-[center_40%] p-3"
+                  contain || gallery.slug === "dog-waste-stations"
+                    ? "object-contain object-center p-3"
                     : gallery.slug === "shade-structures"
                       ? "object-cover object-[center_35%]"
                       : "object-cover object-center"

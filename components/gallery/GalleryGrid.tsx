@@ -21,6 +21,7 @@ function ImageTile({
   className,
   inquireHref,
   productFit = false,
+  tileBg = "default",
 }: {
   image: GalleryImage;
   contain: boolean;
@@ -29,11 +30,21 @@ function ImageTile({
   inquireHref?: string;
   /** Square tiles + padded contain — full product visible at a smaller scale */
   productFit?: boolean;
+  /** Product tile backdrop — white blends product cutouts into the page */
+  tileBg?: "default" | "white";
 }) {
   const modelName = image.name ?? (image.id ? getImageLabel(image) : null);
   const useContain = image.imageFit === "contain" || contain || productFit;
   const scale = image.imageScale ?? (productFit ? 0.82 : 1);
   const showLabel = Boolean(image.id || modelName);
+  const surface =
+    tileBg === "white"
+      ? "bg-white"
+      : productFit
+        ? "bg-[#e8eef2]"
+        : contain
+          ? "bg-[#c8dceb]"
+          : "bg-stone";
 
   return (
     <div className={cn("group relative", className)}>
@@ -41,11 +52,8 @@ function ImageTile({
         type="button"
         className={cn(
           "relative w-full overflow-hidden rounded-xl",
-          productFit
-            ? "aspect-square bg-[#e8eef2]"
-            : contain
-              ? "aspect-[3/4] bg-[#c8dceb]"
-              : "aspect-[4/3] bg-stone"
+          productFit ? "aspect-square" : contain ? "aspect-[3/4]" : "aspect-[4/3]",
+          surface
         )}
         onClick={onOpen}
       >
@@ -130,6 +138,7 @@ function SectionBlock({
   anchorImage,
   inquireFor,
   productFit = false,
+  tileBg = "default",
 }: {
   section: GallerySection;
   contain: boolean;
@@ -138,6 +147,7 @@ function SectionBlock({
   anchorImage?: GalleryImage;
   inquireFor?: (image: GalleryImage) => string | undefined;
   productFit?: boolean;
+  tileBg?: "default" | "white";
 }) {
   if (
     section.layout === "anchor-aside" &&
@@ -153,6 +163,7 @@ function SectionBlock({
             image={anchorImage}
             contain={contain}
             productFit={productFit}
+            tileBg={tileBg}
             onOpen={() => onOpenImage(anchorImage.src)}
             inquireHref={inquireFor?.(anchorImage)}
           />
@@ -160,6 +171,7 @@ function SectionBlock({
             image={featured}
             contain={contain}
             productFit={productFit}
+            tileBg={tileBg}
             onOpen={() => onOpenImage(featured.src)}
             inquireHref={inquireFor?.(featured)}
           />
@@ -188,6 +200,7 @@ function SectionBlock({
                 image={image}
                 contain={contain}
                 productFit={productFit}
+                tileBg={tileBg}
                 onOpen={() => onOpenImage(image.src)}
                 inquireHref={inquireFor?.(image)}
               />
@@ -213,6 +226,7 @@ function SectionBlock({
               image={featured}
               contain={contain}
               productFit={productFit}
+              tileBg={tileBg}
               onOpen={() => onOpenImage(featured.src)}
               inquireHref={inquireFor?.(featured)}
             />
@@ -242,6 +256,7 @@ function SectionBlock({
                 image={image}
                 contain={contain}
                 productFit={productFit}
+                tileBg={tileBg}
                 onOpen={() => onOpenImage(image.src)}
                 inquireHref={inquireFor?.(image)}
               />
@@ -276,6 +291,7 @@ function SectionBlock({
             image={image}
             contain={contain}
             productFit={productFit}
+            tileBg={tileBg}
             onOpen={() => onOpenImage(image.src)}
             inquireHref={inquireFor?.(image)}
           />
@@ -301,6 +317,9 @@ function inquiryHeadline(gallery: Gallery): string {
   if (gallery.slug === "bollards") {
     return "Interested in a specific bollard?";
   }
+  if (gallery.slug === "picnic-tables") {
+    return "Interested in a specific picnic table?";
+  }
   return `Interested in ${gallery.name.toLowerCase()}?`;
 }
 
@@ -309,8 +328,14 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   const productFit =
     gallery.slug === "litter-receptacles" ||
     gallery.slug === "bollards" ||
-    gallery.slug === "dog-waste-stations";
+    gallery.slug === "dog-waste-stations" ||
+    gallery.slug === "picnic-tables";
   const contain = gallery.imageFit === "contain" && !productFit;
+  const tileBg =
+    gallery.slug === "dog-waste-stations" || gallery.slug === "picnic-tables"
+      ? "white"
+      : "default";
+  const hideQuote = gallery.slug === "dog-waste-stations";
   const hasLabeledProducts =
     gallery.images.some((image) => Boolean(image.id || image.name)) ||
     (gallery.sections?.some((section) =>
@@ -367,6 +392,7 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
             image={image}
             contain={contain}
             productFit={productFit}
+            tileBg={tileBg}
             onOpen={() => openImage(image.src)}
             inquireHref={inquireFor(image)}
           />
@@ -379,6 +405,7 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
           section={section}
           contain={contain}
           productFit={productFit}
+          tileBg={tileBg}
           gridClass={gridClass}
           onOpenImage={openImage}
           inquireFor={showInquiry ? inquireFor : undefined}
@@ -391,12 +418,14 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
       {gallery.sisterSite ? (
         <div className="mt-8 rounded-2xl border border-border bg-white/60 p-8 text-center">
           <p className="font-display text-xl text-charcoal md:text-2xl">
-            Explore our full umbrella line
+            {gallery.sisterSite.headline ??
+              `Explore our full ${gallery.name.toLowerCase()} line`}
           </p>
-          <p className="mt-2 text-sm text-muted-foreground">
-            Cantilever systems, market umbrellas, bases, and wind-rated commercial
-            shade for resorts and hospitality.
-          </p>
+          {gallery.sisterSite.description && (
+            <p className="mt-2 text-sm text-muted-foreground">
+              {gallery.sisterSite.description}
+            </p>
+          )}
           <a
             href={gallery.sisterSite.url}
             target="_blank"
@@ -408,27 +437,29 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
         </div>
       ) : null}
 
-      <div id="quote" className="mt-16 scroll-mt-24">
-        <div className="mb-8 text-center">
-          <p className="font-display text-2xl text-charcoal">
-            {inquiryHeadline(gallery)}
-          </p>
-          {!showInquiry && (
-            <p className="mt-2 text-muted-foreground">
-              Share quantities, finishes, and your project timeline — we will
-              respond with options and pricing.
+      {!hideQuote && (
+        <div id="quote" className="mt-16 scroll-mt-24">
+          <div className="mb-8 text-center">
+            <p className="font-display text-2xl text-charcoal">
+              {inquiryHeadline(gallery)}
             </p>
-          )}
+            {!showInquiry && (
+              <p className="mt-2 text-muted-foreground">
+                Share quantities, finishes, and your project timeline — we will
+                respond with options and pricing.
+              </p>
+            )}
+          </div>
+          <div className="mx-auto max-w-3xl">
+            <Suspense fallback={<QuoteFormFallback />}>
+              <QuoteForm
+                defaultCategory={gallery.slug}
+                specificItems={showInquiry ? inquiryItems : undefined}
+              />
+            </Suspense>
+          </div>
         </div>
-        <div className="mx-auto max-w-3xl">
-          <Suspense fallback={<QuoteFormFallback />}>
-            <QuoteForm
-              defaultCategory={gallery.slug}
-              specificItems={showInquiry ? inquiryItems : undefined}
-            />
-          </Suspense>
-        </div>
-      </div>
+      )}
 
       {lightboxIndex !== null && (
         <Lightbox

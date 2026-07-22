@@ -558,6 +558,7 @@
     "tier": "essential",
     "description": "Dog waste stations, dispensers, agility equipment, and site amenities for dog parks and trails.",
     "heroImage": "/images/categories/dog-park-stations.png",
+    "imageFit": "contain",
     "images": [
       {
         "src": "/images/galleries/dog-park-stations/hero-stations-no-model-number.png",
@@ -582,140 +583,14 @@
         "alt": "Steel Teeter Totter PBARK-440",
         "source": "dogparkstations",
         "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-1924f65474a4710abead3f02b923341199fa53c4.png",
-        "alt": "Dog Waste Stations — img 1924f65474a4710abead3f02b923341199fa53c4",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-1f3c975feb22b0023fecb56d22b6019dff55bfc2.png",
-        "alt": "Doggie Crawl Tunnel PBARK-491",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-26c4053ec7cdb72843b2e829a53df99a5da346b7.png",
-        "alt": "Doggie Crawl Tunnel PBark-491",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-39e95634366587a98c38598115123f30cb0c3f76.png",
-        "alt": "Pic Post",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-4023f3f7baed0bc82785ca6fd09e9fb3f736b260.png",
-        "alt": "Steel Weave Posts PBARK-460",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-59dbdaf11d4d8468c088f64b611b986338cfca0d.png",
-        "alt": "Doggie Waste Bag Options",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-7308b64bbbff0a506dadb63768457d7a25af936f.png",
-        "alt": "Recycled Intermediate Agility Kit BARK-KIT01",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-8798df18adcb30495a73e232b2d88c9d6e9416fa.png",
-        "alt": "Recycled Novice Agility Kit BARK-KIT02",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-9073c7e00afa2dd610152ae186fc2d8d6a5f4bde.png",
-        "alt": "ONEpul and MittN Dog Park Stations",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-9386e545fe5c2fe2d37de129e59074cdc516ce53.png",
-        "alt": "Recycled Hilltop Challenge BARK-425",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-9e23a3f52f87b083db2963626b4187e3a8652132.png",
-        "alt": "Leash Post and Pooch Bench",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-a199e20adb4e1f53f40e0dd9f137244aba650bde.png",
-        "alt": "Dog Waste Stations — img a199e20adb4e1f53f40e0dd9f137244aba650bde",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-a39981776f8e6d9656b9f0358683c5b1be7e7c15.png",
-        "alt": "Station Dispensers with Model Numbers",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-b77ed03c41f5b71ec49bd29284cd556506a9aaf9.png",
-        "alt": "Dog Waste Stations — img b77ed03c41f5b71ec49bd29284cd556506a9aaf9",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-c31e3331b9500af663e759e751d225a208c1d599.png",
-        "alt": "Steel Dog Walk PBARK-410 Natural Green",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-d9750f2724e7d9989d6ba7caa5a42eb126cb85a1.png",
-        "alt": "Steel Dog Walk PBARK-410 Playful Red Blue",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-e3f2f9b5af6a10e1a85c116a5c81c5413a3c6453.jpg",
-        "alt": "King of the Hill PBark-400",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-e542079bd63801be5ea3bdb21459c5baa5a1f85b.png",
-        "alt": "Dispenser Options and Dimensions",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-ef45b2b376bec73c4224a805622a79d643b8ce1f.jpg",
-        "alt": "Rover Jump Over PBark-450",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/img-fe40f8d0bfee21e5cf929cd6bece25a295d2ce1f.jpg",
-        "alt": "Trail Proven Recycled Dog Waste Station",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/liners-13-gal-trash-liner.png",
-        "alt": "13 Gal Trash Liner",
-        "source": "dogparkstations",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/dog-park-stations/liners-compostable-liner.png",
-        "alt": "Compostable Liner",
-        "source": "dogparkstations",
-        "tier": "essential"
       }
-    ]
+    ],
+    "sisterSite": {
+      "url": "https://dogparkstations.com",
+      "label": "View full catalog at dogparkstations.com",
+      "headline": "See the full dog park line",
+      "description": "Waste stations, dispensers, liners, agility equipment, and amenities — browse the complete catalog on our sister site."
+    }
   },
   {
     "slug": "umbrellas",
@@ -745,7 +620,9 @@
     ],
     "sisterSite": {
       "url": "https://heavydutyumbrellas.com",
-      "label": "View full umbrella catalog at heavydutyumbrellas.com"
+      "label": "View full umbrella catalog at heavydutyumbrellas.com",
+      "headline": "Explore our full umbrella line",
+      "description": "Cantilever systems, market umbrellas, bases, and wind-rated commercial shade for resorts and hospitality."
     }
   },
   {
@@ -754,165 +631,160 @@
     "tier": "essential",
     "description": "Heavy-duty picnic tables for parks, recreation centers, and outdoor dining — ADA configurations available.",
     "heroImage": "/images/categories/picnic-tables.png",
+    "imageFit": "contain",
     "images": [
       {
         "src": "/images/galleries/picnic-tables/p-picnicvs1.png",
         "alt": "Picnic Tables — Picnic VS1",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "id": "PT-01",
+        "name": "Picnic VS1"
       },
       {
         "src": "/images/galleries/picnic-tables/p-picnicvs2.png",
         "alt": "Picnic Tables — Picnic VS2",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "id": "PT-02",
+        "name": "Picnic VS2"
       },
       {
         "src": "/images/galleries/picnic-tables/p-picnicvs3.png",
         "alt": "Picnic Tables — Picnic VS3",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "id": "PT-03",
+        "name": "Picnic VS3"
       },
       {
         "src": "/images/galleries/picnic-tables/p-picnicvs4.png",
         "alt": "Picnic Tables — Picnic VS4",
         "source": "parkezza",
-        "tier": "essential"
+        "tier": "essential",
+        "id": "PT-04",
+        "name": "Picnic VS4"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/expanded-metal-picnic-table-p-ul1.png",
+        "alt": "Picnic Tables — Expanded metal picnic table P-UL1",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "PT-05",
+        "name": "P-UL1"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/round-expanded-metal-picnic-table-p-ul2.png",
+        "alt": "Picnic Tables — Round expanded metal picnic table P-UL2",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "PT-06",
+        "name": "P-UL2"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/ada-compliant-concrete-picnic-table-p-wu1.png",
+        "alt": "Picnic Tables — ADA Compliant Concrete Picnic Table P-WU1",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "PT-07",
+        "name": "ADA Compliant Concrete Picnic Table, P-WU1"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/concrete-picnic-table-set-p-wu2.png",
+        "alt": "Picnic Tables — Concrete Picnic Table Set P-WU2",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "PT-08",
+        "name": "Concrete Picnic Table Set, P-WU2"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/5-piece-concrete-picnic-table-p-ds1.png",
+        "alt": "Picnic Tables — 5 Piece Concrete Picnic Table P-DS1",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "PT-09",
+        "name": "5 Piece Concrete Picnic Table, P-DS1"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/round-concrete-game-picnic-table-p-ds2.png",
+        "alt": "Picnic Tables — Round Concrete Game Picnic Table P-DS2",
+        "source": "parkezza",
+        "tier": "essential",
+        "id": "PT-10",
+        "name": "Round Concrete Game Picnic Table, P-DS2"
       }
     ]
   },
   {
     "slug": "pergolas-gazebos",
-    "name": "Pergolas & Gazebos",
+    "name": "Pergolas Trellis",
     "tier": "signature",
-    "description": "Architectural pergolas and gazebos for resorts, golf courses, and distinguished outdoor environments.",
+    "description": "Architectural pergolas and trellis structures for resorts, golf courses, and distinguished outdoor environments.",
     "heroImage": "/images/categories/pergolas-gazebos.png",
     "images": [
       {
-        "src": "/images/galleries/pergolas-gazebos/pergola-arched-arbor-park.png",
-        "alt": "Pergolas & Gazebos — pergola arched arbor park",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/pergolas-gazebos/p-ply1.png",
+        "alt": "Pergolas Trellis — P-Ply1",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PG-01",
+        "name": "P-Ply1"
       },
       {
-        "src": "/images/galleries/pergolas-gazebos/pergola-cantilever-picnic-row.png",
-        "alt": "Pergolas & Gazebos — pergola cantilever picnic row",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/pergolas-gazebos/p-ply2.png",
+        "alt": "Pergolas Trellis — P-Ply2",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PG-02",
+        "name": "P-Ply2"
       },
       {
-        "src": "/images/galleries/pergolas-gazebos/pergola-curved-plaza.png",
-        "alt": "Pergolas & Gazebos — pergola curved plaza",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/pergolas-gazebos/p-ply3.png",
+        "alt": "Pergolas Trellis — P-Ply3",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PG-03",
+        "name": "P-Ply3"
       },
       {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg01.png",
-        "alt": "Pergolas & Gazebos — zc pg01",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/pergolas-gazebos/p-ply4.png",
+        "alt": "Pergolas Trellis — P-Ply4",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PG-04",
+        "name": "P-Ply4"
       },
       {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg02.png",
-        "alt": "Pergolas & Gazebos — zc pg02",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/pergolas-gazebos/p-ply5.png",
+        "alt": "Pergolas Trellis — P-Ply5",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PG-05",
+        "name": "P-Ply5"
       },
       {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg03.png",
-        "alt": "Pergolas & Gazebos — zc pg03",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/pergolas-gazebos/p-ply6.png",
+        "alt": "Pergolas Trellis — P-Ply6",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PG-06",
+        "name": "P-Ply6"
       },
       {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg04.png",
-        "alt": "Pergolas & Gazebos — zc pg04",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/pergolas-gazebos/p-ply7.png",
+        "alt": "Pergolas Trellis — P-Ply7",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PG-07",
+        "name": "P-Ply7"
       },
       {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg05.png",
-        "alt": "Pergolas & Gazebos — zc pg05",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg06.png",
-        "alt": "Pergolas & Gazebos — zc pg06",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg07.png",
-        "alt": "Pergolas & Gazebos — zc pg07",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg08.png",
-        "alt": "Pergolas & Gazebos — zc pg08",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg09.png",
-        "alt": "Pergolas & Gazebos — zc pg09",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg10.png",
-        "alt": "Pergolas & Gazebos — zc pg10",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg11.png",
-        "alt": "Pergolas & Gazebos — zc pg11",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg12.png",
-        "alt": "Pergolas & Gazebos — zc pg12",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg13.png",
-        "alt": "Pergolas & Gazebos — zc pg13",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg14.png",
-        "alt": "Pergolas & Gazebos — zc pg14",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg15.png",
-        "alt": "Pergolas & Gazebos — zc pg15",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg16.png",
-        "alt": "Pergolas & Gazebos — zc pg16",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg17.png",
-        "alt": "Pergolas & Gazebos — zc pg17",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/pergolas-gazebos/zc-pg18.png",
-        "alt": "Pergolas & Gazebos — zc pg18",
-        "source": "zenon",
-        "tier": "essential"
+        "src": "/images/galleries/pergolas-gazebos/p-ply8.png",
+        "alt": "Pergolas Trellis — P-Ply8",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PG-08",
+        "name": "P-Ply8"
       }
     ]
   },
@@ -978,78 +850,6 @@
         "src": "/images/galleries/tree-grates/p-treeguardvs1.png",
         "alt": "Tree Guards — Treeguard VS1",
         "source": "parkezza",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/o-trg-01.png",
-        "alt": "Tree Guards — o trg 01",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/o-trg-02.png",
-        "alt": "Tree Guards — o trg 02",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/o-trg-03.png",
-        "alt": "Tree Guards — o trg 03",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/o-trg-06.png",
-        "alt": "Tree Guards — o trg 06",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/o-trg-15.png",
-        "alt": "Tree Guards — o trg 15",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/o-trg-20.png",
-        "alt": "Tree Guards — o trg 20",
-        "source": "zenon",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/tree-grate1.png",
-        "alt": "Tree Guards — tree grate1",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/tree-grate2.png",
-        "alt": "Tree Guards — tree grate2",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/tree-grate3.png",
-        "alt": "Tree Guards — tree grate3",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/tree-grate4.png",
-        "alt": "Tree Guards — tree grate4",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/tree-grate5.png",
-        "alt": "Tree Guards — tree grate5",
-        "source": "pics",
-        "tier": "essential"
-      },
-      {
-        "src": "/images/galleries/tree-grates/tree-grate6.png",
-        "alt": "Tree Guards — tree grate6",
-        "source": "pics",
         "tier": "essential"
       }
     ]

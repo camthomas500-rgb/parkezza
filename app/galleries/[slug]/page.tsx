@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { getGallery, getGallerySlugs } from "@/lib/content";
+import { cn } from "@/lib/utils";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -50,7 +51,12 @@ export default async function GalleryPage({ params }: PageProps) {
       >
         {containHero ? (
           <div className="mx-auto grid max-w-7xl gap-6 px-4 py-6 sm:grid-cols-[minmax(0,160px)_1fr] sm:px-6 sm:py-8 lg:px-8">
-            <div className="relative mx-auto aspect-[3/4] w-full max-w-[160px] overflow-hidden rounded-xl bg-[#c8dceb]">
+            <div
+              className={cn(
+                "relative mx-auto aspect-[3/4] w-full max-w-[160px] overflow-hidden rounded-xl",
+                gallery.slug === "dog-waste-stations" ? "bg-white" : "bg-[#c8dceb]"
+              )}
+            >
               <Image
                 src={gallery.heroImage}
                 alt={gallery.name}

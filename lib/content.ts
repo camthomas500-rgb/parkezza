@@ -48,6 +48,8 @@ export interface Gallery {
   sisterSite?: {
     url: string;
     label: string;
+    headline?: string;
+    description?: string;
   };
 }
 
@@ -60,7 +62,7 @@ export const CATEGORY_NAV = [
   { name: "Dog Waste Stations", slug: "dog-waste-stations" },
   { name: "Commercial Umbrellas", slug: "umbrellas" },
   { name: "Picnic Tables", slug: "picnic-tables" },
-  { name: "Pergolas & Gazebos", slug: "pergolas-gazebos" },
+  { name: "Pergolas Trellis", slug: "pergolas-gazebos" },
   { name: "Bike Racks", slug: "bike-racks" },
   { name: "Flagpoles", slug: "flagpoles" },
   { name: "Tree Guards", slug: "tree-guards" },

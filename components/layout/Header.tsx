@@ -23,7 +23,7 @@ export function Header() {
       <div className="mx-auto flex h-28 max-w-7xl items-center justify-between gap-4 px-4 sm:h-32 sm:px-6 lg:px-8">
         <Link href="/" className="shrink-0">
           <Image
-            src="/logo-parkezza-dark.png?v=solid16"
+            src="/logo-parkezza-dark.png?v=solid23"
             alt="Parkezza"
             width={560}
             height={180}
