@@ -307,7 +307,9 @@ function inquiryHeadline(gallery: Gallery): string {
 export function GalleryGrid({ gallery }: { gallery: Gallery }) {
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
   const productFit =
-    gallery.slug === "litter-receptacles" || gallery.slug === "bollards";
+    gallery.slug === "litter-receptacles" ||
+    gallery.slug === "bollards" ||
+    gallery.slug === "dog-waste-stations";
   const contain = gallery.imageFit === "contain" && !productFit;
   const hasLabeledProducts =
     gallery.images.some((image) => Boolean(image.id || image.name)) ||
