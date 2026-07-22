@@ -1,12 +1,13 @@
-import type { Metadata } from "next";
 import { Suspense } from "react";
 import { QuoteForm } from "@/components/quote/QuoteForm";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Request a Quote",
   description:
     "Request a project quote for outdoor site furnishings. Include quantities, finishes, and timeline.",
-};
+  path: "/quote",
+});
 
 function QuoteFormFallback() {
   return (

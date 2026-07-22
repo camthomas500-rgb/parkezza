@@ -1,13 +1,14 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { MARKETS } from "@/lib/content";
 import { LetsTalk } from "@/components/layout/LetsTalk";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "Markets We Serve",
   description:
     "Parkezza serves resorts, golf courses, HOAs, municipal and federal facilities, recreation centers, dog parks, and more.",
-};
+  path: "/markets",
+});
 
 export default function MarketsPage() {
   return (

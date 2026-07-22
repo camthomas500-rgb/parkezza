@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
+import {
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_URL,
+  jsonLdScript,
+  organizationJsonLd,
+  websiteJsonLd,
+} from "@/lib/seo";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -18,43 +26,48 @@ const dmSerif = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://parkezza.com"),
+  metadataBase: new URL(SITE_URL),
   title: {
-    default: "Parkezza | Curated Outdoor Site Furnishings",
-    template: "%s | Parkezza",
+    default: `${SITE_NAME} | Curated Outdoor Site Furnishings`,
+    template: `%s | ${SITE_NAME}`,
   },
-  description:
-    "High-end and standard outdoor site furnishings for resorts, golf courses, developments, municipal facilities, parks, and recreation centers. Request a project quote.",
+  description: SITE_DESCRIPTION,
   keywords: [
     "site furnishings",
     "outdoor furniture",
     "commercial benches",
-    "park shelters",
+    "shade structures",
     "commercial umbrellas",
-    "dog park stations",
+    "dog waste stations",
     "bollards",
     "picnic tables",
+    "pergolas",
+    "litter receptacles",
   ],
+  alternates: {
+    canonical: SITE_URL,
+  },
   openGraph: {
     type: "website",
     locale: "en_US",
-    siteName: "Parkezza",
-    url: "https://parkezza.com",
-    title: "Parkezza | Curated Outdoor Site Furnishings",
+    siteName: SITE_NAME,
+    url: SITE_URL,
+    title: `${SITE_NAME} | Curated Outdoor Site Furnishings`,
     description:
       "Premium outdoor site furnishings for resorts, developments, golf courses, municipal facilities, and public spaces.",
-    images: [{ url: "/logo-parkezza.png", alt: "Parkezza" }],
+    images: [{ url: "/logo-parkezza.png", alt: SITE_NAME }],
   },
-};
-
-const organizationJsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  name: "Parkezza",
-  url: "https://parkezza.com",
-  description:
-    "Curated outdoor site furnishings for resorts, developments, golf courses, municipal facilities, and public spaces.",
-  sameAs: [],
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} | Curated Outdoor Site Furnishings`,
+    description:
+      "Premium outdoor site furnishings for resorts, developments, golf courses, municipal facilities, and public spaces.",
+    images: ["/logo-parkezza.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -68,7 +81,13 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationJsonLd),
+            __html: jsonLdScript(organizationJsonLd()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLdScript(websiteJsonLd()),
           }}
         />
       </head>

@@ -1,11 +1,12 @@
-import type { Metadata } from "next";
 import Link from "next/link";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata = pageMetadata({
   title: "About",
   description:
     "Parkezza curates high-end and standard outdoor site furnishings for resorts, developments, golf courses, and public spaces.",
-};
+  path: "/about",
+});
 
 export default function AboutPage() {
   return (

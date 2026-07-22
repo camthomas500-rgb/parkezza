@@ -4,6 +4,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
 import { getGallery, getGallerySlugs } from "@/lib/content";
+import {
+  breadcrumbJsonLd,
+  galleryCollectionJsonLd,
+  jsonLdScript,
+  pageMetadata,
+} from "@/lib/seo";
 import { cn } from "@/lib/utils";
 
 interface PageProps {
@@ -21,15 +27,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   const description = gallery.overview ?? gallery.description;
 
-  return {
+  return pageMetadata({
     title: gallery.name,
     description,
-    openGraph: {
-      title: `${gallery.name} | Parkezza`,
-      description,
-      images: [{ url: gallery.heroImage, alt: gallery.name }],
-    },
-  };
+    path: `/galleries/${gallery.slug}`,
+    images: [{ url: gallery.heroImage, alt: gallery.name }],
+  });
 }
 
 export default async function GalleryPage({ params }: PageProps) {
@@ -42,6 +45,24 @@ export default async function GalleryPage({ params }: PageProps) {
 
   return (
     <div>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdScript(
+            breadcrumbJsonLd([
+              { name: "Home", path: "/" },
+              { name: gallery.name, path: `/galleries/${gallery.slug}` },
+            ])
+          ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdScript(galleryCollectionJsonLd(gallery)),
+        }}
+      />
+
       <section
         className={
           containHero

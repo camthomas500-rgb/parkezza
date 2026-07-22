@@ -1,12 +1,18 @@
-import Link from "next/link";
 import { CategoryGrid } from "@/components/home/CategoryGrid";
+import { FaqSection } from "@/components/home/FaqSection";
 import { MarketsSection } from "@/components/home/MarketsSection";
 import { LetsTalk } from "@/components/layout/LetsTalk";
+import { pageMetadata, SITE_DESCRIPTION } from "@/lib/seo";
 
 /**
  * Index page (site homepage) — same role as index.html on your other sites.
  * Customer-facing nav label stays "Home". Route: /
  */
+export const metadata = pageMetadata({
+  description: SITE_DESCRIPTION,
+  path: "/",
+});
+
 export default function IndexPage() {
   return (
     <>
@@ -30,6 +36,8 @@ export default function IndexPage() {
       </section>
 
       <MarketsSection />
+
+      <FaqSection />
 
       <section className="mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 lg:px-8">
         <h2 className="font-display text-3xl text-charcoal md:text-4xl">

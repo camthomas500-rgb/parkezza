@@ -2,9 +2,31 @@
 
 > Curated outdoor site furnishings for resorts, golf courses, developments, municipal facilities, parks, and recreation centers.
 
-Parkezza presents high-end Signature and standard Essential outdoor site furnishing galleries including benches, bollards, picnic tables, shade structures, park shelters, commercial umbrellas, dog park stations, and more.
+Parkezza presents high-end Signature and standard Essential outdoor site furnishing galleries: benches, litter receptacles, shade structures, bollards, dog waste stations, commercial umbrellas, picnic tables, pergolas and trellis, bike racks, flagpoles, and tree guards. Specification support, quantities, and project quotes nationwide.
+
+## Pages
 
 - Home: https://parkezza.com/
-- Galleries: https://parkezza.com/galleries
+- Markets: https://parkezza.com/markets
+- About: https://parkezza.com/about
 - Quote: https://parkezza.com/quote
 - Contact: https://parkezza.com/contact
+
+## Product galleries
+
+- Benches: https://parkezza.com/galleries/benches
+- Litter Receptacles: https://parkezza.com/galleries/litter-receptacles
+- Shade Structures: https://parkezza.com/galleries/shade-structures
+- Bollards: https://parkezza.com/galleries/bollards
+- Dog Waste Stations: https://parkezza.com/galleries/dog-waste-stations
+- Commercial Umbrellas: https://parkezza.com/galleries/umbrellas
+- Picnic Tables: https://parkezza.com/galleries/picnic-tables
+- Pergolas Trellis: https://parkezza.com/galleries/pergolas-gazebos
+- Bike Racks: https://parkezza.com/galleries/bike-racks
+- Flagpoles: https://parkezza.com/galleries/flagpoles
+- Tree Guards: https://parkezza.com/galleries/tree-guards
+
+## Sister catalogs
+
+- Dog park products: https://dogparkstations.com
+- Commercial umbrellas: https://heavydutyumbrellas.com

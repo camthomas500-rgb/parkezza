@@ -467,7 +467,8 @@
         "id": "SS-13",
         "name": "Hybar 4 post fabric sail"
       }
-    ]
+    ],
+    "overview": "Commercial shade structures and park shelters for parks, recreation sites, dog parks, campuses, and public gathering areas. Spec hip, arch, gable, octagon, and tiered roof shelters plus wood trellis, covered walkways, and fabric sail shade systems sized for heavy outdoor use."
   },
   {
     "slug": "bollards",
@@ -559,6 +560,7 @@
     "description": "Dog waste stations, dispensers, agility equipment, and site amenities for dog parks and trails.",
     "heroImage": "/images/categories/dog-park-stations.png",
     "imageFit": "contain",
+    "overview": "Dog waste stations, bag dispensers, and dog-park amenities for municipal parks, HOA trails, and off-leash areas. Browse featured models here, then visit dogparkstations.com for the full catalog of stations, liners, and agility equipment.",
     "images": [
       {
         "src": "/images/galleries/dog-park-stations/hero-stations-no-model-number.png",
@@ -598,6 +600,7 @@
     "tier": "signature",
     "description": "Wind-rated commercial patio umbrellas, cantilever systems, and shade for resorts and hospitality.",
     "heroImage": "/images/categories/umbrellas.png",
+    "overview": "Wind-rated commercial patio umbrellas and cantilever shade for resorts, pool decks, restaurants, and hospitality outdoor dining. Featured systems are shown here; explore the complete line—including bases and market umbrellas—at heavydutyumbrellas.com.",
     "images": [
       {
         "src": "/images/galleries/umbrellas/cantilever-pool-zc-t1.webp",
@@ -632,6 +635,7 @@
     "description": "Heavy-duty picnic tables for parks, recreation centers, and outdoor dining — ADA configurations available.",
     "heroImage": "/images/categories/picnic-tables.png",
     "imageFit": "contain",
+    "overview": "Heavy-duty picnic tables for parks, recreation centers, schools, and outdoor dining. Options include expanded-metal and concrete models, with ADA-oriented configurations available for accessible picnic areas.",
     "images": [
       {
         "src": "/images/galleries/picnic-tables/p-picnicvs1.png",
@@ -721,6 +725,7 @@
     "tier": "signature",
     "description": "Architectural pergolas and trellis structures for resorts, golf courses, and distinguished outdoor environments.",
     "heroImage": "/images/categories/pergolas-gazebos.png",
+    "overview": "Architectural pergolas and trellis structures for resorts, golf courses, hospitality courtyards, and distinguished outdoor environments. Spec open-lattice and covered forms that define gathering spaces while complementing landscape architecture.",
     "images": [
       {
         "src": "/images/galleries/pergolas-gazebos/p-ply1.png",
@@ -794,6 +799,7 @@
     "tier": "essential",
     "description": "Secure bicycle parking from loop racks to decorative designs for campuses and streetscapes.",
     "heroImage": "/images/categories/bike-racks-hero.png",
+    "overview": "Commercial bike racks for campuses, streetscapes, transit stops, and public plazas. Loop and decorative designs provide secure bicycle parking that coordinates with surrounding site furnishings.",
     "images": [
       {
         "src": "/images/galleries/bike-racks/loop-racks-commercial.png",
@@ -814,6 +820,7 @@
     "name": "Flagpoles",
     "tier": "essential",
     "description": "Standard, Premium, and Heavy Duty Flagpoles. Internal and External Halyards, Vanguard. Flags, all sizes. Heights 20 ft – 70 ft. Butt diameters 3\" – 12\".",
+    "overview": "Commercial flagpoles in Standard, Premium, and Heavy Duty grades with internal or external halyards, including Vanguard options. Heights from 20 ft to 70 ft and butt diameters from 3\" to 12\", plus flags in all sizes for civic, campus, and corporate sites.",
     "highlights": [
       "Standard, Premium, Heavy Duty",
       "Internal & External Halyards",
@@ -845,6 +852,7 @@
     "tier": "essential",
     "description": "Decorative tree grates and guards that protect root zones while completing the streetscape.",
     "heroImage": "/images/categories/tree-grates.png",
+    "overview": "Decorative tree guards that protect trunks and root zones while completing streetscapes, campuses, and urban plantings. Coordinate finishes with benches, bollards, and litter receptacles for a unified outdoor package.",
     "images": [
       {
         "src": "/images/galleries/tree-grates/p-treeguardvs1.png",
