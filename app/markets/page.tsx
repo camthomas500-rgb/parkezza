@@ -1,14 +1,18 @@
 import Link from "next/link";
-import { MARKETS } from "@/lib/content";
+import { CATEGORY_NAV, MARKETS } from "@/lib/content";
 import { LetsTalk } from "@/components/layout/LetsTalk";
+import { PRIMARY_STATES_PHRASE, UTAH_LOCAL_PHRASE } from "@/lib/regions";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Markets We Serve",
-  description:
-    "Parkezza serves resorts, golf courses, HOAs, municipal and federal facilities, recreation centers, dog parks, and more.",
+  title: "Markets We Serve — Resorts, HOAs, Parks & More",
+  description: `Outdoor site furnishings for resorts, golf courses, HOAs, and municipal parks around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide.`,
   path: "/markets",
 });
+
+function categoryName(slug: string) {
+  return CATEGORY_NAV.find((c) => c.slug === slug)?.name ?? slug;
+}
 
 export default function MarketsPage() {
   return (
@@ -20,9 +24,11 @@ export default function MarketsPage() {
         Who we serve
       </h1>
       <p className="mt-4 max-w-2xl text-muted-foreground">
-        From a single product line to a coordinated package across your site
-        plan, we provide options, pricing, and lead times aligned to your
-        schedule.
+        From a single product line to a coordinated outdoor site furnishing
+        package across your site plan, we provide options, pricing, and lead
+        times for landscape contractors, developers, resorts, HOAs, and public
+        agencies around {UTAH_LOCAL_PHRASE}, across {PRIMARY_STATES_PHRASE}, and
+        nationwide—including federal and military facilities.
       </p>
 
       <div className="mt-12 grid gap-6 sm:grid-cols-2">
@@ -37,6 +43,18 @@ export default function MarketsPage() {
             <p className="mt-3 leading-relaxed text-muted-foreground">
               {market.description}
             </p>
+            <ul className="mt-4 flex flex-wrap gap-x-4 gap-y-2 text-sm">
+              {market.relatedSlugs.map((slug) => (
+                <li key={slug}>
+                  <Link
+                    href={`/galleries/${slug}`}
+                    className="text-accent underline-offset-4 hover:underline"
+                  >
+                    {categoryName(slug)}
+                  </Link>
+                </li>
+              ))}
+            </ul>
           </article>
         ))}
       </div>
@@ -47,7 +65,13 @@ export default function MarketsPage() {
           Share your site plan, product categories, and quantities for a
           tailored quote.
         </p>
-        <div className="mt-6 flex justify-center">
+        <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+          <Link
+            href="/quote"
+            className="rounded-full bg-bronze px-8 py-3 text-sm font-medium text-white transition-colors hover:bg-bronze/90"
+          >
+            Request a Quote
+          </Link>
           <LetsTalk />
         </div>
       </div>

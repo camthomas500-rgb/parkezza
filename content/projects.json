@@ -1,0 +1,50 @@
+[
+  {
+    "id": "summit-county-park-bench-lawn",
+    "title": "Commercial park benches",
+    "location": "Summit County, Utah",
+    "states": ["Utah"],
+    "categories": ["benches", "litter-receptacles"],
+    "summary": "Recycled-plastic slat park benches with black frames supplied for municipal outdoor use in Summit County, Utah—part of a benches and litter receptacles package.",
+    "image": "/images/projects/summit-park-bench-lawn.png",
+    "imageFit": "cover",
+    "alt": "Brown recycled-plastic park bench with black frame installed on a lawn in Summit County, Utah",
+    "featured": true
+  },
+  {
+    "id": "summit-county-park-bench-mulch",
+    "title": "Park seating installation",
+    "location": "Summit County, Utah",
+    "states": ["Utah"],
+    "categories": ["benches"],
+    "summary": "Durable commercial park bench installed on mulch in a Summit County, Utah public outdoor space—built for year-round Intermountain weather.",
+    "image": "/images/projects/summit-park-bench-mulch.png",
+    "imageFit": "cover",
+    "alt": "Brown and black recycled-plastic park bench installed on wood-chip mulch in Summit County, Utah",
+    "featured": true
+  },
+  {
+    "id": "summit-county-dog-park-obstacles",
+    "title": "Dog park obstacles and seating",
+    "location": "Summit County, Utah",
+    "states": ["Utah"],
+    "categories": ["benches", "dog-waste-stations"],
+    "summary": "Dog park agility obstacles—including A-frame, paws table, and seesaw—plus park seating supplied for a Summit County, Utah municipality.",
+    "image": "/images/projects/summit-dog-park-obstacles.png",
+    "imageFit": "cover",
+    "alt": "Green dog park A-frame, paws table, seesaw, and bench installed in a Summit County, Utah dog park",
+    "featured": true
+  },
+  {
+    "id": "summit-county-pooch-perch",
+    "title": "Dog park themed bench",
+    "location": "Summit County, Utah",
+    "states": ["Utah"],
+    "categories": ["benches", "dog-waste-stations"],
+    "summary": "Pooch Perch–style dog park bench with paw and bone cutouts—decorative commercial seating for pet-friendly parks and trails in Summit County and beyond.",
+    "image": "/images/projects/summit-pooch-perch-bench.png",
+    "imageFit": "contain",
+    "alt": "Green metal dog park bench with paw print and bone cutouts for Summit County, Utah pet amenities",
+    "featured": true
+  }
+]

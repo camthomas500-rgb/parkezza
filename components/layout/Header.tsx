@@ -11,6 +11,8 @@ import { LetsTalk } from "@/components/layout/LetsTalk";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "Markets", href: "/markets" },
+  { name: "Projects", href: "/projects" },
+  { name: "Resources", href: "/resources" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
 ];

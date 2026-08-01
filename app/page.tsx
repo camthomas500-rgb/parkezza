@@ -27,8 +27,9 @@ export default function IndexPage() {
         </h1>
         <p className="mt-4 text-base leading-snug text-muted-foreground">
           Select outdoor site amenities for resorts, golf courses,
-          developments, municipal facilities, parks, and recreation centers.
-          Specification support, quantities, and project quotes nationwide.
+          developments, municipal facilities, parks, and recreation centers
+          around Park City, Heber City, and Wasatch and Summit Counties—plus
+          Utah, Nevada, Idaho, Wyoming, Montana, and nationwide.
         </p>
         <div className="mt-8">
           <CategoryGrid />

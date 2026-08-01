@@ -94,31 +94,37 @@ export const MARKETS = [
     title: "Resorts & Hospitality",
     description:
       "Pool decks, lobbies, and outdoor dining furnished with coordinated shade, seating, and site amenities.",
+    relatedSlugs: ["umbrellas", "benches", "shade-structures", "pergolas-gazebos"],
   },
   {
     title: "Golf Courses & Clubs",
     description:
       "Benches, bollards, and gathering furnishings that complement premium landscape architecture.",
+    relatedSlugs: ["benches", "bollards", "litter-receptacles", "pergolas-gazebos"],
   },
   {
     title: "Developments & HOAs",
     description:
       "Streetscapes, parkways, and community amenities specified for long-term durability and curb appeal.",
+    relatedSlugs: ["benches", "litter-receptacles", "bike-racks", "dog-waste-stations"],
   },
   {
     title: "Municipal & Federal",
     description:
       "Parks, parkways, civic plazas, and public facilities with specification support and project quotes.",
+    relatedSlugs: ["benches", "litter-receptacles", "bollards", "flagpoles"],
   },
   {
     title: "Recreation & Community Centers",
     description:
       "Picnic areas, shelters, and outdoor gathering spaces built for heavy public use.",
+    relatedSlugs: ["picnic-tables", "shade-structures", "benches", "bike-racks"],
   },
   {
     title: "Dog Parks & Trails",
     description:
       "Waste stations, agility equipment, and dog-specific furnishings for dedicated off-leash environments.",
+    relatedSlugs: ["dog-waste-stations", "benches", "litter-receptacles", "shade-structures"],
   },
 ] as const;
 

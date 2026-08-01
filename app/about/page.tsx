@@ -1,10 +1,15 @@
 import Link from "next/link";
+import {
+  PRIMARY_REGION_LABEL,
+  PRIMARY_STATES_PHRASE,
+  SERVICE_AREA_COPY,
+  UTAH_LOCAL_PHRASE,
+} from "@/lib/regions";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "About",
-  description:
-    "Parkezza curates high-end and standard outdoor site furnishings for resorts, developments, golf courses, and public spaces.",
+  title: "About — Outdoor Site Furnishings in Utah & Beyond",
+  description: `Parkezza curates commercial outdoor site furnishings for municipalities, resorts, and HOAs around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide.`,
   path: "/about",
 });
 
@@ -31,19 +36,40 @@ export default function AboutPage() {
           dog park amenities, and coordinated streetscape packages.
         </p>
         <p>
-          Whether you are specifying a resort pool deck, upgrading a municipal
-          parkway, or furnishing a new community center, Parkezza delivers
-          options, specification support, quantities, and project quotes
-          aligned to your timeline.
+          Based in Utah’s resort corridor, we work with cities and project teams
+          around {UTAH_LOCAL_PHRASE}—including municipal benches and litter
+          receptacles and dog-park benches and obstacles supplied for Summit
+          County projects, plus packages for new resort and community
+          developments. The {PRIMARY_REGION_LABEL} ({PRIMARY_STATES_PHRASE})
+          remains a primary focus, with quotes nationwide.
+        </p>
+        <p>
+          {SERVICE_AREA_COPY} Whether you are specifying a resort amenity zone,
+          upgrading a municipal park, furnishing an HOA dog park, or outfitting
+          a federal or military facility, Parkezza delivers options,
+          specification support, quantities, and project quotes aligned to your
+          timeline.
         </p>
       </div>
 
-      <div className="mt-10">
+      <div className="mt-10 flex flex-wrap gap-4">
         <Link
           href="/"
           className="rounded-full bg-charcoal px-8 py-3 text-sm font-medium text-ivory"
         >
           View Products
+        </Link>
+        <Link
+          href="/projects"
+          className="rounded-full border border-border px-8 py-3 text-sm font-medium text-charcoal"
+        >
+          Installed Projects
+        </Link>
+        <Link
+          href="/resources"
+          className="rounded-full border border-border px-8 py-3 text-sm font-medium text-charcoal"
+        >
+          Resources
         </Link>
       </div>
     </div>

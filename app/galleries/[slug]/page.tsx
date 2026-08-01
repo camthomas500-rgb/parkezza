@@ -7,6 +7,7 @@ import { getGallery, getGallerySlugs } from "@/lib/content";
 import {
   breadcrumbJsonLd,
   galleryCollectionJsonLd,
+  GALLERY_SEO,
   jsonLdScript,
   pageMetadata,
 } from "@/lib/seo";
@@ -25,10 +26,12 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const gallery = getGallery(slug);
   if (!gallery) return { title: "Gallery Not Found" };
 
-  const description = gallery.overview ?? gallery.description;
+  const seo = GALLERY_SEO[gallery.slug];
+  const description =
+    seo?.description ?? gallery.overview ?? gallery.description;
 
   return pageMetadata({
-    title: gallery.name,
+    title: seo?.title ?? gallery.name,
     description,
     path: `/galleries/${gallery.slug}`,
     images: [{ url: gallery.heroImage, alt: gallery.name }],

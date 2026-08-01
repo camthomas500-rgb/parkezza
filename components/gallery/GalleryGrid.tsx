@@ -4,6 +4,7 @@ import { Suspense, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Lightbox } from "@/components/gallery/Lightbox";
+import { FaqList } from "@/components/FaqList";
 import { QuoteForm } from "@/components/quote/QuoteForm";
 import {
   getGalleryInquiryItems,
@@ -12,6 +13,7 @@ import {
   type GalleryImage,
   type GallerySection,
 } from "@/lib/content";
+import { getGalleryFaqs } from "@/lib/gallery-faqs";
 import { cn } from "@/lib/utils";
 
 function ImageTile({
@@ -311,9 +313,6 @@ function QuoteFormFallback() {
 
 function inquiryHeadline(gallery: Gallery): string {
   if (gallery.slug === "benches") return "Interested in a specific bench?";
-  if (gallery.slug === "litter-receptacles") {
-    return "Interested in a specific litter receptacle?";
-  }
   if (gallery.slug === "bollards") {
     return "Interested in a specific bollard?";
   }
@@ -342,8 +341,10 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
       section.images.some((image) => Boolean(image.id || image.name))
     ) ??
       false);
-  const showInquiry = hasLabeledProducts;
+  const showInquiry =
+    hasLabeledProducts && gallery.slug !== "litter-receptacles";
   const inquiryItems = showInquiry ? getGalleryInquiryItems(gallery) : [];
+  const galleryFaqs = getGalleryFaqs(gallery.slug);
 
   const usesAnchorAside = gallery.sections?.some(
     (s) => s.layout === "anchor-aside"
@@ -436,6 +437,17 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
           </a>
         </div>
       ) : null}
+
+      {galleryFaqs.length > 0 && (
+        <div className="mx-auto mt-16 max-w-3xl border-t border-border pt-12">
+          <FaqList
+            faqs={galleryFaqs}
+            heading={`About ${gallery.name.toLowerCase()}`}
+            intro={`Answers for landscape contractors, architects, HOAs, and municipalities specifying ${gallery.name.toLowerCase()}.`}
+            headingId={`${gallery.slug}-faq`}
+          />
+        </div>
+      )}
 
       {!hideQuote && (
         <div id="quote" className="mt-16 scroll-mt-24">
