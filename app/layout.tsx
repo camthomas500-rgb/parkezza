@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { DM_Sans, DM_Serif_Display } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import {
@@ -18,10 +18,10 @@ const dmSans = DM_Sans({
   display: "swap",
 });
 
-const dmSerif = DM_Serif_Display({
-  variable: "--font-dm-serif",
+const cormorantGaramond = Cormorant_Garamond({
+  variable: "--font-display-serif",
   subsets: ["latin"],
-  weight: "400",
+  weight: ["500", "600", "700"],
   display: "swap",
 });
 
@@ -106,7 +106,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${dmSans.variable} ${dmSerif.variable} antialiased`}>
+      <body className={`${dmSans.variable} ${cormorantGaramond.variable} antialiased`}>
         <Header />
         <main>{children}</main>
         <Footer />

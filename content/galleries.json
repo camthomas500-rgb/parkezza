@@ -117,6 +117,14 @@
         "tier": "essential",
         "id": "BN-14",
         "name": "Tree Surround"
+      },
+      {
+        "src": "/images/galleries/benches/bench-ipe-wood.png",
+        "alt": "Benches — IPE Wood, most durable of hardwoods through years of harsh weather.",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "BN-21",
+        "name": "IPE Wood, most durable of hardwoods through years of harsh weather."
       }
     ],
     "sections": [
@@ -275,6 +283,13 @@
         "source": "parkezza",
         "tier": "signature",
         "name": "PL-LF2"
+      },
+      {
+        "src": "/images/galleries/waste-receptacles/pl-ipe-wood.png",
+        "alt": "Litter Receptacles — IPE Wood, most durable of hardwoods through years of harsh weather.",
+        "source": "parkezza",
+        "tier": "signature",
+        "name": "IPE Wood, most durable of hardwoods through years of harsh weather."
       }
     ],
     "sections": [
@@ -716,6 +731,14 @@
         "tier": "essential",
         "id": "PT-10",
         "name": "Round Concrete Game Picnic Table, P-DS2"
+      },
+      {
+        "src": "/images/galleries/picnic-tables/ipe-wood-picnic-table.png",
+        "alt": "Picnic Tables — IPE Wood, most durable of hardwoods through years of harsh weather.",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PT-11",
+        "name": "IPE Wood, most durable of hardwoods through years of harsh weather."
       }
     ]
   },

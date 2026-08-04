@@ -1,8 +1,19 @@
 import { CategoryGrid } from "@/components/home/CategoryGrid";
 import { FaqSection } from "@/components/home/FaqSection";
 import { MarketsSection } from "@/components/home/MarketsSection";
-import { LetsTalk } from "@/components/layout/LetsTalk";
+import {
+  PRIMARY_STATES,
+  UTAH_LOCAL_CITIES,
+  UTAH_LOCAL_COUNTIES,
+} from "@/lib/regions";
 import { pageMetadata, SITE_DESCRIPTION } from "@/lib/seo";
+
+const SERVICE_AREAS = [
+  ...UTAH_LOCAL_CITIES,
+  ...UTAH_LOCAL_COUNTIES,
+  ...PRIMARY_STATES,
+  "Nationwide",
+];
 
 /**
  * Index page (site homepage) — same role as index.html on your other sites.
@@ -20,17 +31,12 @@ export default function IndexPage() {
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-bronze">
           Outdoor Site Furnishings
         </p>
-        <h1 className="mt-3 max-w-4xl font-display text-3xl leading-tight text-charcoal md:text-4xl">
-          Curated furnishings
-          <br />
-          for distinguished outdoor environments
+        <h1 className="mt-3 max-w-6xl font-display text-2xl leading-snug text-charcoal md:text-3xl lg:text-4xl">
+          Commercial outdoor site furnishings for resorts, developments, golf
+          courses, and HOAs, bringing beauty to community parks, walkways, and
+          public spaces, with the durable craftsmanship trusted by municipal,
+          government, and military installations nationwide.
         </h1>
-        <p className="mt-4 text-base leading-snug text-muted-foreground">
-          Select outdoor site amenities for resorts, golf courses,
-          developments, municipal facilities, parks, and recreation centers
-          around Park City, Heber City, and Wasatch and Summit Counties—plus
-          Utah, Nevada, Idaho, Wyoming, Montana, and nationwide.
-        </p>
         <div className="mt-8">
           <CategoryGrid />
         </div>
@@ -40,17 +46,29 @@ export default function IndexPage() {
 
       <FaqSection />
 
-      <section className="mx-auto max-w-7xl px-4 py-20 text-center sm:px-6 lg:px-8">
-        <h2 className="font-display text-3xl text-charcoal md:text-4xl">
-          Ready to specify your project?
-        </h2>
-        <p className="mx-auto mt-4 max-w-xl text-muted-foreground">
-          Include drawings or site plans, product categories, quantities, finish
-          preferences, and your timeline — we will respond with options and
-          pricing.
-        </p>
-        <div className="mt-8 flex justify-center">
-          <LetsTalk variant="inline" />
+      <section className="border-t border-border bg-stone/40">
+        <div className="mx-auto max-w-3xl px-4 py-16 text-center sm:px-6 lg:px-8">
+          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-bronze">
+            Where We Serve
+          </p>
+          <h2 className="mt-3 font-display text-3xl leading-tight text-charcoal md:text-4xl">
+            Curated furnishings for distinguished outdoor environments
+          </h2>
+          <p className="mx-auto mt-4 max-w-2xl text-base leading-snug text-muted-foreground">
+            Select outdoor site amenities for resorts, golf courses,
+            developments, municipal facilities, parks, and recreation centers
+            across:
+          </p>
+          <ul className="mx-auto mt-6 flex max-w-2xl flex-wrap items-center justify-center gap-3">
+            {SERVICE_AREAS.map((area) => (
+              <li
+                key={area}
+                className="rounded-full border border-border bg-white px-4 py-2 text-sm font-medium text-charcoal"
+              >
+                {area}
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
     </>
