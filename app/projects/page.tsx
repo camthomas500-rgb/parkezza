@@ -37,17 +37,17 @@ export default function ProjectsPage() {
         {SERVICE_AREA_COPY}
       </p>
 
-      <div className="mt-12 grid gap-8 sm:grid-cols-2">
+      <div className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project) => (
           <article
             key={project.id}
-            className="overflow-hidden rounded-2xl border border-border bg-white shadow-sm"
+            className="overflow-hidden rounded-xl border border-border bg-white shadow-sm"
           >
             <div
               className={
                 project.imageFit === "contain"
-                  ? "relative aspect-[4/3] bg-white"
-                  : "relative aspect-[4/3] bg-stone"
+                  ? "relative h-40 bg-stone/40 sm:h-44"
+                  : "relative h-40 bg-stone sm:h-44"
               }
             >
               {project.image ? (
@@ -57,10 +57,10 @@ export default function ProjectsPage() {
                   fill
                   className={
                     project.imageFit === "contain"
-                      ? "object-contain object-center p-6"
+                      ? "object-contain object-center p-3"
                       : "object-cover"
                   }
-                  sizes="(max-width: 768px) 100vw, 50vw"
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
                 />
               ) : (
                 <div className="flex h-full flex-col items-center justify-center gap-2 px-6 text-center">
@@ -73,21 +73,21 @@ export default function ProjectsPage() {
                 </div>
               )}
             </div>
-            <div className="p-6">
+            <div className="p-4">
               <p className="text-xs font-semibold uppercase tracking-wider text-bronze">
                 {project.location}
                 {project.states.length > 0
                   ? ` · ${project.states.join(", ")}`
                   : ""}
               </p>
-              <h2 className="mt-2 font-display text-2xl text-charcoal">
+              <h2 className="mt-1.5 font-display text-xl text-charcoal">
                 {project.title}
               </h2>
-              <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
                 {project.summary}
               </p>
               {project.categories.length > 0 && (
-                <ul className="mt-4 flex flex-wrap gap-2">
+                <ul className="mt-3 flex flex-wrap gap-2">
                   {project.categories.map((slug) => (
                     <li key={slug}>
                       <Link

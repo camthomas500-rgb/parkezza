@@ -7,20 +7,8 @@
     "categories": ["benches", "litter-receptacles"],
     "summary": "Recycled-plastic slat park benches with black frames supplied for municipal outdoor use in Summit County, Utah—part of a benches and litter receptacles package.",
     "image": "/images/projects/summit-park-bench-lawn.png",
-    "imageFit": "cover",
+    "imageFit": "contain",
     "alt": "Brown recycled-plastic park bench with black frame installed on a lawn in Summit County, Utah",
-    "featured": true
-  },
-  {
-    "id": "summit-county-park-bench-mulch",
-    "title": "Park seating installation",
-    "location": "Summit County, Utah",
-    "states": ["Utah"],
-    "categories": ["benches"],
-    "summary": "Durable commercial park bench installed on mulch in a Summit County, Utah public outdoor space—built for year-round Intermountain weather.",
-    "image": "/images/projects/summit-park-bench-mulch.png",
-    "imageFit": "cover",
-    "alt": "Brown and black recycled-plastic park bench installed on wood-chip mulch in Summit County, Utah",
     "featured": true
   },
   {
