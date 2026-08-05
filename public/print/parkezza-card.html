@@ -206,6 +206,81 @@
     font-weight: 600;
   }
 
+  /* ---- Bottom row on the back card: Notes box + condensed contact stack ---- */
+  .bottom-row {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 0.16in;
+    margin-top: 0.04in;
+  }
+
+  .notes-box {
+    flex: 0 0 auto;
+    width: 1.1in;
+    height: 0.88in;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.05in 0.08in;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .notes-label {
+    font-size: 6.5pt;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    font-weight: 600;
+  }
+
+  .notes-lines {
+    flex: 1;
+    margin-top: 0.06in;
+    background-image: repeating-linear-gradient(
+      to bottom,
+      transparent,
+      transparent 0.18in,
+      var(--border) 0.18in,
+      var(--border) calc(0.18in + 0.5px)
+    );
+  }
+
+  .footer-stack {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-stack .service-line,
+  .footer-stack .website,
+  .footer-stack .signature-footer {
+    margin-top: 0;
+  }
+
+  .footer-stack .service-line {
+    font-size: 6.2pt;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+  }
+
+  .footer-stack .contact-block {
+    margin-top: 0.06in;
+  }
+
+  .footer-stack .website {
+    margin-top: 0.05in;
+  }
+
+  .footer-stack .signature-footer {
+    margin-top: 0.06in;
+  }
+
   /* ---- Print rules ---- */
   @media print {
     @page {
@@ -299,17 +374,25 @@
         <p class="tile-label">Tree Guards</p>
       </div>
     </div>
-    <p class="footer-line" style="margin-top: 0.06in; font-size: 10pt;">
+    <p class="footer-line" style="margin-top: 0.04in; font-size: 10pt;">
       Bringing beauty to community parks, walkways, and public spaces&mdash;with durable
       craftsmanship trusted by municipal, government, and military installations nationwide.
     </p>
-    <p class="service-line">Utah focus: Park City &middot; Kamas City &middot; Heber City &middot; Wasatch &amp; Summit Counties &mdash; and nationwide</p>
-    <div class="contact-block">
-      <div><span class="icon">&#9993;</span>projects@parkezza.com</div>
-      <div><span class="icon">&#9742;</span>435-901-8028</div>
+    <div class="bottom-row">
+      <div class="notes-box">
+        <span class="notes-label">Notes:</span>
+        <div class="notes-lines"></div>
+      </div>
+      <div class="footer-stack">
+        <p class="service-line">Utah focus: Park City &middot; Kamas City &middot; Heber City &middot; Wasatch &amp; Summit Counties &mdash; and nationwide</p>
+        <div class="contact-block">
+          <div><span class="icon">&#9993;</span>projects@parkezza.com</div>
+          <div><span class="icon">&#9742;</span>435-901-8028</div>
+        </div>
+        <p class="website">parkezza.com</p>
+        <p class="signature-footer"><strong>Cynthia Thomas</strong> &middot; cynthia@parkezza.com &middot; Phone: 435-901-8028</p>
+      </div>
     </div>
-    <p class="website">parkezza.com</p>
-    <p class="signature-footer"><strong>Cynthia Thomas</strong> &middot; cynthia@parkezza.com &middot; Phone: 435-901-8028</p>
   </div>
 
 </div>
