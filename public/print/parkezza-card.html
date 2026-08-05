@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Parkezza — 4x6 Card (Print)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --bronze: #a67c52;
+    --charcoal: #1c1c1e;
+    --ivory: #f5f0e8;
+    --stone: #e8e2d9;
+    --border: #ddd6cb;
+    --muted: #5c5650;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #999;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    color: var(--charcoal);
+  }
+
+  .page-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+    padding: 28px 0 60px;
+  }
+
+  .page-label {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #eee;
+    font-family: 'DM Sans', sans-serif;
+  }
+
+  /* ---- The actual 6in x 4in card ---- */
+  .card {
+    width: 6in;
+    height: 4in;
+    background: var(--ivory);
+    box-shadow: 0 4px 24px rgba(0,0,0,0.35);
+    position: relative;
+    padding: 0.24in 0.34in;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    height: 0.5in;
+    width: auto;
+    margin-top: 0.02in;
+    margin-bottom: 0.04in;
+  }
+
+  .logo-standalone {
+    margin-bottom: 0.26in;
+  }
+
+  .eyebrow {
+    margin-top: 0.06in;
+    font-size: 7.5pt;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .headline {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 600;
+    font-size: 14.5pt;
+    line-height: 1.22;
+    text-align: center;
+    max-width: 5.1in;
+    margin: 0.06in 0 0;
+    color: var(--charcoal);
+  }
+
+  .rule {
+    width: 0.9in;
+    height: 2px;
+    background: var(--bronze);
+    margin: 0.11in 0;
+    border: none;
+  }
+
+  /* ---- Category tile row — flexible so 5 (front) and 6 (back) both fit evenly ---- */
+  .tile-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.1in;
+    width: 100%;
+    flex: 1;
+    align-items: flex-start;
+  }
+
+  .tile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1 1 0;
+    min-width: 0;
+    max-width: 1in;
+  }
+
+  .tile-photo {
+    width: 100%;
+    height: 0.82in;
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .tile-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tile-photo.contain img {
+    object-fit: contain;
+    padding: 4px;
+  }
+
+  .tile-label {
+    margin-top: 0.05in;
+    font-size: 6.2pt;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    text-align: center;
+    color: var(--charcoal);
+    line-height: 1.12;
+  }
+
+  .footer-line {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 10.5pt;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 0.08in;
+  }
+
+  .service-line {
+    font-size: 7pt;
+    color: var(--muted);
+    text-align: center;
+    margin-top: 0.04in;
+    letter-spacing: 0.02em;
+  }
+
+  .contact-block {
+    margin-top: 0.1in;
+    display: flex;
+    gap: 0.32in;
+    align-items: center;
+    justify-content: center;
+    font-size: 9.5pt;
+    font-weight: 600;
+    color: var(--charcoal);
+  }
+
+  .contact-block span.icon {
+    color: var(--bronze);
+    margin-right: 0.05in;
+    font-weight: 700;
+  }
+
+  .website {
+    margin-top: 0.06in;
+    font-size: 8.5pt;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--bronze);
+    font-weight: 600;
+  }
+
+  /* ---- Print rules ---- */
+  @media print {
+    @page {
+      size: 6in 4in;
+      margin: 0;
+    }
+    html, body {
+      background: white;
+    }
+    .page-wrap {
+      padding: 0;
+      gap: 0;
+    }
+    .page-label {
+      display: none;
+    }
+    .card {
+      box-shadow: none;
+      page-break-after: always;
+    }
+    .card:last-child {
+      page-break-after: auto;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <div class="page-label">FRONT — print this page first</div>
+  <div class="card" id="front">
+    <img class="logo" src="logo-parkezza-transparent.png" alt="Parkezza" />
+    <p class="eyebrow">Outdoor Site Furnishings</p>
+    <p class="headline">
+      Commercial outdoor site furnishings for resorts, developments, golf courses, and HOAs.
+    </p>
+    <hr class="rule" />
+    <div class="tile-row">
+      <div class="tile">
+        <div class="tile-photo"><img src="../images/categories/benches-hero.png" alt="Benches" /></div>
+        <p class="tile-label">Benches</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo"><img src="../images/categories/waste-receptacles.png" alt="Litter Receptacles" /></div>
+        <p class="tile-label">Litter Receptacles</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo"><img src="../images/categories/shade-structures.png" alt="Shade Structures" /></div>
+        <p class="tile-label">Shade Structures</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo contain"><img src="../images/categories/picnic-tables.png" alt="Picnic Tables" /></div>
+        <p class="tile-label">Picnic Tables</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo"><img src="../images/categories/bollards-hero.png" alt="Bollards" /></div>
+        <p class="tile-label">Bollards</p>
+      </div>
+    </div>
+    <p class="footer-line">Curated furnishings for distinguished outdoor environments.</p>
+  </div>
+
+  <div class="page-label">BACK — print this page second (flip on short edge)</div>
+  <div class="card" id="back">
+    <img class="logo logo-standalone" src="logo-parkezza-transparent.png" alt="Parkezza" />
+    <div class="tile-row">
+      <div class="tile">
+        <div class="tile-photo contain"><img src="../images/categories/dog-park-stations.png" alt="Dog Waste Stations" /></div>
+        <p class="tile-label">Dog Waste Stations</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo contain"><img src="../images/categories/umbrellas.png" alt="Commercial Umbrellas" /></div>
+        <p class="tile-label">Commercial Umbrellas</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo"><img src="../images/categories/pergolas-gazebos.png" alt="Pergolas &amp; Trellis" /></div>
+        <p class="tile-label">Pergolas &amp; Trellis</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo contain"><img src="../images/categories/bike-racks-hero.png" alt="Bike Racks" /></div>
+        <p class="tile-label">Bike Racks</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo contain"><img src="../images/categories/flagpoles-hero.png" alt="Flagpoles" /></div>
+        <p class="tile-label">Flagpoles</p>
+      </div>
+      <div class="tile">
+        <div class="tile-photo"><img src="../images/categories/tree-grates.png" alt="Tree Guards" /></div>
+        <p class="tile-label">Tree Guards</p>
+      </div>
+    </div>
+    <p class="footer-line" style="margin-top: 0.06in; font-size: 10pt;">
+      Bringing beauty to community parks, walkways, and public spaces&mdash;with durable
+      craftsmanship trusted by municipal, government, and military installations nationwide.
+    </p>
+    <p class="service-line">Park City &middot; Kamas City &middot; Heber City &middot; Wasatch &amp; Summit Counties, Utah &mdash; and nationwide</p>
+    <div class="contact-block">
+      <div><span class="icon">&#9993;</span>projects@parkezza.com</div>
+      <div><span class="icon">&#9742;</span>435-901-8028</div>
+    </div>
+    <p class="website">parkezza.com</p>
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -98,10 +98,11 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
     description:
       `Parkezza supports commercial outdoor site furnishings around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide—including resorts, HOAs, municipalities, and federal or military facilities.`,
     summary:
-      "Park City, Heber City, Wasatch & Summit Counties, plus Intermountain and nationwide projects.",
+      "Park City, Kamas City, Heber City, Wasatch & Summit Counties, plus Intermountain and nationwide projects.",
     sections: [
       {
-        heading: "Northern Utah: Park City, Heber City, and nearby counties",
+        heading:
+          "Northern Utah: Park City, Kamas City, Heber City, and nearby counties",
         body: `Parkezza’s local footing is in Utah’s resort and mountain-community corridor—${UTAH_LOCAL_PHRASE}. We have supplied municipal benches and litter receptacles and dog-park benches and obstacles for Summit County projects. HOA amenities and new resort developments in this area regularly need coordinated outdoor packages.`,
       },
       {

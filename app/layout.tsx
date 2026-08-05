@@ -50,6 +50,7 @@ export const metadata: Metadata = {
     "litter receptacles",
     "Utah site furnishings",
     "Park City site furnishings",
+    "Kamas City Utah outdoor furnishings",
     "Heber City park furniture",
     "Wasatch County outdoor furnishings",
     "Summit County site amenities",

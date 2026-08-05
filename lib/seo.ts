@@ -92,7 +92,7 @@ export const HOME_FAQS: FaqItem[] = [
       "We work with landscape architects, developers, municipalities, resorts, golf courses, HOAs, recreation districts, and federal or civic projects that need durable outdoor amenities and specification support.",
   },
   {
-    question: "Does Parkezza serve Park City, Heber City, and nearby Utah counties?",
+    question: "Does Parkezza serve Park City, Kamas City, Heber City, and nearby Utah counties?",
     answer: `Yes. Northern Utah around ${UTAH_LOCAL_PHRASE} is a core local market—municipal parks, dog parks, resort amenity zones, and new community developments. We have supplied benches, litter receptacles, and dog-park benches and obstacles for Summit County, Utah projects.`,
   },
   {
@@ -208,6 +208,7 @@ export function organizationJsonLd() {
       "park shelters",
       "Intermountain West site furnishings",
       "Park City site furnishings",
+      "Kamas City Utah site furnishings",
       "Heber City outdoor furniture",
       "Wasatch County park furniture",
       "Summit County site amenities",

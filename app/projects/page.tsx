@@ -11,7 +11,7 @@ import {
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Installed Projects — Park City, Heber City & Beyond",
+  title: "Installed Projects — Park City, Kamas City, Heber City & Beyond",
   description: `Parkezza outdoor site furnishings installed around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide—municipal parks, dog parks, resorts, and civic sites.`,
   path: "/projects",
 });
