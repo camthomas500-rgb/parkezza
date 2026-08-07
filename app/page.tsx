@@ -31,7 +31,7 @@ export default function IndexPage() {
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-bronze">
           Outdoor Site Furnishings
         </p>
-        <h1 className="mt-3 max-w-6xl font-display text-2xl leading-snug text-charcoal md:text-3xl lg:text-4xl">
+        <h1 className="mt-3 w-full font-display text-base leading-snug text-charcoal md:text-lg lg:text-xl">
           Commercial outdoor site furnishings for resorts, developments, golf
           courses, and HOAs, bringing beauty to community parks, walkways, and
           public spaces, with the durable craftsmanship trusted by municipal,
