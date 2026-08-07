@@ -1,8 +1,11 @@
 import type { Metadata } from "next";
 import { CATEGORY_NAV, type Gallery } from "@/lib/content";
+import type { ResourceGuide } from "@/lib/resources";
 import {
   PRIMARY_STATES,
   PRIMARY_STATES_PHRASE,
+  UTAH_LOCAL_CITIES,
+  UTAH_LOCAL_COUNTIES,
   UTAH_LOCAL_PHRASE,
 } from "@/lib/regions";
 
@@ -194,15 +197,37 @@ export function organizationJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "Organization",
+    "@id": `${SITE_URL}/#organization`,
     name: SITE_NAME,
     url: SITE_URL,
     logo: absoluteUrl("/logo-parkezza.png"),
+    image: absoluteUrl("/logo-parkezza.png"),
     description: `Commercial outdoor site furnishings for resorts, developments, golf courses, HOAs, municipal facilities, parks, and public spaces across ${PRIMARY_STATES_PHRASE} and nationwide.`,
     email: "projects@parkezza.com",
+    contactPoint: {
+      "@type": "ContactPoint",
+      contactType: "sales",
+      email: "projects@parkezza.com",
+      areaServed: "US",
+      availableLanguage: "English",
+    },
     areaServed: [
       { "@type": "Country", name: "United States" },
       ...PRIMARY_STATES.map((name) => ({ "@type": "State", name })),
+      ...UTAH_LOCAL_COUNTIES.map((name) => ({
+        "@type": "AdministrativeArea",
+        name: `${name}, Utah`,
+      })),
+      ...UTAH_LOCAL_CITIES.map((name) => ({
+        "@type": "City",
+        name: `${name}, Utah`,
+      })),
     ],
+    audience: {
+      "@type": "Audience",
+      audienceType:
+        "Landscape architects, landscape contractors, developers, HOA managers, municipalities, resorts, and golf courses",
+    },
     knowsAbout: [
       ...CATEGORY_NAV.map((c) => c.name),
       "outdoor site furnishings",
@@ -211,6 +236,8 @@ export function organizationJsonLd() {
       "site amenities",
       "streetscape furnishings",
       "park shelters",
+      "dog waste stations for trails",
+      "HOA amenity furnishings",
       "Intermountain West site furnishings",
       "Park City site furnishings",
       "Kamas City Utah site furnishings",
@@ -229,14 +256,91 @@ export function websiteJsonLd() {
   return {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": `${SITE_URL}/#website`,
     name: SITE_NAME,
     url: SITE_URL,
     description: SITE_DESCRIPTION,
-    publisher: {
-      "@type": "Organization",
-      name: SITE_NAME,
-      url: SITE_URL,
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    inLanguage: "en-US",
+  };
+}
+
+/** Invisible entity markup for LAs/developers searching park amenity suppliers */
+export function serviceJsonLd() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "@id": `${SITE_URL}/#site-furnishings-service`,
+    name: "Commercial outdoor site furnishings supply and specification support",
+    serviceType: "Outdoor site furnishings",
+    description: SITE_DESCRIPTION,
+    provider: { "@id": `${SITE_URL}/#organization` },
+    url: SITE_URL,
+    areaServed: [
+      { "@type": "Country", name: "United States" },
+      ...PRIMARY_STATES.map((name) => ({ "@type": "State", name })),
+      ...UTAH_LOCAL_COUNTIES.map((name) => ({
+        "@type": "AdministrativeArea",
+        name: `${name}, Utah`,
+      })),
+      ...UTAH_LOCAL_CITIES.map((name) => ({
+        "@type": "City",
+        name: `${name}, Utah`,
+      })),
+    ],
+    audience: {
+      "@type": "Audience",
+      audienceType:
+        "Landscape architects, landscape contractors, real estate developers, and HOA project managers",
     },
+    hasOfferCatalog: {
+      "@type": "OfferCatalog",
+      name: "Parkezza outdoor site furnishing categories",
+      itemListElement: CATEGORY_NAV.map((category, index) => ({
+        "@type": "OfferCatalog",
+        position: index + 1,
+        name: category.name,
+        url: absoluteUrl(`/galleries/${category.slug}`),
+        itemListElement: [
+          {
+            "@type": "Offer",
+            itemOffered: {
+              "@type": "Product",
+              name: category.name,
+              url: absoluteUrl(`/galleries/${category.slug}`),
+              category: "Outdoor site furnishings",
+            },
+          },
+        ],
+      })),
+    },
+  };
+}
+
+export function resourceArticleJsonLd(guide: ResourceGuide) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    headline: guide.title,
+    description: guide.description,
+    url: absoluteUrl(`/resources/${guide.slug}`),
+    mainEntityOfPage: absoluteUrl(`/resources/${guide.slug}`),
+    author: { "@id": `${SITE_URL}/#organization` },
+    publisher: { "@id": `${SITE_URL}/#organization` },
+    about: [
+      "outdoor site furnishings",
+      "landscape architecture",
+      "park amenities",
+      "HOA amenities",
+    ],
+    audience: {
+      "@type": "Audience",
+      audienceType:
+        "Landscape architects, landscape contractors, and developers",
+    },
+    inLanguage: "en-US",
+    isPartOf: { "@id": `${SITE_URL}/#website` },
+    articleSection: "Specifier guides",
   };
 }
 

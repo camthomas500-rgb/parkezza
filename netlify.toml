@@ -2,7 +2,8 @@
 # Build/publish values match Netlify's Next.js defaults.
 
 [build]
-  command = "npm run build"
+  # IndexNow runs after Next build on Netlify only (skipped unless CONTEXT=production)
+  command = "npm run build && node scripts/indexnow.mjs"
   publish = ".next"
 
 [build.environment]

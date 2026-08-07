@@ -8,6 +8,7 @@ import {
   SITE_URL,
   jsonLdScript,
   organizationJsonLd,
+  serviceJsonLd,
   websiteJsonLd,
 } from "@/lib/seo";
 import "./globals.css";
@@ -104,6 +105,12 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: jsonLdScript(websiteJsonLd()),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: jsonLdScript(serviceJsonLd()),
           }}
         />
       </head>

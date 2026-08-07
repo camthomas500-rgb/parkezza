@@ -6,7 +6,12 @@ import {
   getResourceGuides,
   getResourceSlugs,
 } from "@/lib/resources";
-import { breadcrumbJsonLd, jsonLdScript, pageMetadata } from "@/lib/seo";
+import {
+  breadcrumbJsonLd,
+  jsonLdScript,
+  pageMetadata,
+  resourceArticleJsonLd,
+} from "@/lib/seo";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -47,6 +52,12 @@ export default async function ResourceGuidePage({ params }: PageProps) {
               { name: guide.title, path: `/resources/${guide.slug}` },
             ])
           ),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: jsonLdScript(resourceArticleJsonLd(guide)),
         }}
       />
 
