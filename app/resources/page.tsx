@@ -20,7 +20,7 @@ export default function ResourcesPage() {
       <h1 className="mt-2 font-display text-4xl text-charcoal">
         Specifier guides
       </h1>
-      <p className="mt-4 max-w-2xl text-muted-foreground">
+      <p className="mt-4 w-full text-muted-foreground">
         Short practical guides for landscape architects, contractors,
         developers, HOA managers, and parks staff—written to answer the
         questions people ask before they request a quote. These pages also help
