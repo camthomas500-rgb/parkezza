@@ -125,6 +125,11 @@ export const HOME_FAQS: FaqItem[] = [
       "Dog waste stations and dog-park amenities are expanded on dogparkstations.com. Commercial umbrellas and shade systems are expanded on heavydutyumbrellas.com. Parkezza remains the hub for curated outdoor site furnishing packages.",
   },
   {
+    question: "Do walking paths and HOA trails need dog waste stations?",
+    answer:
+      "Yes. Community walking paths, resort trails, and HOA amenity loops benefit from dog waste stations and bag dispensers at trailheads and regular intervals—not only inside fenced dog parks. See the Parkezza guide on dog waste stations for trails and walking paths, and quote stations with benches or litter receptacles as one package.",
+  },
+  {
     question: "Can landscape contractors and architects specify matching site furniture packages?",
     answer:
       "Yes. Landscape contractors, landscape architects, and developers regularly specify coordinated packages—benches with matching litter receptacles, bollards, picnic tables, and shade—so finishes and materials align across the site plan.",

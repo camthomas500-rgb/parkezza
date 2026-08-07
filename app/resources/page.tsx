@@ -5,7 +5,7 @@ import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
   title: "Resources — Specifying Outdoor Site Furnishings",
-  description: `Specifier guides for commercial outdoor site furnishings: how to specify packages, match benches and litter receptacles, ADA picnic tables, and projects across ${PRIMARY_STATES_PHRASE} and nationwide.`,
+  description: `Specifier guides for commercial outdoor site furnishings: how to specify packages, dog waste stations for trails and paths, match benches and litter receptacles, ADA picnic tables, and projects across ${PRIMARY_STATES_PHRASE} and nationwide.`,
   path: "/resources",
 });
 
@@ -23,8 +23,9 @@ export default function ResourcesPage() {
       <p className="mt-4 w-full text-muted-foreground">
         Short practical guides for landscape architects, contractors,
         developers, HOA managers, and parks staff—written to answer the
-        questions people ask before they request a quote. These pages also help
-        Google and AI search engines cite clear, factual answers about
+        questions people ask before they request a quote, including trail and
+        pathway dog waste stations for community developments. These pages also
+        help Google and AI search engines cite clear, factual answers about
         commercial outdoor site furnishings.
       </p>
 

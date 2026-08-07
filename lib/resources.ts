@@ -41,6 +41,36 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
     ],
   },
   {
+    slug: "dog-waste-stations-for-trails-and-paths",
+    title: "Dog Waste Stations for Trails and Walking Paths",
+    description:
+      "How landscape architects, contractors, and HOAs specify dog waste stations along community walking paths, trail corridors, and amenity loops—not only inside fenced dog parks—plus how to package stations with benches and litter receptacles.",
+    summary:
+      "Trail and pathway pet-waste stations for HOAs, developments, and parks—plus packaging with seating and litter.",
+    sections: [
+      {
+        heading: "Walking paths need stations too—not only dog parks",
+        body: `Pet owners use community walking paths, resort trails, and HOA amenity loops every day. Without dog waste stations and bag dispensers at natural intervals, paths and turf become the cleanup zone. Specifying stations along circulation—not only inside a fenced off-leash area—keeps developments cleaner and shows residents the amenity package was planned for real use.`,
+      },
+      {
+        heading: "Where to place stations on the site plan",
+        body: `Place stations at trailheads, path intersections, near parking or mail kiosks, and at regular intervals along longer loops. Pair a station with a bench or litter receptacle where people naturally pause. For master-planned communities around ${UTAH_LOCAL_PHRASE}, path networks between parks, open space, and resort edges are prime locations.`,
+      },
+      {
+        heading: "Package with benches, litter, and dog-park amenities",
+        body: `A complete pet-friendly amenity package often includes dog waste stations, matching or nearby park benches, litter receptacles, and—where the program calls for it—agility obstacles or a dedicated dog park. Parkezza quotes multi-category packages so finishes and materials can align across the site. Browse featured stations on the dog waste gallery; the expanded catalog of stations, liners, dispensers, and agility equipment is on dogparkstations.com.`,
+      },
+      {
+        heading: "Local proof in Summit County and the Utah resort corridor",
+        body: `Parkezza has supplied dog-park benches and obstacles for Summit County, Utah projects, alongside municipal benches and litter receptacles. Landscape contractors and architects working Wasatch and Summit County developments can use the Installed Projects page for field examples, then request a quote for path stations and coordinated seating.`,
+      },
+      {
+        heading: "What to include on a quote request",
+        body: `Note path length or number of stations, preferred style (with can, mesh can, no can, trail-proven recycled wood look, etc.), mounting preferences, whether bags/liners are needed, and any companion products (benches, litter, shade, agility). Mention the city or development when the project is in ${UTAH_LOCAL_PHRASE} or elsewhere in ${PRIMARY_STATES_PHRASE}. Nationwide trail and HOA projects are welcome on the same form.`,
+      },
+    ],
+  },
+  {
     slug: "matching-benches-and-litter-receptacles",
     title: "Matching Benches and Litter Receptacles",
     description:
