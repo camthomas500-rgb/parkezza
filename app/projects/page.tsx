@@ -27,13 +27,7 @@ export default function ProjectsPage() {
       <h1 className="mt-2 font-display text-4xl text-charcoal">
         Furnishings in the field
       </h1>
-      <p className="mt-4 max-w-2xl text-muted-foreground">
-        Real installations for parks, dog parks, resorts, HOAs, and civic sites.
-        Local footing around {UTAH_LOCAL_PHRASE}; broader focus across the{" "}
-        {PRIMARY_REGION_LABEL} ({PRIMARY_STATES_PHRASE}); quotes nationwide—
-        including federal and military facilities as those installs come online.
-      </p>
-      <p className="mt-3 max-w-2xl text-sm text-muted-foreground">
+      <p className="mt-4 w-full text-muted-foreground">
         {SERVICE_AREA_COPY}
       </p>
 

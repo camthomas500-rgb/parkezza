@@ -19,7 +19,7 @@
     "categories": ["benches", "dog-waste-stations"],
     "summary": "Dog park agility obstacles—including A-frame, paws table, and seesaw—plus park seating supplied for a Summit County, Utah municipality.",
     "image": "/images/projects/summit-dog-park-obstacles.png",
-    "imageFit": "cover",
+    "imageFit": "contain",
     "alt": "Summit County, Utah dog park with green A-frame, jump, seesaw, and park bench on gravel",
     "featured": true
   },
