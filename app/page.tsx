@@ -28,7 +28,7 @@ export default function IndexPage() {
   return (
     <>
       <section className="mx-auto max-w-7xl px-4 pb-10 pt-8 sm:px-6 lg:px-8">
-        <p className="font-display text-3xl leading-tight text-bronze sm:text-4xl md:text-5xl">
+        <p className="text-center font-display text-2xl leading-tight text-bronze sm:text-3xl md:text-4xl">
           Outdoor Site Furnishings
         </p>
         <h1 className="mt-3 w-full font-display text-base leading-snug text-charcoal md:text-lg lg:text-xl">
