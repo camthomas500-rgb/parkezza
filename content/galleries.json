@@ -647,45 +647,91 @@
     "slug": "pool-furniture",
     "name": "Pool Furniture",
     "tier": "signature",
-    "description": "Commercial poolside chaise lounges and matching chairs with stackable frames, arms, and fade-resistant mesh fabric—no cushions, no strapping—for HOA, resort, and hospitality decks.",
-    "heroImage": "/images/categories/pool-furniture.png",
+    "description": "Commercial pool and deck furniture—chaise lounges, chairs, and cafe seating for HOA amenity decks, resorts, clubs, and hospitality pool areas.",
+    "heroImage": "/images/categories/chairs-chaises.png",
     "imageFit": "contain",
-    "overview": "Commercial pool and deck furniture for HOA amenity centers, resorts, clubs, and hospitality pool decks. Spec stackable chaise lounges with arms and matching mesh chairs in powder-coated aluminum with fade-resistant mesh fabric—built for high-traffic outdoor use without cushions or strap seating. Chaise lounge seating height around 15–16 inches. Pair with commercial umbrellas and shade for a complete poolside package.",
-    "highlights": [
-      "Stackable chaise lounges with arms",
-      "Matching mesh side / lounge chairs",
-      "Fade-resistant mesh fabric (no cushions, no strapping)",
-      "Powder-coated aluminum frames",
-      "Chaise seating height approx. 15–16\"",
-      "Weatherproof finishes for high-traffic decks"
-    ],
+    "overview": "Commercial pool and deck furniture for resorts, HOA amenity centers, clubs, and hospitality decks. Browse chaise lounges, lounge chairs, and cafe seating suited to outdoor pool environments, then add wind-rated commercial umbrellas for a complete poolside package. A stackable mesh poolside line is also available for specs that call for arms, fade-resistant mesh fabric, and cushion-free seating.",
     "images": [
       {
-        "src": "/images/galleries/pool-furniture/chaise-lounge-mesh-arms.png",
-        "alt": "Pool Furniture — stackable mesh chaise lounge with arms, powder-coated aluminum frame",
+        "src": "/images/galleries/chairs-chaises/p-chaiself1.png",
+        "alt": "Pool Furniture — chaise lounge LF1 with wood slats and metal frame",
         "source": "parkezza",
         "tier": "signature",
         "id": "PF-01",
-        "name": "Mesh Chaise Lounge with Arms",
+        "name": "Chaise LF1",
         "imageFit": "contain"
       },
       {
-        "src": "/images/galleries/pool-furniture/stackable-mesh-chair-arms.png",
-        "alt": "Pool Furniture — stackable mesh chair with arms, matching poolside seating",
+        "src": "/images/galleries/chairs-chaises/p-chaiself1-2.png",
+        "alt": "Pool Furniture — chaise lounge LF1-2",
         "source": "parkezza",
         "tier": "signature",
         "id": "PF-02",
-        "name": "Stackable Mesh Chair with Arms",
+        "name": "Chaise LF1-2",
         "imageFit": "contain"
       },
       {
-        "src": "/images/galleries/pool-furniture/pool-deck-mesh-seating.png",
-        "alt": "Pool Furniture — matching mesh chairs with arms on a commercial outdoor pool deck",
+        "src": "/images/galleries/chairs-chaises/p-chairlf1-3.png",
+        "alt": "Pool Furniture — lounge chair LF1-3",
         "source": "parkezza",
         "tier": "signature",
         "id": "PF-03",
-        "name": "Mesh Pool Deck Seating",
+        "name": "Chair LF1-3",
         "imageFit": "contain"
+      },
+      {
+        "src": "/images/galleries/chairs-chaises/p-chairvs1.png",
+        "alt": "Pool Furniture — chair VS1",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PF-04",
+        "name": "Chair VS1",
+        "imageFit": "contain"
+      },
+      {
+        "src": "/images/galleries/chairs-chaises/p-cafechairvs1.png",
+        "alt": "Pool Furniture — cafe chair VS1 with matching table",
+        "source": "parkezza",
+        "tier": "signature",
+        "id": "PF-05",
+        "name": "Cafe Chair VS1",
+        "imageFit": "contain"
+      }
+    ],
+    "sections": [
+      {
+        "id": "stackable-mesh-poolside",
+        "title": "Stackable Mesh Poolside",
+        "description": "Stackable chaise lounges with arms and matching mesh chairs—powder-coated aluminum frames and fade-resistant mesh fabric (no cushions, no strapping). Chaise lounge seating height approximately 15–16 inches. Strong construction and weatherproof finishes for high-traffic residential amenity and commercial pool decks. Ask about available mesh colors when requesting a quote.",
+        "images": [
+          {
+            "src": "/images/galleries/pool-furniture/chaise-lounge-mesh-arms.png",
+            "alt": "Pool Furniture — stackable mesh chaise lounge with arms, powder-coated aluminum frame",
+            "source": "parkezza",
+            "tier": "signature",
+            "id": "PF-M1",
+            "name": "Mesh Chaise Lounge with Arms",
+            "imageFit": "contain"
+          },
+          {
+            "src": "/images/galleries/pool-furniture/stackable-mesh-chair-arms.png",
+            "alt": "Pool Furniture — stackable mesh chair with arms, matching poolside seating",
+            "source": "parkezza",
+            "tier": "signature",
+            "id": "PF-M2",
+            "name": "Stackable Mesh Chair with Arms",
+            "imageFit": "contain"
+          },
+          {
+            "src": "/images/galleries/pool-furniture/pool-deck-mesh-seating.png",
+            "alt": "Pool Furniture — matching mesh chairs with arms in a commercial outdoor deck setting",
+            "source": "parkezza",
+            "tier": "signature",
+            "id": "PF-M3",
+            "name": "Mesh Pool Deck Setting",
+            "imageFit": "contain"
+          }
+        ]
       }
     ]
   },

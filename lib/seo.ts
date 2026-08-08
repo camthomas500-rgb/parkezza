@@ -51,9 +51,9 @@ export const GALLERY_SEO: Record<
       "Wind-rated commercial patio umbrellas and cantilever shade for resorts, pool decks, restaurants, and hospitality outdoor dining. Explore featured systems and the full catalog.",
   },
   "pool-furniture": {
-    title: "Commercial Pool Furniture — Mesh Chaise Lounges & Chairs",
+    title: "Commercial Pool Furniture — Chaises, Chairs & Mesh Poolside",
     description:
-      "Commercial poolside chaise lounges and matching chairs with stackable powder-coated aluminum frames, arms, and fade-resistant mesh fabric—no cushions, no strapping. Chaise seating height approx. 15–16\". For HOA, resort, and hospitality decks.",
+      "Commercial pool and deck furniture for HOA amenity decks, resorts, and hospitality: chaise lounges, chairs, cafe seating, plus stackable mesh chaise lounges and chairs with arms (fade-resistant mesh, approx. 15–16\" chaise seat height).",
   },
   "picnic-tables": {
     title: "Commercial Picnic Tables & ADA Picnic Areas",
@@ -150,7 +150,7 @@ export const HOME_FAQS: FaqItem[] = [
   {
     question: "What commercial pool furniture does Parkezza offer?",
     answer:
-      "Parkezza offers commercial poolside chaise lounges and matching chairs with stackable frames, arms, powder-coated aluminum construction, and fade-resistant mesh fabric—no cushions and no strapping. Chaise lounge seating height is approximately 15–16 inches. Pair with commercial umbrellas for a complete pool deck package.",
+      "Parkezza offers commercial pool and deck chaise lounges, chairs, and cafe seating, plus a stackable mesh poolside line with arms—powder-coated aluminum and fade-resistant mesh (no cushions, no strapping), with chaise seating height approximately 15–16 inches. Pair with commercial umbrellas for a complete pool deck package.",
   },
   {
     question: "What materials are available for commercial park benches and litter receptacles?",
