@@ -61,6 +61,7 @@ export const CATEGORY_NAV = [
   { name: "Bollards", slug: "bollards" },
   { name: "Dog Waste Stations", slug: "dog-waste-stations" },
   { name: "Commercial Umbrellas", slug: "umbrellas" },
+  { name: "Pool Furniture", slug: "pool-furniture" },
   { name: "Picnic Tables", slug: "picnic-tables" },
   { name: "Pergolas Trellis", slug: "pergolas-gazebos" },
   { name: "Bike Racks", slug: "bike-racks" },
@@ -94,7 +95,7 @@ export const MARKETS = [
     title: "Resorts & Hospitality",
     description:
       "Pool decks, lobbies, and outdoor dining furnished with coordinated shade, seating, and site amenities.",
-    relatedSlugs: ["umbrellas", "benches", "shade-structures", "pergolas-gazebos"],
+    relatedSlugs: ["pool-furniture", "umbrellas", "benches", "shade-structures"],
   },
   {
     title: "Golf Courses & Clubs",
@@ -106,7 +107,7 @@ export const MARKETS = [
     title: "Developments & HOAs",
     description:
       "Streetscapes, parkways, and community amenities specified for long-term durability and curb appeal.",
-    relatedSlugs: ["benches", "litter-receptacles", "bike-racks", "dog-waste-stations"],
+    relatedSlugs: ["benches", "litter-receptacles", "pool-furniture", "dog-waste-stations"],
   },
   {
     title: "Municipal & Federal",

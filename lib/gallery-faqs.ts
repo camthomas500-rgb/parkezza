@@ -136,6 +136,37 @@ export const GALLERY_FAQS: Record<string, FaqItem[]> = {
       answer: `Yes. ${regionalServe}`,
     },
   ],
+  "pool-furniture": [
+    {
+      question: "What commercial pool furniture does Parkezza offer?",
+      answer:
+        "Stackable mesh chaise lounges with arms and matching mesh chairs with arms—powder-coated aluminum frames and fade-resistant mesh fabric for HOA, resort, and hospitality pool decks. No cushions and no strapping material.",
+    },
+    {
+      question: "What seating height do the chaise lounges use?",
+      answer:
+        "Chaise lounge seating height is approximately 15–16 inches, a common specification for commercial poolside lounges.",
+    },
+    {
+      question: "Are the lounges and chairs stackable?",
+      answer:
+        "Yes. Featured chaise lounges and matching chairs are designed to stack for seasonal storage and deck rearranging on high-use properties.",
+    },
+    {
+      question: "What materials are used for poolside mesh seating?",
+      answer:
+        "Powder-coated aluminum frames with fade-resistant mesh fabric. Mesh seating is breathable and quick-drying versus cushioned or strap styles—suited to wet pool-deck environments and high traffic.",
+    },
+    {
+      question: "Can pool furniture be quoted with commercial umbrellas?",
+      answer:
+        "Yes. Many HOA and resort packages combine mesh pool seating with wind-rated commercial umbrellas through Parkezza as one quote.",
+    },
+    {
+      question: "Do you quote pool furniture for HOAs and resorts nationwide?",
+      answer: `Yes. ${regionalServe}`,
+    },
+  ],
   "picnic-tables": [
     {
       question: "Do you offer ADA picnic tables?",

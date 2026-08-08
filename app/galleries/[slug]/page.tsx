@@ -78,7 +78,10 @@ export default async function GalleryPage({ params }: PageProps) {
             <div
               className={cn(
                 "relative mx-auto aspect-[3/4] w-full max-w-[160px] overflow-hidden rounded-xl",
-                gallery.slug === "dog-waste-stations" ? "bg-white" : "bg-[#c8dceb]"
+                gallery.slug === "dog-waste-stations" ||
+                  gallery.slug === "pool-furniture"
+                  ? "bg-white"
+                  : "bg-[#c8dceb]"
               )}
             >
               <Image

@@ -50,6 +50,11 @@ export const GALLERY_SEO: Record<
     description:
       "Wind-rated commercial patio umbrellas and cantilever shade for resorts, pool decks, restaurants, and hospitality outdoor dining. Explore featured systems and the full catalog.",
   },
+  "pool-furniture": {
+    title: "Commercial Pool Furniture — Mesh Chaise Lounges & Chairs",
+    description:
+      "Commercial poolside chaise lounges and matching chairs with stackable powder-coated aluminum frames, arms, and fade-resistant mesh fabric—no cushions, no strapping. Chaise seating height approx. 15–16\". For HOA, resort, and hospitality decks.",
+  },
   "picnic-tables": {
     title: "Commercial Picnic Tables & ADA Picnic Areas",
     description:
@@ -87,7 +92,7 @@ export const HOME_FAQS: FaqItem[] = [
   {
     question: "What outdoor site furnishings does Parkezza offer?",
     answer:
-      "Parkezza curates commercial outdoor site furnishings including benches, litter receptacles, shade structures, bollards, dog waste stations, commercial umbrellas, picnic tables, pergolas and trellis, bike racks, flagpoles, and tree guards for public and hospitality environments.",
+      "Parkezza curates commercial outdoor site furnishings including benches, litter receptacles, shade structures, bollards, dog waste stations, commercial umbrellas, pool furniture, picnic tables, pergolas and trellis, bike racks, flagpoles, and tree guards for public and hospitality environments.",
   },
   {
     question: "Who does Parkezza serve?",
@@ -140,7 +145,12 @@ export const HOME_FAQS: FaqItem[] = [
   {
     question: "Do you supply outdoor furniture for HOA amenities and resort pool decks?",
     answer:
-      "Yes. HOAs, master-planned communities, resorts, and golf clubs use Parkezza for community amenity seating, litter receptacles, shade structures, picnic areas, commercial umbrellas, and dog-park stations.",
+      "Yes. HOAs, master-planned communities, resorts, and golf clubs use Parkezza for community amenity seating, litter receptacles, shade structures, picnic areas, commercial umbrellas, poolside mesh chaise lounges and chairs, and dog-park stations.",
+  },
+  {
+    question: "What commercial pool furniture does Parkezza offer?",
+    answer:
+      "Parkezza offers commercial poolside chaise lounges and matching chairs with stackable frames, arms, powder-coated aluminum construction, and fade-resistant mesh fabric—no cushions and no strapping. Chaise lounge seating height is approximately 15–16 inches. Pair with commercial umbrellas for a complete pool deck package.",
   },
   {
     question: "What materials are available for commercial park benches and litter receptacles?",

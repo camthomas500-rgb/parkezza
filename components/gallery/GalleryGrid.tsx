@@ -319,6 +319,9 @@ function inquiryHeadline(gallery: Gallery): string {
   if (gallery.slug === "picnic-tables") {
     return "Interested in a specific picnic table?";
   }
+  if (gallery.slug === "pool-furniture") {
+    return "Interested in a specific pool furniture piece?";
+  }
   return `Interested in ${gallery.name.toLowerCase()}?`;
 }
 
@@ -328,10 +331,13 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
     gallery.slug === "litter-receptacles" ||
     gallery.slug === "bollards" ||
     gallery.slug === "dog-waste-stations" ||
-    gallery.slug === "picnic-tables";
+    gallery.slug === "picnic-tables" ||
+    gallery.slug === "pool-furniture";
   const contain = gallery.imageFit === "contain" && !productFit;
   const tileBg =
-    gallery.slug === "dog-waste-stations" || gallery.slug === "picnic-tables"
+    gallery.slug === "dog-waste-stations" ||
+    gallery.slug === "picnic-tables" ||
+    gallery.slug === "pool-furniture"
       ? "white"
       : "default";
   const hideQuote = gallery.slug === "dog-waste-stations";

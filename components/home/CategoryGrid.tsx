@@ -20,7 +20,9 @@ export function CategoryGrid() {
             <div
               className={cn(
                 "relative aspect-[4/3] overflow-hidden",
-                contain || gallery.slug === "dog-waste-stations"
+                contain ||
+                gallery.slug === "dog-waste-stations" ||
+                gallery.slug === "pool-furniture"
                   ? "bg-white"
                   : "bg-stone"
               )}
@@ -31,7 +33,9 @@ export function CategoryGrid() {
                 fill
                 className={cn(
                   "transition-transform duration-500 group-hover:scale-105",
-                  contain || gallery.slug === "dog-waste-stations"
+                  contain ||
+                  gallery.slug === "dog-waste-stations" ||
+                  gallery.slug === "pool-furniture"
                     ? "object-contain object-center p-3"
                     : gallery.slug === "shade-structures"
                       ? "object-cover object-[center_35%]"
