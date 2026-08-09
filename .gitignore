@@ -45,4 +45,5 @@ next-env.d.ts
 
 # Local working docs / extract folders (not for deploy)
 *.docx
+/documents/
 _litter-doc-extract/
