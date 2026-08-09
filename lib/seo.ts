@@ -51,9 +51,9 @@ export const GALLERY_SEO: Record<
       "Wind-rated commercial patio umbrellas and cantilever shade for resorts, pool decks, restaurants, and hospitality outdoor dining. Explore featured systems and the full catalog.",
   },
   "pool-furniture": {
-    title: "Commercial Pool Furniture — Chaises, Chairs & Mesh Poolside",
+    title: "Commercial Pool Furniture — Chaises, Mesh, Wicker & Vinyl",
     description:
-      "Commercial pool and deck furniture for HOA amenity decks, resorts, and hospitality: chaise lounges, chairs, cafe seating, plus stackable mesh chaise lounges and chairs with arms (fade-resistant mesh, approx. 15–16\" chaise seat height).",
+      "Commercial pool and deck furniture for HOA amenity decks, resorts, and hospitality: chaise lounges, cafe seating, stackable mesh, sling fabric, wicker, vinyl strap, aluminum-slat, and sustainable recycled lounges. Mesh chaise seat height approx. 15–16\".",
   },
   "picnic-tables": {
     title: "Commercial Picnic Tables & ADA Picnic Areas",

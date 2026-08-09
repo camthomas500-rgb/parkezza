@@ -40,6 +40,13 @@ export interface Gallery {
   highlights?: string[];
   /** Use "contain" for tall photos (e.g. flagpoles) so the full subject stays visible */
   imageFit?: "cover" | "contain";
+  /**
+   * photo-strip: light multi-image hero (no charcoal band)
+   * default / omitted: existing single-hero treatments
+   */
+  heroStyle?: "default" | "photo-strip";
+  /** Optional curated photos for photo-strip heroes */
+  heroImages?: string[];
   heroImage: string;
   images: GalleryImage[];
   /** Optional grouped sections (e.g. Recycled Plastic on benches) */

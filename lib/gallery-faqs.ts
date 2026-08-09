@@ -140,12 +140,22 @@ export const GALLERY_FAQS: Record<string, FaqItem[]> = {
     {
       question: "What commercial pool furniture does Parkezza offer?",
       answer:
-        "Chaise lounges, lounge chairs, and cafe seating for pool and amenity decks, plus a stackable mesh poolside line with arms for HOA, resort, and hospitality projects.",
+        "Chaise lounges, lounge chairs, and cafe seating, plus stackable mesh, sling mesh, aluminum-slat, wicker, vinyl strap, cross-weave, and sustainable recycled poolside lines for HOA, resort, and hospitality decks.",
     },
     {
       question: "What is the stackable mesh poolside line?",
       answer:
         "Stackable mesh chaise lounges with arms and matching mesh chairs—powder-coated aluminum frames and fade-resistant mesh fabric with no cushions and no strapping. Chaise seating height is approximately 15–16 inches. Ask about mesh colors on your quote.",
+    },
+    {
+      question: "Do sling mesh and aluminum-slat lounges come in multiple colors?",
+      answer:
+        "Yes. Sling mesh and aluminum-slat lines offer various mesh and aluminum frame colors, with stackable or wheeled options and padded or head-cushion configurations on select models.",
+    },
+    {
+      question: "Do you offer wicker and vinyl strap pool lounges?",
+      answer:
+        "Yes. Wicker and English-garden weave chaises use durable synthetic fiber over powder-coated aluminum; vinyl strap and cross-weave lounges include stackable-with-arms options suited to high-use pool programs.",
     },
     {
       question: "Can pool furniture be quoted with commercial umbrellas?",

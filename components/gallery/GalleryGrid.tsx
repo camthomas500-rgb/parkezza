@@ -270,13 +270,15 @@ function SectionBlock({
   }
 
   return (
-    <section className="mt-16">
-      <div className="mb-8 border-t border-border pt-10">
+    <section className="mt-8">
+      <div className="mb-4 border-t border-border pt-6">
         {section.title && (
-          <h2 className="font-display text-3xl text-charcoal">{section.title}</h2>
+          <h2 className="font-display text-2xl text-charcoal md:text-3xl">
+            {section.title}
+          </h2>
         )}
         {section.callout && (
-          <p className="mt-3 w-full text-base font-semibold tracking-wide text-accent md:text-lg">
+          <p className="mt-2 w-full text-sm font-semibold tracking-wide text-accent md:text-base">
             {section.callout}
           </p>
         )}
