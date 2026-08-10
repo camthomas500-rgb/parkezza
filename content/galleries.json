@@ -798,7 +798,7 @@
       },
       {
         "id": "wicker-and-woven",
-        "title": "Wicker & Woven Poolside Chaises",
+        "title": "Wicker, Woven Wheeled",
         "description": "Wicker and woven styles with elegantly curved waterfall fronts—handwoven durable synthetic fiber over powder-coated aluminum frames for harsh exterior elements and high-traffic use. Premium synthetic weave is UV-resistant and colorfast; optional cushions use open-cell quick-dry foam with recycled poly fibers for drainage and air circulation.",
         "images": [
           {
@@ -821,11 +821,11 @@
           },
           {
             "src": "/images/galleries/pool-furniture/p-j-4-wheeled-mesh.png",
-            "alt": "Pool chaise lounge — wicker, woven and wheeled",
+            "alt": "Pool chaise lounge — wicker, woven wheeled",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-J-4",
-            "name": "Wicker, Woven and Wheeled",
+            "name": "Wicker, Woven Wheeled",
             "imageFit": "contain"
           }
         ]
