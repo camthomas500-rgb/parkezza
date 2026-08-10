@@ -647,7 +647,7 @@
     "slug": "pool-furniture",
     "name": "Pool Furniture",
     "tier": "signature",
-    "description": "Commercial pool and deck furniture—chaise lounges, chairs, and cafe seating for HOA amenity decks, resorts, clubs, and hospitality pool areas.",
+    "description": "Commercial pool furniture and chaise lounges for HOA amenity decks, resorts, clubs, and hospitality—mesh, sling, wicker, vinyl, and recycled styles, with matching dining chairs on select lines.",
     "heroImage": "/images/galleries/pool-furniture/pool-deck-mesh-seating.png",
     "heroStyle": "photo-strip",
     "heroImages": [
@@ -655,17 +655,17 @@
       "/images/categories/chairs-chaises.png",
       "/images/galleries/chairs-chaises/p-chaiself1.png",
       "/images/galleries/pool-furniture/chaise-lounge-mesh-arms.png",
-      "/images/galleries/pool-furniture/p-lc-sling-featured.png",
+      "/images/galleries/pool-furniture/p-lc-1.png",
       "/images/galleries/pool-furniture/p-j-2-wheeled-wicker.png",
       "/images/galleries/pool-furniture/p-j-1-stackable-vinyl.png",
-      "/images/galleries/pool-furniture/p-lc-6.png"
+      "/images/galleries/pool-furniture/p-lc-7-vinyl-cross-weave.png"
     ],
     "imageFit": "contain",
-    "overview": "Commercial pool and deck furniture for resorts, HOA amenity centers, clubs, and hospitality decks—chaise lounges, lounge chairs, cafe seating, stackable mesh, sling fabric, wicker, vinyl strap, aluminum-slat, and sustainable recycled options. Pair with wind-rated commercial umbrellas for a complete poolside package.",
+    "overview": "Specify commercial pool furniture and chaise lounges for resorts, HOA amenity centers, clubs, and hospitality decks. Choose stackable mesh, sling mesh, aluminum-slat, wicker, vinyl strap, cross-weave, and sustainable recycled options—some styles include matching dining or cafe chairs for coordinated outdoor dining. Prices range from under $1,000 to multi-thousand—ask for a quote with your preferred styles, finishes, and quantities. Pair seating with wind-rated commercial umbrellas for a complete poolside package.",
     "images": [
       {
         "src": "/images/galleries/chairs-chaises/p-chaiself1.png",
-        "alt": "Pool Furniture — chaise lounge LF1 with wood slats and metal frame",
+        "alt": "Pool Furniture — commercial chaise lounge LF1 with wood slats and metal frame",
         "source": "parkezza",
         "tier": "signature",
         "id": "PF-01",
@@ -674,7 +674,7 @@
       },
       {
         "src": "/images/galleries/chairs-chaises/p-chaiself1-2.png",
-        "alt": "Pool Furniture — chaise lounge LF1-2",
+        "alt": "Pool Furniture — commercial chaise lounge LF1-2",
         "source": "parkezza",
         "tier": "signature",
         "id": "PF-02",
@@ -683,7 +683,7 @@
       },
       {
         "src": "/images/galleries/chairs-chaises/p-chairlf1-3.png",
-        "alt": "Pool Furniture — lounge chair LF1-3",
+        "alt": "Pool Furniture — lounge chair LF1-3 for pool and deck seating",
         "source": "parkezza",
         "tier": "signature",
         "id": "PF-03",
@@ -692,7 +692,7 @@
       },
       {
         "src": "/images/galleries/chairs-chaises/p-chairvs1.png",
-        "alt": "Pool Furniture — chair VS1",
+        "alt": "Pool Furniture — chair VS1 for poolside and patio seating",
         "source": "parkezza",
         "tier": "signature",
         "id": "PF-04",
@@ -701,7 +701,7 @@
       },
       {
         "src": "/images/galleries/chairs-chaises/p-cafechairvs1.png",
-        "alt": "Pool Furniture — cafe chair VS1 with matching table",
+        "alt": "Pool Furniture — cafe chair VS1 with matching table for outdoor dining",
         "source": "parkezza",
         "tier": "signature",
         "id": "PF-05",
@@ -712,12 +712,12 @@
     "sections": [
       {
         "id": "stackable-mesh-poolside",
-        "title": "Stackable Mesh Poolside",
-        "description": "Stackable chaise lounges with arms and matching mesh chairs—powder-coated aluminum frames and fade-resistant mesh fabric (no cushions, no strapping). Chaise lounge seating height approximately 15–16 inches. Ask about mesh and frame colors when requesting a quote.",
+        "title": "Stackable Mesh Chaise Lounges & Matching Chairs",
+        "description": "Stackable mesh chaise lounges with arms and matching dining chairs—powder-coated aluminum frames and fade-resistant mesh fabric (no cushions, no strapping). Chaise seating height approximately 15–16 inches. Ask about mesh and frame colors when requesting a quote.",
         "images": [
           {
             "src": "/images/galleries/pool-furniture/chaise-lounge-mesh-arms.png",
-            "alt": "Pool Furniture — stackable mesh chaise lounge with arms, powder-coated aluminum frame",
+            "alt": "Commercial pool furniture — stackable mesh chaise lounge with arms",
             "source": "parkezza",
             "tier": "signature",
             "id": "PF-M1",
@@ -726,16 +726,16 @@
           },
           {
             "src": "/images/galleries/pool-furniture/stackable-mesh-chair-arms.png",
-            "alt": "Pool Furniture — stackable mesh chair with arms, matching poolside seating",
+            "alt": "Commercial pool furniture — matching stackable mesh dining chair with arms",
             "source": "parkezza",
             "tier": "signature",
             "id": "PF-M2",
-            "name": "Stackable Mesh Chair with Arms",
+            "name": "Matching Mesh Dining Chair",
             "imageFit": "contain"
           },
           {
             "src": "/images/galleries/pool-furniture/pool-deck-mesh-seating.png",
-            "alt": "Pool Furniture — matching mesh chairs with arms in a commercial outdoor deck setting",
+            "alt": "Commercial pool furniture — mesh chairs with arms on an outdoor pool deck",
             "source": "parkezza",
             "tier": "signature",
             "id": "PF-M3",
@@ -745,22 +745,13 @@
         ]
       },
       {
-        "id": "sling-mesh-and-aluminum-slat",
-        "title": "Sling Mesh & Aluminum Slat Lounges",
-        "description": "Sling mesh fabric and aluminum-slat backs and seats in a variety of mesh and frame colors—stackable or wheeled options for high-traffic residential and commercial pool decks. Fade-resistant materials with strong construction and weatherproof finishes; padded and head-cushion configurations available on select models.",
+        "id": "sling-mesh-chaises",
+        "title": "Sling Mesh Pool Chaise Lounges",
+        "description": "Sling mesh fabric chaise lounges with various mesh and aluminum frame colors—stackable or wheeled options, fade-resistant mesh or aluminum-slat backs and seats, and strong weatherproof finishes for high-traffic residential and commercial settings. P-LC-2 is available with or without arms; P-LC-3 is a padded chaise.",
         "images": [
           {
-            "src": "/images/galleries/pool-furniture/p-lc-sling-featured.png",
-            "alt": "Pool Furniture — sling mesh chaise lounge with bronze frame for commercial pool decks",
-            "source": "parkezza",
-            "tier": "signature",
-            "id": "P-LC-S",
-            "name": "Sling Mesh Chaise",
-            "imageFit": "contain"
-          },
-          {
             "src": "/images/galleries/pool-furniture/p-lc-1.png",
-            "alt": "Pool Furniture — P-LC-1 sling mesh chaise lounge",
+            "alt": "Pool chaise lounge P-LC-1 — sling mesh with arms, bronze aluminum frame",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-LC-1",
@@ -769,16 +760,16 @@
           },
           {
             "src": "/images/galleries/pool-furniture/p-lc-2.png",
-            "alt": "Pool Furniture — P-LC-2 sling mesh chaise lounge",
+            "alt": "Pool chaise lounge P-LC-2 — sling mesh, available with or without arms",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-LC-2",
-            "name": "P-LC-2",
+            "name": "P-LC-2 (With or Without Arms)",
             "imageFit": "contain"
           },
           {
             "src": "/images/galleries/pool-furniture/p-lc-3-padded.png",
-            "alt": "Pool Furniture — P-LC-3 padded sling chaise lounge",
+            "alt": "Pool chaise lounge P-LC-3 — padded sling mesh chaise",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-LC-3",
@@ -787,7 +778,7 @@
           },
           {
             "src": "/images/galleries/pool-furniture/p-lc-4.png",
-            "alt": "Pool Furniture — P-LC-4 sling mesh chaise with yellow frame",
+            "alt": "Pool chaise lounge P-LC-4 — sling mesh commercial lounge",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-LC-4",
@@ -796,7 +787,7 @@
           },
           {
             "src": "/images/galleries/pool-furniture/p-lc-5.png",
-            "alt": "Pool Furniture — P-LC-5 sling mesh chaise lounge",
+            "alt": "Pool chaise lounge P-LC-5 — sling mesh with bold frame color options",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-LC-5",
@@ -804,71 +795,87 @@
             "imageFit": "contain"
           },
           {
-            "src": "/images/galleries/pool-furniture/p-lc-5-head-cushion.png",
-            "alt": "Pool Furniture — P-LC-5 sling chaise with head cushion",
+            "src": "/images/galleries/pool-furniture/p-lc-6-head-cushion.png",
+            "alt": "Pool chaise lounge P-LC-6 — sling mesh with head cushion",
             "source": "parkezza",
             "tier": "signature",
-            "id": "P-LC-5C",
-            "name": "P-LC-5 with Head Cushion",
-            "imageFit": "contain"
-          },
-          {
-            "src": "/images/galleries/pool-furniture/p-lc-6.png",
-            "alt": "Pool Furniture — P-LC-6 aluminum slat chaise lounge with wheels",
-            "source": "parkezza",
-            "tier": "signature",
-            "id": "P-LC-6",
-            "name": "P-LC-6",
+            "id": "P-LC-6C",
+            "name": "P-LC-6 with Head Cushion",
             "imageFit": "contain"
           }
         ]
       },
       {
-        "id": "wicker-poolside",
-        "title": "Wicker & English Garden Weave",
-        "description": "Wicker and English-garden styles with elegantly curved, waterfall fronts—handwoven durable synthetic fiber over powder-coated aluminum frames. UV-resistant, colorfast weave engineered for sun, moisture, and high-traffic exterior use; cushions available with quick-dry foam on select models.",
+        "id": "wicker-and-woven",
+        "title": "Wicker & Woven Poolside Chaises",
+        "description": "Wicker and woven styles with elegantly curved waterfall fronts—handwoven durable synthetic fiber over powder-coated aluminum frames for harsh exterior elements and high-traffic use. Premium synthetic weave is UV-resistant and colorfast; optional cushions use open-cell quick-dry foam with recycled poly fibers for drainage and air circulation.",
         "images": [
           {
             "src": "/images/galleries/pool-furniture/p-j-2-wheeled-wicker.png",
-            "alt": "Pool Furniture — P-J-2 wheeled wicker chaise lounge, cushions available",
+            "alt": "Pool chaise lounge P-J-2 — wheeled wicker with waterfall front, cushions available",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-J-2",
-            "name": "P-J-2 Wheeled Wicker",
+            "name": "P-J-2 Wheeled Wicker, Waterfall Front",
             "imageFit": "contain"
           },
           {
-            "src": "/images/galleries/pool-furniture/p-j-3.png",
-            "alt": "Pool Furniture — P-J-3 woven strap wheeled chaise lounge",
+            "src": "/images/galleries/pool-furniture/p-j-3-wheeled.png",
+            "alt": "Pool chaise lounge P-J-3 — wheeled woven chaise lounge",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-J-3",
-            "name": "P-J-3",
+            "name": "P-J-3 Wheeled Chaise Lounge",
             "imageFit": "contain"
           }
         ]
       },
       {
-        "id": "vinyl-strap-cross-weave",
+        "id": "vinyl-strap-lounges",
         "title": "Vinyl Strap & Cross-Weave Lounges",
-        "description": "Stackable vinyl strap lounges with arms and cross-weave designs—bleach-cleanable, fade-resistant, anti-mildew options suited to resort and community pool programs. Include P-LC-7 vinyl cross-weave when specifying strap seating for high-use decks.",
+        "description": "Vinyl strap and cross-weave chaise lounges that are bleach-cleanable, fade-resistant, anti-mildew, and eco-friendly for resort and community pool programs. Includes stackable wide-horizontal vinyl slats with arms, two-tone vinyl slat options, and vinyl cross-weave designs.",
         "images": [
           {
             "src": "/images/galleries/pool-furniture/p-j-1-stackable-vinyl.png",
-            "alt": "Pool Furniture — P-J-1 stackable vinyl strap chaise with arms",
+            "alt": "Pool chaise lounge P-J-1 — stackable wide horizontal vinyl slats with arms",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-J-1",
-            "name": "P-J-1 Stackable Vinyl with Arms",
+            "name": "P-J-1 Stackable Vinyl Slats with Arms",
             "imageFit": "contain"
           },
           {
-            "src": "/images/galleries/pool-furniture/p-j-4.png",
-            "alt": "Pool Furniture — P-J-4 vinyl strap chaise lounge",
+            "src": "/images/galleries/pool-furniture/p-lc-6-two-tone-vinyl.png",
+            "alt": "Pool chaise lounge P-LC-6 — two-tone vinyl slats",
+            "source": "parkezza",
+            "tier": "signature",
+            "id": "P-LC-6V",
+            "name": "P-LC-6 Two-Tone Vinyl Slats",
+            "imageFit": "contain"
+          },
+          {
+            "src": "/images/galleries/pool-furniture/p-lc-7-vinyl-cross-weave.png",
+            "alt": "Pool chaise lounge P-LC-7 — vinyl cross-weave design with arms",
+            "source": "parkezza",
+            "tier": "signature",
+            "id": "P-LC-7",
+            "name": "P-LC-7 Vinyl Cross Weave Design",
+            "imageFit": "contain"
+          }
+        ]
+      },
+      {
+        "id": "wheeled-mesh-lounges",
+        "title": "Wheeled Mesh Chaise Lounges",
+        "description": "Wheeled mesh chaise lounges for decks that need easy repositioning—protective, weather-resistant, rustproof frames with UV-inhibiting finishes more durable than conventional paint. Strong construction for high-traffic commercial and residential pool settings.",
+        "images": [
+          {
+            "src": "/images/galleries/pool-furniture/p-j-4-wheeled-mesh.png",
+            "alt": "Pool chaise lounge P-J-4 — wheeled mesh chaise lounge",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-J-4",
-            "name": "P-J-4",
+            "name": "P-J-4 Wheeled Mesh Chaise Lounge",
             "imageFit": "contain"
           }
         ]
@@ -876,15 +883,15 @@
       {
         "id": "sustainable-recycled-poolside",
         "title": "Sustainable Recycled Poolside",
-        "description": "Eco-friendly, 100-percent recyclable solutions that replicate the natural beauty of wood with resistance to moisture, fungi, salt spray, insects, and corrosive substances—ideal for high-traffic interior and exterior amenity settings.",
+        "description": "Eco-friendly, 100-percent recyclable solutions that replicate the natural beauty of wood—with resistance to moisture, fungi, salt spray, insects, and corrosive substances—ideal for high-traffic interior and exterior amenity settings.",
         "images": [
           {
             "src": "/images/galleries/pool-furniture/p-j-5-recycled.png",
-            "alt": "Pool Furniture — P-J-5 eco-friendly sustainable recycled chaise lounge",
+            "alt": "Pool chaise lounge P-J-5 — recyclable wood-look sustainable outdoor lounge",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-J-5",
-            "name": "P-J-5 Eco-Friendly Sustainable Recycled",
+            "name": "P-J-5 Recyclable Wood-Look",
             "imageFit": "contain"
           }
         ]

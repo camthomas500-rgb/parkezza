@@ -138,24 +138,34 @@ export const GALLERY_FAQS: Record<string, FaqItem[]> = {
   ],
   "pool-furniture": [
     {
-      question: "What commercial pool furniture does Parkezza offer?",
+      question: "What commercial pool furniture and chaise lounges does Parkezza offer?",
       answer:
-        "Chaise lounges, lounge chairs, and cafe seating, plus stackable mesh, sling mesh, aluminum-slat, wicker, vinyl strap, cross-weave, and sustainable recycled poolside lines for HOA, resort, and hospitality decks.",
+        "Commercial pool chaise lounges and seating in stackable mesh, sling mesh, wicker, vinyl strap, cross-weave, wheeled mesh, and sustainable recycled styles—plus lounge and cafe chairs for HOA, resort, and hospitality decks.",
+    },
+    {
+      question: "Do any styles include matching dining chairs?",
+      answer:
+        "Yes. Select lines—including stackable mesh poolside—offer matching dining or cafe chairs so lounges and outdoor dining can share the same finish language on the deck.",
+    },
+    {
+      question: "What price range should we expect for commercial pool chaise lounges?",
+      answer:
+        "Prices range from under $1,000 to multi-thousand, depending on style and finishes. Request a quote for current pricing, quantities, and options.",
     },
     {
       question: "What is the stackable mesh poolside line?",
       answer:
-        "Stackable mesh chaise lounges with arms and matching mesh chairs—powder-coated aluminum frames and fade-resistant mesh fabric with no cushions and no strapping. Chaise seating height is approximately 15–16 inches. Ask about mesh colors on your quote.",
+        "Stackable mesh chaise lounges with arms and matching dining chairs—powder-coated aluminum frames and fade-resistant mesh fabric with no cushions and no strapping. Chaise seating height is approximately 15–16 inches.",
     },
     {
-      question: "Do sling mesh and aluminum-slat lounges come in multiple colors?",
+      question: "Do sling mesh lounges come in multiple colors and with or without arms?",
       answer:
-        "Yes. Sling mesh and aluminum-slat lines offer various mesh and aluminum frame colors, with stackable or wheeled options and padded or head-cushion configurations on select models.",
+        "Yes. Sling mesh lines offer various mesh and aluminum frame colors, with stackable or wheeled options. P-LC-2 is available with or without arms; padded and head-cushion configurations are available on select models.",
     },
     {
       question: "Do you offer wicker and vinyl strap pool lounges?",
       answer:
-        "Yes. Wicker and English-garden weave chaises use durable synthetic fiber over powder-coated aluminum; vinyl strap and cross-weave lounges include stackable-with-arms options suited to high-use pool programs.",
+        "Yes. Wicker waterfall-front chaises use durable synthetic fiber over powder-coated aluminum (cushions available). Vinyl strap and cross-weave lounges include stackable-with-arms and bleach-cleanable, fade-resistant options for high-use pool programs.",
     },
     {
       question: "Can pool furniture be quoted with commercial umbrellas?",

@@ -51,9 +51,9 @@ export const GALLERY_SEO: Record<
       "Wind-rated commercial patio umbrellas and cantilever shade for resorts, pool decks, restaurants, and hospitality outdoor dining. Explore featured systems and the full catalog.",
   },
   "pool-furniture": {
-    title: "Commercial Pool Furniture — Chaises, Mesh, Wicker & Vinyl",
+    title: "Commercial Pool Furniture & Chaise Lounges",
     description:
-      "Commercial pool and deck furniture for HOA amenity decks, resorts, and hospitality: chaise lounges, cafe seating, stackable mesh, sling fabric, wicker, vinyl strap, aluminum-slat, and sustainable recycled lounges. Mesh chaise seat height approx. 15–16\".",
+      "Commercial pool furniture and chaise lounges for HOA amenity decks, resorts, and hospitality—stackable mesh, sling, wicker, vinyl strap, wheeled mesh, and sustainable recycled styles. Some lines include matching dining chairs. Prices range from under $1,000 to multi-thousand; request a quote.",
   },
   "picnic-tables": {
     title: "Commercial Picnic Tables & ADA Picnic Areas",
@@ -150,7 +150,7 @@ export const HOME_FAQS: FaqItem[] = [
   {
     question: "What commercial pool furniture does Parkezza offer?",
     answer:
-      "Parkezza offers commercial pool and deck chaise lounges, chairs, and cafe seating, plus a stackable mesh poolside line with arms—powder-coated aluminum and fade-resistant mesh (no cushions, no strapping), with chaise seating height approximately 15–16 inches. Pair with commercial umbrellas for a complete pool deck package.",
+      "Parkezza offers commercial pool furniture and chaise lounges—including stackable mesh, sling mesh, wicker, vinyl strap, cross-weave, wheeled mesh, and sustainable recycled styles—plus cafe and lounge chairs. Select styles include matching dining chairs. Prices range from under $1,000 to multi-thousand; request a quote for current pricing.",
   },
   {
     question: "What materials are available for commercial park benches and litter receptacles?",
