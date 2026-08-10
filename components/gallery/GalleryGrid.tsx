@@ -38,7 +38,12 @@ function ImageTile({
   const modelName = image.name ?? (image.id ? getImageLabel(image) : null);
   const useContain = image.imageFit === "contain" || contain || productFit;
   const scale = image.imageScale ?? (productFit ? 0.82 : 1);
-  const showLabel = Boolean(image.id || modelName);
+  // Single caption only — avoid "P-LC-1 · P-LC-1" / bold id + name duplicates
+  const labelText =
+    modelName && image.id && modelName !== image.id
+      ? modelName
+      : modelName || image.id || null;
+  const showLabel = Boolean(labelText);
   const surface =
     tileBg === "white"
       ? "bg-white"
@@ -98,35 +103,15 @@ function ImageTile({
         (inquireHref ? (
           <Link
             href={inquireHref}
-            className="mt-2 inline-flex items-center gap-1 text-sm text-charcoal hover:text-accent"
+            className="mt-2 inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-accent"
           >
-            {image.id ? (
-              <>
-                <span className="font-semibold tracking-wide">{image.id}</span>
-                {modelName && (
-                  <span className="text-muted-foreground"> · {modelName}</span>
-                )}
-              </>
-            ) : (
-              <span className="font-semibold tracking-wide">{modelName}</span>
-            )}
+            <span>{labelText}</span>
             <span aria-hidden="true" className="text-accent">
               →
             </span>
           </Link>
         ) : (
-          <p className="mt-2 text-sm text-charcoal">
-            {image.id ? (
-              <>
-                <span className="font-semibold tracking-wide">{image.id}</span>
-                {modelName && (
-                  <span className="text-muted-foreground"> · {modelName}</span>
-                )}
-              </>
-            ) : (
-              <span className="font-semibold tracking-wide">{modelName}</span>
-            )}
-          </p>
+          <p className="mt-2 text-sm text-muted-foreground">{labelText}</p>
         ))}
     </div>
   );
