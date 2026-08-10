@@ -732,6 +732,24 @@
             "id": "PF-M3",
             "name": "Mesh Pool Deck Setting",
             "imageFit": "contain"
+          },
+          {
+            "src": "/images/galleries/pool-furniture/white-wood-arm-chaise.png",
+            "alt": "Pool chaise lounge P-J-5 — stackable white chaise with wood armrests",
+            "source": "parkezza",
+            "tier": "signature",
+            "id": "P-J-5",
+            "name": "P-J-5",
+            "imageFit": "contain"
+          },
+          {
+            "src": "/images/galleries/pool-furniture/white-wood-arm-dining-chair.png",
+            "alt": "Pool dining chair P-J-6 — matching white dining chair with wood armrests",
+            "source": "parkezza",
+            "tier": "signature",
+            "id": "P-J-6",
+            "name": "P-J-6",
+            "imageFit": "contain"
           }
         ]
       },
@@ -871,11 +889,11 @@
         "images": [
           {
             "src": "/images/galleries/pool-furniture/p-j-5-recycled.png",
-            "alt": "Pool chaise lounge P-J-5 — recyclable wood-look sustainable outdoor lounge",
+            "alt": "Pool chaise lounge P-J-7 — recyclable wood-look sustainable outdoor lounge",
             "source": "parkezza",
             "tier": "signature",
-            "id": "P-J-5",
-            "name": "P-J-5 Recyclable Wood-Look",
+            "id": "P-J-7",
+            "name": "P-J-7 Recyclable Wood-Look",
             "imageFit": "contain"
           }
         ]
