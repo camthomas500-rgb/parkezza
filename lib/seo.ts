@@ -11,6 +11,8 @@ import {
 
 export const SITE_URL = "https://parkezza.com";
 export const SITE_NAME = "Parkezza";
+/** Default browser tab / document title */
+export const SITE_TITLE = "Parkezza - Commercial Outdoor Site Furnishings";
 
 export const SITE_DESCRIPTION =
   `Commercial outdoor site furnishings for resorts, golf courses, HOAs, and municipal parks around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide—benches, litter receptacles, shade, picnic tables, and more.`;
@@ -177,12 +179,10 @@ export function pageMetadata({
 }): Metadata {
   const url = absoluteUrl(path);
   const ogImages = images ?? [{ url: "/logo-parkezza.png", alt: SITE_NAME }];
-  const pageTitle = title
-    ? `${title} | ${SITE_NAME}`
-    : `${SITE_NAME} | Curated Outdoor Site Furnishings`;
+  const pageTitle = title ? `${title} | ${SITE_NAME}` : SITE_TITLE;
 
   return {
-    title,
+    title: title ?? SITE_TITLE,
     description,
     alternates: { canonical: url },
     openGraph: {

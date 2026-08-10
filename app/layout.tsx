@@ -5,6 +5,7 @@ import { Footer } from "@/components/layout/Footer";
 import {
   SITE_DESCRIPTION,
   SITE_NAME,
+  SITE_TITLE,
   SITE_URL,
   jsonLdScript,
   organizationJsonLd,
@@ -29,7 +30,7 @@ const cormorantGaramond = Cormorant_Garamond({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Curated Outdoor Site Furnishings`,
+    default: SITE_TITLE,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
@@ -74,14 +75,14 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: SITE_NAME,
     url: SITE_URL,
-    title: `${SITE_NAME} | Curated Outdoor Site Furnishings`,
+    title: SITE_TITLE,
     description:
       "Premium outdoor site furnishings for resorts, developments, golf courses, municipal facilities, and public spaces.",
     images: [{ url: "/logo-parkezza.png", alt: SITE_NAME }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} | Curated Outdoor Site Furnishings`,
+    title: SITE_TITLE,
     description:
       "Premium outdoor site furnishings for resorts, developments, golf courses, municipal facilities, and public spaces.",
     images: ["/logo-parkezza.png"],
