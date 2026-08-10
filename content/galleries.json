@@ -818,6 +818,15 @@
             "id": "P-J-3",
             "name": "P-J-3 Wheeled Chaise Lounge",
             "imageFit": "contain"
+          },
+          {
+            "src": "/images/galleries/pool-furniture/p-j-4-wheeled-mesh.png",
+            "alt": "Pool chaise lounge — wicker, woven and wheeled",
+            "source": "parkezza",
+            "tier": "signature",
+            "id": "P-J-4",
+            "name": "Wicker, Woven and Wheeled",
+            "imageFit": "contain"
           }
         ]
       },
@@ -851,22 +860,6 @@
             "tier": "signature",
             "id": "P-LC-7",
             "name": "P-LC-7 Vinyl Cross Weave Design",
-            "imageFit": "contain"
-          }
-        ]
-      },
-      {
-        "id": "wheeled-mesh-lounges",
-        "title": "Wheeled Mesh Chaise Lounges",
-        "description": "Wheeled mesh chaise lounges for decks that need easy repositioning—protective, weather-resistant, rustproof frames with UV-inhibiting finishes more durable than conventional paint. Strong construction for high-traffic commercial and residential pool settings.",
-        "images": [
-          {
-            "src": "/images/galleries/pool-furniture/p-j-4-wheeled-mesh.png",
-            "alt": "Pool chaise lounge P-J-4 — wheeled mesh chaise lounge",
-            "source": "parkezza",
-            "tier": "signature",
-            "id": "P-J-4",
-            "name": "P-J-4 Wheeled Mesh Chaise Lounge",
             "imageFit": "contain"
           }
         ]
