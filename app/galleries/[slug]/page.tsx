@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
+import { UmbrellaLinkedText } from "@/components/UmbrellaLinkedText";
 import { getGallery, getGallerySlugs } from "@/lib/content";
 import {
   breadcrumbJsonLd,
@@ -187,7 +188,7 @@ export default async function GalleryPage({ params }: PageProps) {
       <div className="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
         {gallery.overview && (
           <p className="mb-4 w-full text-sm leading-snug text-muted-foreground">
-            {gallery.overview}
+            <UmbrellaLinkedText text={gallery.overview} />
           </p>
         )}
         {gallery.highlights && gallery.highlights.length > 0 && (

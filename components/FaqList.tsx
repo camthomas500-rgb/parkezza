@@ -1,3 +1,4 @@
+import { UmbrellaLinkedText } from "@/components/UmbrellaLinkedText";
 import type { FaqItem } from "@/lib/seo";
 import { faqPageJsonLd, jsonLdScript } from "@/lib/seo";
 
@@ -46,7 +47,7 @@ export function FaqList({
               </span>
             </summary>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
-              {faq.answer}
+              <UmbrellaLinkedText text={faq.answer} />
             </p>
           </details>
         ))}

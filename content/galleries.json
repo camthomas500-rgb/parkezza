@@ -812,20 +812,20 @@
           },
           {
             "src": "/images/galleries/pool-furniture/p-j-3-wheeled.png",
-            "alt": "Pool chaise lounge P-J-3 — wheeled woven chaise lounge",
+            "alt": "Pool chaise lounge P-J-3 — intricately woven synthetic fiber",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-J-3",
-            "name": "P-J-3 Wheeled Chaise Lounge",
+            "name": "P-J-3 Intricately woven synthetic fiber",
             "imageFit": "contain"
           },
           {
             "src": "/images/galleries/pool-furniture/p-j-4-wheeled-mesh.png",
-            "alt": "Pool chaise lounge — wicker, woven wheeled",
+            "alt": "Pool chaise lounge P-J-4 — wheeled mesh fabric",
             "source": "parkezza",
             "tier": "signature",
             "id": "P-J-4",
-            "name": "Wicker, Woven Wheeled",
+            "name": "P-J-4 Wheeled mesh fabric",
             "imageFit": "contain"
           }
         ]
