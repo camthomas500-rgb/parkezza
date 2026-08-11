@@ -7,18 +7,14 @@ import { QuoteForm } from "@/components/quote/QuoteForm";
 import {
   PRIMARY_STATES,
   PRIMARY_STATES_PHRASE,
-  UTAH_LOCAL_CITIES,
+  UTAH_LOCAL_CITY_SEO,
   UTAH_LOCAL_COUNTIES,
   UTAH_LOCAL_PHRASE,
 } from "@/lib/regions";
 import { pageMetadata, SITE_DESCRIPTION } from "@/lib/seo";
 
-const SERVICE_AREAS = [
-  ...UTAH_LOCAL_CITIES,
-  ...UTAH_LOCAL_COUNTIES,
-  ...PRIMARY_STATES,
-  "Nationwide",
-];
+/** Primary visual emphasis — states + nationwide (where most quotes also happen). */
+const PRIMARY_SERVICE_AREAS = [...PRIMARY_STATES, "Nationwide"] as const;
 
 /**
  * Index page (site homepage) — same role as index.html on your other sites.
@@ -110,7 +106,7 @@ export default function IndexPage() {
             Where We Serve
           </p>
           <h2 className="mt-3 font-display text-3xl leading-tight text-charcoal md:text-4xl">
-            Utah HOAs, Intermountain resorts, and projects nationwide
+            Utah roots, Intermountain focus, projects nationwide
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-snug text-muted-foreground">
             Specify commercial outdoor site amenities for community parks,
@@ -118,7 +114,7 @@ export default function IndexPage() {
             centers across:
           </p>
           <ul className="mx-auto mt-6 flex max-w-2xl flex-wrap items-center justify-center gap-3">
-            {SERVICE_AREAS.map((area) => (
+            {PRIMARY_SERVICE_AREAS.map((area) => (
               <li
                 key={area}
                 className="rounded-full border border-border bg-white px-4 py-2 text-sm font-medium text-charcoal"
@@ -127,6 +123,12 @@ export default function IndexPage() {
               </li>
             ))}
           </ul>
+          <p className="mx-auto mt-8 max-w-2xl text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground/80">
+            Utah communities we often serve
+          </p>
+          <p className="mx-auto mt-2 max-w-2xl text-[11px] leading-relaxed text-muted-foreground/70">
+            {[...UTAH_LOCAL_CITY_SEO, ...UTAH_LOCAL_COUNTIES].join(" · ")}
+          </p>
           <p className="mx-auto mt-8 max-w-xl text-sm text-muted-foreground">
             Prefer email or phone?{" "}
             <Link href="/contact" className="font-medium text-bronze underline underline-offset-2 hover:text-charcoal">

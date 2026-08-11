@@ -5,6 +5,7 @@ import {
   PRIMARY_STATES,
   PRIMARY_STATES_PHRASE,
   UTAH_LOCAL_CITIES,
+  UTAH_LOCAL_CITY_SEO,
   UTAH_LOCAL_COUNTIES,
   UTAH_LOCAL_PHRASE,
 } from "@/lib/regions";
@@ -228,7 +229,7 @@ export function organizationJsonLd() {
         "@type": "AdministrativeArea",
         name: `${name}, Utah`,
       })),
-      ...UTAH_LOCAL_CITIES.map((name) => ({
+      ...UTAH_LOCAL_CITY_SEO.map((name) => ({
         "@type": "City",
         name: `${name}, Utah`,
       })),
@@ -252,6 +253,11 @@ export function organizationJsonLd() {
       "Park City site furnishings",
       "Kamas City Utah site furnishings",
       "Heber City outdoor furniture",
+      "Salt Lake City site furnishings",
+      "Lehi outdoor site amenities",
+      "Draper park furniture",
+      "Provo commercial outdoor furnishings",
+      "St. George HOA amenities",
       "Wasatch County park furniture",
       "Summit County site amenities",
     ],
@@ -293,7 +299,7 @@ export function serviceJsonLd() {
         "@type": "AdministrativeArea",
         name: `${name}, Utah`,
       })),
-      ...UTAH_LOCAL_CITIES.map((name) => ({
+      ...UTAH_LOCAL_CITY_SEO.map((name) => ({
         "@type": "City",
         name: `${name}, Utah`,
       })),

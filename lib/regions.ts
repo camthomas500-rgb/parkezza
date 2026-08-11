@@ -11,7 +11,7 @@ export const PRIMARY_REGION_LABEL = "Intermountain West";
 
 export const PRIMARY_STATES_PHRASE = "Utah, Nevada, Idaho, Wyoming, and Montana";
 
-/** Northern Utah resort & municipal corridor — name only places with real local activity. */
+/** Core Northern Utah corridor — used in short prose / meta phrases. */
 export const UTAH_LOCAL_CITIES = [
   "Park City",
   "Kamas City",
@@ -19,6 +19,32 @@ export const UTAH_LOCAL_CITIES = [
 ] as const;
 
 export const UTAH_LOCAL_COUNTIES = ["Wasatch County", "Summit County"] as const;
+
+/**
+ * Broader Utah place names for local SEO / AI discovery (homepage small type).
+ * Keep UTAH_LOCAL_PHRASE short so page copy stays readable.
+ */
+export const UTAH_LOCAL_CITY_SEO = [
+  "Park City",
+  "Kamas City",
+  "Heber City",
+  "Midway",
+  "Oakley",
+  "Coalville",
+  "Salt Lake City",
+  "Sandy",
+  "Draper",
+  "Lehi",
+  "Alpine",
+  "Highland",
+  "American Fork",
+  "Provo",
+  "Orem",
+  "Ogden",
+  "Layton",
+  "Farmington",
+  "St. George",
+] as const;
 
 export const UTAH_LOCAL_PHRASE =
   "Park City, Kamas City, Heber City, and Wasatch and Summit Counties";
