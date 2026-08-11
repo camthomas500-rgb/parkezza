@@ -6,10 +6,8 @@ import { MarketsSection } from "@/components/home/MarketsSection";
 import { QuoteForm } from "@/components/quote/QuoteForm";
 import {
   PRIMARY_STATES,
-  PRIMARY_STATES_PHRASE,
   UTAH_LOCAL_CITY_SEO,
   UTAH_LOCAL_COUNTIES,
-  UTAH_LOCAL_PHRASE,
 } from "@/lib/regions";
 import { pageMetadata, SITE_DESCRIPTION } from "@/lib/seo";
 
@@ -45,11 +43,10 @@ export default function IndexPage() {
           resorts, and public spaces
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-relaxed text-muted-foreground md:text-base">
-          Parkezza helps landscape architects, landscape contractors, resort
-          developers, and HOA managers specify durable benches, litter
-          receptacles, shade, picnic tables, pool furniture, dog-park stations,
-          and coordinated site amenities—from {UTAH_LOCAL_PHRASE} across{" "}
-          {PRIMARY_STATES_PHRASE}, and nationwide.
+          Utah roots, projects nationwide. Parkezza helps landscape architects,
+          landscape contractors, resort developers, and HOA managers specify
+          durable benches, litter receptacles, shade, picnic tables, pool
+          furniture, dog-park stations, and coordinated site amenities.
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <a
