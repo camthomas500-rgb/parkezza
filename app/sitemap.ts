@@ -28,8 +28,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
   });
 
   const projectImages = getProjects()
-    .map((p) => p.image)
-    .filter((src): src is string => Boolean(src))
+    .flatMap((p) => [
+      ...(p.image ? [p.image] : []),
+      ...(p.images?.map((img) => img.src) ?? []),
+    ])
     .map((src) => absoluteUrl(src));
 
   const resourceRoutes = getResourceSlugs().map((slug) => ({

@@ -1,7 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import { LetsTalk } from "@/components/layout/LetsTalk";
-import { categoryLabel, getFeaturedProjects } from "@/lib/projects";
+import {
+  categoryLabel,
+  getFeaturedProjects,
+  getProjectImages,
+} from "@/lib/projects";
 import {
   PRIMARY_REGION_LABEL,
   PRIMARY_STATES_PHRASE,
@@ -37,36 +41,77 @@ export default function ProjectsPage() {
             key={project.id}
             className="overflow-hidden rounded-xl border border-border bg-white shadow-sm"
           >
-            <div
-              className={
-                project.imageFit === "contain"
-                  ? "relative h-40 bg-stone/40 sm:h-44"
-                  : "relative h-40 bg-stone sm:h-44"
+            {(() => {
+              const photos = getProjectImages(project);
+              const contain = project.imageFit === "contain";
+              if (photos.length === 0) {
+                return (
+                  <div className="relative flex h-40 flex-col items-center justify-center gap-2 bg-stone px-6 text-center sm:h-44">
+                    <p className="text-sm font-medium text-charcoal/70">
+                      Photo coming soon
+                    </p>
+                    <p className="text-xs text-muted-foreground">
+                      Placeholder for your installation image
+                    </p>
+                  </div>
+                );
               }
-            >
-              {project.image ? (
-                <Image
-                  src={project.image}
-                  alt={project.alt ?? project.title}
-                  fill
+              if (photos.length === 1) {
+                return (
+                  <div
+                    className={
+                      contain
+                        ? "relative h-40 bg-stone/40 sm:h-44"
+                        : "relative h-40 bg-stone sm:h-44"
+                    }
+                  >
+                    <Image
+                      src={photos[0].src}
+                      alt={photos[0].alt ?? project.title}
+                      fill
+                      className={
+                        contain
+                          ? "object-contain object-center p-3"
+                          : "object-cover"
+                      }
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
+                    />
+                  </div>
+                );
+              }
+              return (
+                <div
                   className={
-                    project.imageFit === "contain"
-                      ? "object-contain object-center p-3"
-                      : "object-cover"
+                    contain
+                      ? "grid grid-cols-2 gap-px bg-border/60"
+                      : "grid grid-cols-2"
                   }
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 280px"
-                />
-              ) : (
-                <div className="flex h-full flex-col items-center justify-center gap-2 px-6 text-center">
-                  <p className="text-sm font-medium text-charcoal/70">
-                    Photo coming soon
-                  </p>
-                  <p className="text-xs text-muted-foreground">
-                    Placeholder for your installation image
-                  </p>
+                >
+                  {photos.map((photo) => (
+                    <div
+                      key={photo.src}
+                      className={
+                        contain
+                          ? "relative h-40 bg-stone/40 sm:h-44"
+                          : "relative h-40 bg-stone sm:h-44"
+                      }
+                    >
+                      <Image
+                        src={photo.src}
+                        alt={photo.alt ?? project.title}
+                        fill
+                        className={
+                          contain
+                            ? "object-contain object-center p-2"
+                            : "object-cover"
+                        }
+                        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 140px"
+                      />
+                    </div>
+                  ))}
                 </div>
-              )}
-            </div>
+              );
+            })()}
             <div className="p-4">
               <p className="text-xs font-semibold uppercase tracking-wider text-bronze">
                 {project.location}
