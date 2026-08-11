@@ -38,15 +38,16 @@ export default function IndexPage() {
         <p className="text-center font-display text-2xl leading-tight text-bronze sm:text-3xl md:text-4xl">
           Outdoor Site Furnishings
         </p>
-        <h1 className="mt-3 w-full text-center font-display text-xl leading-snug text-charcoal md:text-2xl lg:text-3xl">
+        <h1 className="mx-auto mt-3 max-w-4xl text-center font-display text-lg leading-snug text-charcoal md:text-xl lg:text-2xl">
           Commercial outdoor site furnishings and park amenities for HOAs,
-          resorts, and public spaces
+          resorts, and public&nbsp;spaces
         </h1>
         <p className="mx-auto mt-4 max-w-3xl text-center text-sm leading-relaxed text-muted-foreground md:text-base">
-          Utah roots, projects nationwide. Parkezza helps landscape architects,
-          landscape contractors, resort developers, and HOA managers specify
-          durable benches, litter receptacles, shade, picnic tables, pool
-          furniture, dog-park stations, and coordinated site amenities.
+          Utah roots, Intermountain focus, projects nationwide. Parkezza helps
+          landscape architects, landscape contractors, resort developers, and
+          HOA managers specify durable benches, litter receptacles, shade,
+          picnic tables, pool furniture, dog-park stations, and coordinated site
+          amenities.
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <a
