@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { ServiceAreaFooter } from "@/components/layout/ServiceAreaFooter";
 import { QuoteForm } from "@/components/quote/QuoteForm";
 import { pageMetadata } from "@/lib/seo";
 
@@ -19,20 +20,25 @@ function QuoteFormFallback() {
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-      <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-        Contact
-      </p>
-      <h1 className="mt-2 font-display text-4xl text-charcoal">Get in touch</h1>
-      <p className="mt-4 text-muted-foreground">
-        Project quotes, specifications, and quantities — we respond within one
-        business day.
-      </p>
-      <div className="mt-10">
-        <Suspense fallback={<QuoteFormFallback />}>
-          <QuoteForm />
-        </Suspense>
+    <>
+      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+        <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+          Contact
+        </p>
+        <h1 className="mt-2 font-display text-4xl text-charcoal">Get in touch</h1>
+        <p className="mt-4 text-muted-foreground">
+          Project quotes, specifications, and quantities — we respond within one
+          business day. Utah meetings available when helpful; quotes welcome
+          nationwide.
+        </p>
+        <div className="mt-10">
+          <Suspense fallback={<QuoteFormFallback />}>
+            <QuoteForm />
+          </Suspense>
+        </div>
       </div>
-    </div>
+
+      <ServiceAreaFooter contactNote={null} />
+    </>
   );
 }

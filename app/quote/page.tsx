@@ -1,4 +1,5 @@
 import { Suspense } from "react";
+import { ServiceAreaFooter } from "@/components/layout/ServiceAreaFooter";
 import { QuoteForm } from "@/components/quote/QuoteForm";
 import { pageMetadata } from "@/lib/seo";
 
@@ -19,21 +20,26 @@ function QuoteFormFallback() {
 
 export default function QuotePage() {
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
-      <p className="text-sm font-semibold uppercase tracking-widest text-accent">
-        Quote Request
-      </p>
-      <h1 className="mt-2 font-display text-4xl text-charcoal">Get a quote</h1>
-      <p className="mt-4 text-muted-foreground">
-        Quantities, finishes, timeline — we will respond with options and
-        pricing. Landscape architects and specifiers: include drawings or site
-        plans in Project Details.
-      </p>
-      <div className="mt-10">
-        <Suspense fallback={<QuoteFormFallback />}>
-          <QuoteForm />
-        </Suspense>
+    <>
+      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+        <p className="text-sm font-semibold uppercase tracking-widest text-accent">
+          Quote Request
+        </p>
+        <h1 className="mt-2 font-display text-4xl text-charcoal">Get a quote</h1>
+        <p className="mt-4 text-muted-foreground">
+          Quantities, finishes, timeline — we will respond with options and
+          pricing. Landscape architects and specifiers: include drawings or site
+          plans in Project Details. Utah meetings available when helpful; quotes
+          welcome nationwide.
+        </p>
+        <div className="mt-10">
+          <Suspense fallback={<QuoteFormFallback />}>
+            <QuoteForm />
+          </Suspense>
+        </div>
       </div>
-    </div>
+
+      <ServiceAreaFooter contactNote={null} />
+    </>
   );
 }

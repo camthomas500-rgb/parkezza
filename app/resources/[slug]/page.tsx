@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { ServiceAreaFooter } from "@/components/layout/ServiceAreaFooter";
 import {
   getResourceGuide,
   getResourceGuides,
@@ -41,7 +42,8 @@ export default async function ResourceGuidePage({ params }: PageProps) {
   const others = getResourceGuides().filter((g) => g.slug !== guide.slug);
 
   return (
-    <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
+    <>
+      <div className="mx-auto max-w-3xl px-4 py-16 sm:px-6 lg:px-8">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -125,6 +127,9 @@ export default async function ResourceGuidePage({ params }: PageProps) {
           </ul>
         </div>
       )}
-    </div>
+      </div>
+
+      <ServiceAreaFooter />
+    </>
   );
 }

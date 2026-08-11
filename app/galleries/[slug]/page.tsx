@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { GalleryGrid } from "@/components/gallery/GalleryGrid";
+import { ServiceAreaFooter } from "@/components/layout/ServiceAreaFooter";
 import { UmbrellaLinkedText } from "@/components/UmbrellaLinkedText";
 import { getGallery, getGallerySlugs } from "@/lib/content";
 import {
@@ -205,6 +206,8 @@ export default async function GalleryPage({ params }: PageProps) {
         )}
         <GalleryGrid gallery={gallery} />
       </div>
+
+      <ServiceAreaFooter />
     </div>
   );
 }
