@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { MARKETS } from "@/lib/content";
 
 export function MarketsSection() {
@@ -9,8 +10,12 @@ export function MarketsSection() {
             Markets We Serve
           </p>
           <h2 className="mt-3 font-display text-3xl md:text-4xl">
-            Furnishings for every distinguished outdoor environment
+            Site amenities for HOAs, resorts, and design teams
           </h2>
+          <p className="mt-4 text-sm leading-relaxed text-ivory/75">
+            Built for the buyers who specify commercial outdoor furnishings—not
+            residential patio sets.
+          </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {MARKETS.map((market) => (
@@ -25,6 +30,14 @@ export function MarketsSection() {
             </article>
           ))}
         </div>
+        <p className="mt-10 text-sm text-ivory/70">
+          <Link
+            href="/markets"
+            className="font-medium text-bronze underline underline-offset-2 hover:text-ivory"
+          >
+            Explore markets we serve →
+          </Link>
+        </p>
       </div>
     </section>
   );

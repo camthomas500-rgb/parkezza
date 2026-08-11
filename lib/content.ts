@@ -113,8 +113,14 @@ export const MARKETS = [
   {
     title: "Developments & HOAs",
     description:
-      "Streetscapes, parkways, and community amenities specified for long-term durability and curb appeal.",
+      "Streetscapes, parkways, pool decks, trails, and community amenities specified for long-term durability and curb appeal across Utah and nationwide.",
     relatedSlugs: ["benches", "litter-receptacles", "pool-furniture", "dog-waste-stations"],
+  },
+  {
+    title: "Landscape Architects & Contractors",
+    description:
+      "Coordinated site furnishing packages with finish-matched families, quantities, and specification support for drawings and site plans.",
+    relatedSlugs: ["benches", "litter-receptacles", "bollards", "picnic-tables"],
   },
   {
     title: "Municipal & Federal",

@@ -15,7 +15,7 @@ export const SITE_NAME = "Parkezza";
 export const SITE_TITLE = "Parkezza - Commercial Outdoor Site Furnishings";
 
 export const SITE_DESCRIPTION =
-  `Commercial outdoor site furnishings for resorts, golf courses, HOAs, and municipal parks around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide—benches, litter receptacles, shade, picnic tables, and more.`;
+  `Commercial outdoor site furnishings and park amenities for HOAs, landscape architects, contractors, and resort developers around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide—benches, litter receptacles, shade, picnic tables, pool furniture, and more.`;
 
 /** Search-intent titles for gallery SERP snippets (H1 on page stays the short category name). */
 export const GALLERY_SEO: Record<
@@ -117,7 +117,7 @@ export const HOME_FAQS: FaqItem[] = [
   {
     question: "How do I request a quote?",
     answer:
-      "Use the Request a Quote or Contact form and include product categories, model references when known, quantities, finish preferences, drawings or site plans if available, and your timeline. We typically respond within one business day.",
+      "Use the quote form on the Parkezza homepage (or Request a Quote / Contact). Add every product category you need, plus model references when known, quantities, finish preferences, drawings or site plans if available, and your timeline. We typically respond within one business day.",
   },
   {
     question: "What is the difference between Signature and Essential products?",
