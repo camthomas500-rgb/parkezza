@@ -309,25 +309,16 @@ export function serviceJsonLd() {
       audienceType:
         "Landscape architects, landscape contractors, real estate developers, and HOA project managers",
     },
+    // ItemList (not Product/Offer) — avoids GSC Product rich-result errors when prices are quote-only
     hasOfferCatalog: {
       "@type": "OfferCatalog",
       name: "Parkezza outdoor site furnishing categories",
       itemListElement: CATEGORY_NAV.map((category, index) => ({
-        "@type": "OfferCatalog",
+        "@type": "ListItem",
         position: index + 1,
         name: category.name,
         url: absoluteUrl(`/galleries/${category.slug}`),
-        itemListElement: [
-          {
-            "@type": "Offer",
-            itemOffered: {
-              "@type": "Product",
-              name: category.name,
-              url: absoluteUrl(`/galleries/${category.slug}`),
-              category: "Outdoor site furnishings",
-            },
-          },
-        ],
+        item: absoluteUrl(`/galleries/${category.slug}`),
       })),
     },
   };
