@@ -1,12 +1,16 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import {
+  NATIONWIDE_STATE_SEO,
   PRIMARY_STATES,
   UTAH_LOCAL_CITY_SEO,
   UTAH_LOCAL_COUNTIES,
 } from "@/lib/regions";
 
-const PRIMARY_SERVICE_AREAS = [...PRIMARY_STATES, "Nationwide"] as const;
+/** Visible branding: nationwide first, Utah for local vibe—not a long state pill row. */
+const PRIMARY_SERVICE_AREAS = ["Nationwide", "Utah"] as const;
+
+const INTERMOUNTAIN_STATES = PRIMARY_STATES.filter((s) => s !== "Utah");
 
 export function ServiceAreaFooter({
   contactNote = (
@@ -31,12 +35,12 @@ export function ServiceAreaFooter({
           Where We Serve
         </p>
         <h2 className="mt-3 font-display text-3xl leading-tight text-charcoal md:text-4xl">
-          Utah roots, Intermountain focus, projects nationwide
+          Utah roots, projects nationwide
         </h2>
         <p className="mx-auto mt-4 max-w-2xl text-base leading-snug text-muted-foreground">
-          Utah focus when in-person meetings help—quotes and specification
-          support for community parks, resort decks, golf clubs, municipal
-          facilities, and recreation centers across:
+          Quote commercial outdoor site furnishings anywhere in the U.S. Utah
+          roots when in-person meetings help—Intermountain experience, nationwide
+          specification support.
         </p>
         <ul className="mx-auto mt-6 flex max-w-2xl flex-wrap items-center justify-center gap-3">
           {PRIMARY_SERVICE_AREAS.map((area) => (
@@ -49,10 +53,22 @@ export function ServiceAreaFooter({
           ))}
         </ul>
         <p className="mx-auto mt-8 max-w-2xl text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground/80">
+          Intermountain West
+        </p>
+        <p className="mx-auto mt-2 max-w-2xl text-[11px] leading-relaxed text-muted-foreground/70">
+          {INTERMOUNTAIN_STATES.join(" · ")}
+        </p>
+        <p className="mx-auto mt-6 max-w-2xl text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground/80">
           Utah communities we often serve
         </p>
         <p className="mx-auto mt-2 max-w-2xl text-[11px] leading-relaxed text-muted-foreground/70">
           {[...UTAH_LOCAL_CITY_SEO, ...UTAH_LOCAL_COUNTIES].join(" · ")}
+        </p>
+        <p className="mx-auto mt-6 max-w-2xl text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground/80">
+          Also quote projects across
+        </p>
+        <p className="mx-auto mt-2 max-w-2xl text-[11px] leading-relaxed text-muted-foreground/70">
+          {[...NATIONWIDE_STATE_SEO].join(" · ")} · and nationwide
         </p>
         {contactNote ? (
           <p className="mx-auto mt-8 max-w-xl text-sm text-muted-foreground">

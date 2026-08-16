@@ -4,7 +4,7 @@ import type { ResourceGuide } from "@/lib/resources";
 import {
   PRIMARY_STATES,
   PRIMARY_STATES_PHRASE,
-  UTAH_LOCAL_CITIES,
+  NATIONWIDE_STATE_SEO,
   UTAH_LOCAL_CITY_SEO,
   UTAH_LOCAL_COUNTIES,
   UTAH_LOCAL_PHRASE,
@@ -16,7 +16,7 @@ export const SITE_NAME = "Parkezza";
 export const SITE_TITLE = "Parkezza - Commercial Outdoor Site Furnishings";
 
 export const SITE_DESCRIPTION =
-  `Commercial outdoor site furnishings and park amenities for HOAs, landscape architects, contractors, and resort developers around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide—benches, litter receptacles, shade, picnic tables, pool furniture, and more.`;
+  "Commercial outdoor site furnishings for HOAs, landscape architects, and resort developers. Utah roots, Intermountain focus, projects nationwide.";
 
 /** Search-intent titles for gallery SERP snippets (H1 on page stays the short category name). */
 export const GALLERY_SEO: Record<
@@ -213,7 +213,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     logo: absoluteUrl("/logo-parkezza.png"),
     image: absoluteUrl("/logo-parkezza.png"),
-    description: `Commercial outdoor site furnishings for resorts, developments, golf courses, HOAs, municipal facilities, parks, and public spaces across ${PRIMARY_STATES_PHRASE} and nationwide.`,
+    description: `Commercial outdoor site furnishings for resorts, developments, golf courses, HOAs, municipal facilities, parks, and public spaces nationwide—with Utah roots and Intermountain West experience.`,
     email: "projects@parkezza.com",
     contactPoint: {
       "@type": "ContactPoint",
@@ -225,6 +225,7 @@ export function organizationJsonLd() {
     areaServed: [
       { "@type": "Country", name: "United States" },
       ...PRIMARY_STATES.map((name) => ({ "@type": "State", name })),
+      ...NATIONWIDE_STATE_SEO.map((name) => ({ "@type": "State", name })),
       ...UTAH_LOCAL_COUNTIES.map((name) => ({
         "@type": "AdministrativeArea",
         name: `${name}, Utah`,
@@ -295,6 +296,7 @@ export function serviceJsonLd() {
     areaServed: [
       { "@type": "Country", name: "United States" },
       ...PRIMARY_STATES.map((name) => ({ "@type": "State", name })),
+      ...NATIONWIDE_STATE_SEO.map((name) => ({ "@type": "State", name })),
       ...UTAH_LOCAL_COUNTIES.map((name) => ({
         "@type": "AdministrativeArea",
         name: `${name}, Utah`,
