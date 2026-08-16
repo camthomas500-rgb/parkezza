@@ -1,20 +1,27 @@
 import { Suspense } from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { CategoryGrid } from "@/components/home/CategoryGrid";
 import { FaqSection } from "@/components/home/FaqSection";
 import { MarketsSection } from "@/components/home/MarketsSection";
 import { ServiceAreaFooter } from "@/components/layout/ServiceAreaFooter";
 import { QuoteForm } from "@/components/quote/QuoteForm";
-import { pageMetadata, SITE_DESCRIPTION } from "@/lib/seo";
+import { pageMetadata, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/seo";
 
 /**
  * Index page (site homepage) — same role as index.html on your other sites.
  * Customer-facing nav label stays "Home". Route: /
  */
-export const metadata = pageMetadata({
-  description: SITE_DESCRIPTION,
-  path: "/",
-});
+export const metadata: Metadata = {
+  ...pageMetadata({
+    description: SITE_DESCRIPTION,
+    path: "/",
+  }),
+  // Absolute title so the homepage never inherits a template/blank title edge case
+  title: {
+    absolute: SITE_TITLE,
+  },
+};
 
 function QuoteFormFallback() {
   return (
