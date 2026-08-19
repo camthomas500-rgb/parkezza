@@ -30,10 +30,11 @@ export default function MarketsPage() {
         </h1>
         <p className="mt-4 max-w-2xl text-muted-foreground">
           From a single product line to a coordinated outdoor site furnishing
-          package across your site plan, we provide options, pricing, and lead
-          times for landscape contractors, developers, resorts, HOAs, and public
-          agencies—Utah focus when meetings help, quotes welcome nationwide,
-          including federal and military facilities.
+          package across your site plan. Landscape architects: we help turn
+          placeholders into specified products, hold the aesthetic, and quote
+          procurement-ready packages. Options, pricing, and lead times for
+          contractors, developers, resorts, HOAs, and public agencies—Utah
+          meetings when helpful, quotes nationwide.
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">

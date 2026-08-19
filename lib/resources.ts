@@ -41,6 +41,36 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
     ],
   },
   {
+    slug: "landscape-architect-site-furnishings",
+    title: "Landscape Architect Site Furnishings: Placeholders to Procurement",
+    description:
+      "How landscape architects use Parkezza from spec placeholders and schematic design through aesthetic selection, quantities, and a procurement-ready outdoor site furnishing package.",
+    summary:
+      "For LAs: replace generic placeholders, align finishes with the design, then quote a coordinated procurement package.",
+    sections: [
+      {
+        heading: "Start with the placeholder—not a catalog hunt",
+        body: `Most site plans begin with a generic note: bench, litter receptacle, picnic table, shade, bollard. Parkezza helps landscape architects turn those placeholders into specified commercial products that match the design intent, the climate, and the maintenance reality—without forcing a residential patio look into a public or hospitality site.`,
+      },
+      {
+        heading: "Aesthetic design: one family across the plan",
+        body: `Clients notice when seating, trash, shade, and circulation elements look unrelated. We help you select Signature or Essential lines so frame colors, slat materials, and design language align across benches, litter receptacles, picnic tables, bollards, and related amenities. Send a finish palette, rendering, or mood board if you have one; we will propose options that hold the aesthetic.`,
+      },
+      {
+        heading: "What to send at schematic, DD, and CD",
+        body: `Schematic: categories and zones (plaza, trail, picnic grove, pool deck). Design development: preferred materials, mounting (portable, surface-mount, inground), ADA notes, and rough quantities. Construction documents: model references when known, finish callouts, quantities by zone, and site plans or drawings. Incomplete packages are welcome—we help fill gaps so specs stay bid-ready.`,
+      },
+      {
+        heading: "Procurement package, not a product dump",
+        body: `Parkezza quotes coordinated packages with options, quantities, and lead-time context so landscape architects, contractors, and owners can move from specification to purchase. Include drawings in Project Details on the quote form. We typically respond within one business day. Utah meetings are available when in-person review helps; quotes are nationwide.`,
+      },
+      {
+        heading: "Typical searches landscape architects make",
+        body: `Landscape architects find Parkezza when looking for commercial outdoor site furnishings, park amenities for developments, matching benches and litter receptacles, ADA picnic tables, dog waste stations for trails, and specifier support for site furniture packages—not residential patio furniture.`,
+      },
+    ],
+  },
+  {
     slug: "dog-waste-stations-for-trails-and-paths",
     title: "Dog Waste Stations for Trails and Walking Paths",
     description:

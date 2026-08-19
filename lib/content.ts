@@ -119,7 +119,7 @@ export const MARKETS = [
   {
     title: "Landscape Architects & Contractors",
     description:
-      "Coordinated site furnishing packages with finish-matched families, quantities, and specification support for drawings and site plans.",
+      "From spec placeholders to finish-matched families, quantities, cut sheets, and a procurement-ready package—so drawings, aesthetics, and bidding stay aligned.",
     relatedSlugs: ["benches", "litter-receptacles", "bollards", "picnic-tables"],
   },
   {

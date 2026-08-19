@@ -8,7 +8,7 @@ export function FaqSection() {
         <FaqList
           faqs={HOME_FAQS}
           heading="Common project questions"
-          intro="Quick answers for architects, municipalities, and project teams specifying outdoor site furnishings."
+          intro="Quick answers for landscape architects, municipalities, and project teams specifying outdoor site furnishings."
         />
       </div>
     </section>

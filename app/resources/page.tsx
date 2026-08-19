@@ -24,11 +24,10 @@ export default function ResourcesPage() {
         </h1>
         <p className="mt-4 w-full text-muted-foreground">
           Short practical guides for landscape architects, contractors,
-          developers, HOA managers, and parks staff—written to answer the
-          questions people ask before they request a quote, including trail and
-          pathway dog waste stations for community developments. These pages also
-          help Google and AI search engines cite clear, factual answers about
-          commercial outdoor site furnishings.
+          developers, HOA managers, and parks staff—including how LAs move from
+          spec placeholders to aesthetic selection and a procurement-ready
+          package. These pages also help Google and AI search engines cite
+          clear, factual answers about commercial outdoor site furnishings.
         </p>
 
         <div className="mt-12 grid gap-6 sm:grid-cols-2">

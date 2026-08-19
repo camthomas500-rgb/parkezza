@@ -28,9 +28,10 @@ export default function QuotePage() {
         <h1 className="mt-2 font-display text-4xl text-charcoal">Get a quote</h1>
         <p className="mt-4 text-muted-foreground">
           Quantities, finishes, timeline — we will respond with options and
-          pricing. Landscape architects and specifiers: include drawings or site
-          plans in Project Details. Utah meetings available when helpful; quotes
-          welcome nationwide.
+          pricing. Landscape architects: include drawings, site plans, finish
+          palettes, or placeholder notes in Project Details. We help turn those
+          into a specified, procurement-ready package. Utah meetings available
+          when helpful; quotes welcome nationwide.
         </p>
         <div className="mt-10">
           <Suspense fallback={<QuoteFormFallback />}>

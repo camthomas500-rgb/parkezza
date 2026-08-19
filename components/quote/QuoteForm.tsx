@@ -261,7 +261,7 @@ export function QuoteForm({ defaultCategory, specificItems }: QuoteFormProps) {
         <textarea
           name="project_details"
           rows={5}
-          placeholder="Quantities, finishes, timeline, site plans, or drawings…"
+          placeholder="Quantities, finishes, mounting, ADA notes, timeline, site plans, or drawings—placeholders welcome…"
           className="mt-1.5 w-full rounded-lg border border-border bg-ivory px-4 py-2.5 text-sm outline-none focus:border-accent"
         />
       </label>

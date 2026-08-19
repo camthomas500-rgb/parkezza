@@ -30,10 +30,12 @@ export default function AboutPage() {
             spaces that endure.
           </p>
           <p>
-            We partner with landscape architects, developers, municipalities,
-            resorts, golf courses, HOAs, and recreation districts on benches,
-            shade, shelters, bollards, waste receptacles, commercial umbrellas,
-            dog park amenities, and coordinated streetscape packages.
+          We partner with landscape architects from spec placeholders through
+          aesthetic selection and a coordinated procurement package—plus
+          developers, municipalities, resorts, golf courses, HOAs, and
+          recreation districts on benches, shade, shelters, bollards, waste
+          receptacles, commercial umbrellas, dog park amenities, and streetscape
+          packages.
           </p>
           <p>
             Utah roots, Intermountain focus, projects nationwide. Based in

@@ -146,6 +146,11 @@ export const HOME_FAQS: FaqItem[] = [
       "Yes. Landscape contractors, landscape architects, and developers regularly specify coordinated packages—benches with matching litter receptacles, bollards, picnic tables, and shade—so finishes and materials align across the site plan.",
   },
   {
+    question: "How does Parkezza help landscape architects from spec placeholders to procurement?",
+    answer:
+      "Send schematic notes, drawings, or generic placeholders (bench, litter, shade, picnic). Parkezza helps landscape architects select commercial products that match the aesthetic, confirm quantities and mounting, and quote a coordinated procurement package. Include site plans in Project Details; we typically respond within one business day.",
+  },
+  {
     question: "Do you supply outdoor furniture for HOA amenities and resort pool decks?",
     answer:
       "Yes. HOAs, master-planned communities, resorts, and golf clubs use Parkezza for community amenity seating, litter receptacles, shade structures, picnic areas, commercial umbrellas, poolside mesh chaise lounges and chairs, and dog-park stations.",
@@ -249,6 +254,8 @@ export function organizationJsonLd() {
       "streetscape furnishings",
       "park shelters",
       "dog waste stations for trails",
+      "site furnishings specification",
+      "landscape architect site furnishings",
       "HOA amenity furnishings",
       "Intermountain West site furnishings",
       "Park City site furnishings",

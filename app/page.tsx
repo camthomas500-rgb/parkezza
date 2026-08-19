@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { CategoryGrid } from "@/components/home/CategoryGrid";
 import { FaqSection } from "@/components/home/FaqSection";
 import { MarketsSection } from "@/components/home/MarketsSection";
+import { SpecifierPath } from "@/components/home/SpecifierPath";
 import { ServiceAreaFooter } from "@/components/layout/ServiceAreaFooter";
 import { QuoteForm } from "@/components/quote/QuoteForm";
 import { pageMetadata, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/seo";
@@ -47,7 +48,8 @@ export default function IndexPage() {
           landscape architects, landscape contractors, resort developers, and
           HOA managers specify durable benches, litter receptacles, shade,
           picnic tables, pool furniture, dog-park stations, and coordinated site
-          amenities.
+          amenities—from spec placeholders through aesthetic selection and a
+          procurement-ready package.
         </p>
         <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
           <a
@@ -70,6 +72,8 @@ export default function IndexPage() {
 
       <MarketsSection />
 
+      <SpecifierPath />
+
       <section
         id="quote"
         className="scroll-mt-24 border-t border-border bg-stone/30"
@@ -84,8 +88,9 @@ export default function IndexPage() {
           <p className="mt-4 text-base leading-relaxed text-muted-foreground">
             Add every product category you are considering—benches, litter
             receptacles, pool furniture, shade, dog waste stations, and more.
-            Landscape architects and contractors: note quantities, finishes, and
-            drawings in Project Details. HOAs and resort teams: share amenity
+            Landscape architects: note quantities, finishes, mounting, ADA
+            needs, and drawings or site plans in Project Details—even if the
+            spec is still placeholders. HOAs and resort teams: share amenity
             goals and timeline. We typically respond within one business day.
           </p>
           <div className="mt-8">
