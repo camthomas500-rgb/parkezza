@@ -1,38 +1,20 @@
 import type { MetadataRoute } from "next";
 import { getGalleries } from "@/lib/content";
-import { getProjects } from "@/lib/projects";
 import { getResourceSlugs } from "@/lib/resources";
-import { absoluteUrl, SITE_URL } from "@/lib/seo";
+import { SITE_URL } from "@/lib/seo";
 
+/**
+ * Plain sitemaps.org XML (no Google image extensions).
+ * Bing Webmaster Tools is pickier about image namespaces; Google still finds
+ * images from page HTML/alt. Keep this file Bing- and Google-compatible.
+ */
 export default function sitemap(): MetadataRoute.Sitemap {
-  const galleries = getGalleries();
-
-  const galleryRoutes = galleries.map((gallery) => {
-    const galleryImages = [
-      gallery.heroImage,
-      ...gallery.images.map((img) => img.src),
-      ...(gallery.sections?.flatMap((s) => s.images.map((img) => img.src)) ??
-        []),
-    ]
-      .filter(Boolean)
-      .slice(0, 20)
-      .map((src) => absoluteUrl(src));
-
-    return {
-      url: `${SITE_URL}/galleries/${gallery.slug}`,
-      lastModified: new Date(),
-      changeFrequency: "monthly" as const,
-      priority: 0.8,
-      images: galleryImages,
-    };
-  });
-
-  const projectImages = getProjects()
-    .flatMap((p) => [
-      ...(p.image ? [p.image] : []),
-      ...(p.images?.map((img) => img.src) ?? []),
-    ])
-    .map((src) => absoluteUrl(src));
+  const galleryRoutes = getGalleries().map((gallery) => ({
+    url: `${SITE_URL}/galleries/${gallery.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
 
   const resourceRoutes = getResourceSlugs().map((slug) => ({
     url: `${SITE_URL}/resources/${slug}`,
@@ -43,11 +25,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   return [
     {
-      url: SITE_URL,
+      url: `${SITE_URL}/`,
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 1,
-      images: [absoluteUrl("/logo-parkezza.png")],
     },
     {
       url: `${SITE_URL}/markets`,
@@ -60,7 +41,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
       changeFrequency: "weekly",
       priority: 0.8,
-      images: projectImages,
     },
     {
       url: `${SITE_URL}/resources`,
