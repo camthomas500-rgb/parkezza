@@ -13,8 +13,8 @@ export function MarketsSection() {
             Site amenities for HOAs, resorts, and design teams
           </h2>
           <p className="mt-4 text-sm leading-relaxed text-ivory/75">
-            Built for the buyers who specify commercial outdoor furnishings—not
-            residential patio sets.
+            Built for the buyers who specify commercial outdoor site furnishings
+            for parks, resorts, HOAs, and public spaces.
           </p>
         </div>
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">

@@ -27,9 +27,9 @@ export function SpecifierPath() {
         </h2>
         <p className="mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
           Parkezza helps landscape architects specify commercial outdoor site
-          furnishings—not residential patio sets. Send a schematic, CD set, or
-          even a simple amenity list. We help fill the spec, hold the design
-          intent, and quote a coordinated package.
+          furnishings. Send a schematic, CD set, or even a simple amenity list.
+          We help fill the spec, hold the design intent, and quote a coordinated
+          package.
         </p>
         <ol className="mt-10 grid gap-6 sm:grid-cols-3">
           {STEPS.map((step, index) => (

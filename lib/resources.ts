@@ -50,7 +50,7 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
     sections: [
       {
         heading: "Start with the placeholder—not a catalog hunt",
-        body: `Most site plans begin with a generic note: bench, litter receptacle, picnic table, shade, bollard. Parkezza helps landscape architects turn those placeholders into specified commercial products that match the design intent, the climate, and the maintenance reality—without forcing a residential patio look into a public or hospitality site.`,
+        body: `Most site plans begin with a generic note: bench, litter receptacle, picnic table, shade, bollard. Parkezza helps landscape architects turn those placeholders into specified commercial products that match the design intent, the climate, and the maintenance reality for public and hospitality sites.`,
       },
       {
         heading: "Aesthetic design: one family across the plan",
@@ -66,7 +66,7 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
       },
       {
         heading: "Typical searches landscape architects make",
-        body: `Landscape architects find Parkezza when looking for commercial outdoor site furnishings, park amenities for developments, matching benches and litter receptacles, ADA picnic tables, dog waste stations for trails, and specifier support for site furniture packages—not residential patio furniture.`,
+        body: `Landscape architects find Parkezza when looking for commercial outdoor site furnishings, park amenities for developments, matching benches and litter receptacles, ADA picnic tables, dog waste stations for trails, and specifier support for site furniture packages.`,
       },
     ],
   },

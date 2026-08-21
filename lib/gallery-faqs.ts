@@ -61,7 +61,7 @@ export const GALLERY_FAQS: Record<string, FaqItem[]> = {
     {
       question: "Are shade structures suitable for parks and recreation departments?",
       answer:
-        "Yes. These are commercial park shelters and shade systems specified for heavy outdoor use in municipal and recreation settings—not residential patio covers.",
+        "Yes. These are commercial park shelters and shade systems specified for heavy outdoor use in municipal and recreation settings.",
     },
     {
       question: "Can shade structures be quoted with benches and picnic tables?",
@@ -122,9 +122,9 @@ export const GALLERY_FAQS: Record<string, FaqItem[]> = {
         "Wind-rated commercial patio umbrellas and cantilever shade for resorts, pool decks, restaurants, and hospitality outdoor dining. Featured systems are shown here; the full line is on heavydutyumbrellas.com.",
     },
     {
-      question: "Are these residential patio umbrellas?",
+      question: "What type of umbrellas are these?",
       answer:
-        "No. These are commercial, wind-rated systems intended for hospitality and high-use outdoor dining—not typical big-box residential patio umbrellas.",
+        "These are commercial, wind-rated systems intended for hospitality and high-use outdoor dining.",
     },
     {
       question: "Can umbrellas be specified with resort benches and shade structures?",
