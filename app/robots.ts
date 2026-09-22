@@ -30,6 +30,14 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
       {
+        userAgent: "Perplexity-User",
+        allow: "/",
+      },
+      {
+        userAgent: "OAI-SearchBot",
+        allow: "/",
+      },
+      {
         userAgent: "Applebot-Extended",
         allow: "/",
       },

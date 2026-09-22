@@ -166,6 +166,11 @@ export const HOME_FAQS: FaqItem[] = [
       "Parkezza offers commercial pool furniture and chaise lounges—including stackable mesh, sling mesh, wicker, vinyl strap, cross-weave, wheeled mesh, and sustainable recycled styles—plus cafe and lounge chairs. Select styles include matching dining chairs. Prices range from under $1,000 to multi-thousand; request a quote for current pricing.",
   },
   {
+    question: "Can Parkezza match a spec written under CSI Division 12 93 00 or 32 33 23?",
+    answer:
+      "Yes. We regularly work from bid documents that call out site furnishings under CSI MasterFormat 12 93 00 (Site Furnishings) or 32 33 00 / 32 33 23 (Site Furnishings / Site Trash and Litter Receptacles). Send the named model and we will match it, propose an approved-equal alternative with cut sheets and technical data, or help draft placeholder spec language for a new project.",
+  },
+  {
     question: "What materials are available for commercial park benches and litter receptacles?",
     answer:
       "Common options include recycled plastic, wood, powder-coated steel, thermoplastic coating, aluminum, and thermally modified ash. Litter receptacles are available in steel and recycled-plastic styles, including dual-stream recycling models.",
@@ -273,6 +278,10 @@ export function organizationJsonLd() {
       "St. George HOA amenities",
       "Wasatch County park furniture",
       "Summit County site amenities",
+      "CSI 12 93 00 site furnishings",
+      "CSI 32 33 23 site trash and litter receptacles",
+      "approved equal site furnishings",
+      "vandal-resistant outdoor furniture",
     ],
     sameAs: [
       "https://dogparkstations.com",

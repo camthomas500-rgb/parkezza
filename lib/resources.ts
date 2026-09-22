@@ -38,6 +38,10 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
         heading: "What to send with a Parkezza quote request",
         body: `Include product categories, model references if known, quantities, finish preferences, drawings or site plans, and timeline. Parkezza supports projects across ${PRIMARY_STATES_PHRASE} and nationwide—including civic, hospitality, HOA, and federal or military facility work.`,
       },
+      {
+        heading: "Spec language: CSI divisions and \"approved equal\"",
+        body: `Site furnishings are typically written into specifications under CSI MasterFormat Division 12 93 00 (Site Furnishings) or 32 33 00 / 32 33 23 (Site Furnishings / Site Trash and Litter Receptacles), covering benches, litter and recycling receptacles, bike racks, bollards, and planters. Bid documents commonly name a specific model "or approved equal," and ask for manufacturer cut sheets, technical data, vandal-resistant construction, and finish/mounting details. Parkezza can match an existing spec, propose an approved-equal alternative, or help write placeholder language into a new spec.`,
+      },
     ],
   },
   {
