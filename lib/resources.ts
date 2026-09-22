@@ -96,7 +96,7 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
       },
       {
         heading: "Local proof in Summit County and the Utah resort corridor",
-        body: `Parkezza has supplied dog-park benches and obstacles for Summit County, Utah projects, alongside municipal benches and litter receptacles. Landscape contractors and architects working Wasatch and Summit County developments can use the Installed Projects page for field examples, then request a quote for path stations and coordinated seating.`,
+        body: `Parkezza has installed dog park obstacles and a themed bench for Park City public works at Quinn's Dog Park, plus park benches and litter receptacles for Kamas City public works. Landscape contractors and architects working Wasatch and Summit County developments can use the Installed Projects page for field examples, then request a quote for path stations and coordinated seating.`,
       },
       {
         heading: "What to include on a quote request",
@@ -167,7 +167,7 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
       {
         heading:
           "Northern Utah: Park City, Kamas City, Heber City, and nearby counties",
-        body: `Parkezza’s local footing is in Utah’s resort and mountain-community corridor—${UTAH_LOCAL_PHRASE}. We have supplied municipal benches and litter receptacles and dog-park benches and obstacles for Summit County projects. HOA amenities and new resort developments in this area regularly need coordinated outdoor packages.`,
+        body: `Parkezza’s local footing is in Utah’s resort and mountain-community corridor—${UTAH_LOCAL_PHRASE}. We have installed park benches and litter receptacles for Kamas City public works, and dog park obstacles and a themed bench for Park City public works at Quinn's Dog Park. HOA amenities and new resort developments in this area regularly need coordinated outdoor packages.`,
       },
       {
         heading: "Intermountain West",

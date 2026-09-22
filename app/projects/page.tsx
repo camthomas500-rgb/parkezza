@@ -14,8 +14,8 @@ import {
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Installed Projects — Utah & Beyond",
-  description: `Parkezza outdoor site furnishings installed around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide—municipal parks, dog parks, resorts, and civic sites.`,
+  title: "Installed Projects — Park City, Kamas City & Beyond",
+  description: `Parkezza outdoor site furnishings installed for Park City and Kamas City, Utah public works, plus projects around ${UTAH_LOCAL_PHRASE}, across ${PRIMARY_STATES_PHRASE}, and nationwide.`,
   path: "/projects",
 });
 
@@ -32,10 +32,10 @@ export default function ProjectsPage() {
           Furnishings in the field
         </h1>
         <p className="mt-4 w-full text-muted-foreground">
-          Utah roots, Intermountain focus, projects nationwide. Field examples
-          from municipal parks, dog parks, and amenity sites—proof for landscape
-          contractors, architects, HOAs, and resort teams specifying commercial
-          outdoor site furnishings.
+          Utah roots, Intermountain focus, projects nationwide. Installed for
+          Park City public works at Quinn's Dog Park and Kamas City public
+          works—field examples for landscape contractors, architects, HOAs,
+          and resort teams specifying commercial outdoor site furnishings.
         </p>
 
         <div className="mx-auto mt-12 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">

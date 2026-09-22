@@ -109,7 +109,7 @@ export const HOME_FAQS: FaqItem[] = [
   },
   {
     question: "Does Parkezza serve Park City, Kamas City, Heber City, and nearby Utah counties?",
-    answer: `Yes. Northern Utah around ${UTAH_LOCAL_PHRASE} is a core local market—municipal parks, dog parks, resort amenity zones, and new community developments. We have supplied benches, litter receptacles, and dog-park benches and obstacles for Summit County, Utah projects.`,
+    answer: `Yes. Northern Utah around ${UTAH_LOCAL_PHRASE} is a core local market—municipal parks, dog parks, resort amenity zones, and new community developments. We have installed park benches and litter receptacles for Kamas City, Utah public works, and dog park obstacles and a themed bench for Park City public works at Quinn's Dog Park.`,
   },
   {
     question: "Does Parkezza serve Utah, Nevada, Idaho, Wyoming, and Montana?",
