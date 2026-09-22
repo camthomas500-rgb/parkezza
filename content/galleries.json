@@ -1087,6 +1087,66 @@
     ]
   },
   {
+    "slug": "bike-repair-stations",
+    "name": "Bike Repair Stations",
+    "tier": "essential",
+    "description": "Dero Fixit public bike repair stations, Air Kit pumps, and wall-mount Tool Kits for trails, campuses, parks, and transit hubs. Authorized Dero dealer in Utah.",
+    "heroImage": "/images/categories/bike-repair-stations.png",
+    "imageFit": "contain",
+    "overview": "Parkezza is an authorized Dero dealer in Utah, supplying Dero Fixit public bike repair stations for trailheads, campuses, parks, bike parking areas, transit stops, and HOA path networks. The Fixit holds the bike off the ground on hanger arms while riders use a full set of cable-tethered tools: Phillips and flat head screwdrivers; 2.5, 3, 4, 5, 6, and 8mm Allen wrenches; 8, 9, 10, 11, 15, and 32mm box wrenches; a T25 Torx wrench; and two tire levers. Add a Dero Air Kit pump with gauge, a wall-mounted Tool Kit for bike rooms and parking garages, and Air and Bike Repair signage with a QR code for repair how-tos. Pair stations with bike racks, benches, and litter receptacles for a complete cycling amenity.",
+    "highlights": [
+      "Authorized Dero dealer — Utah",
+      "Cable-tethered tool set",
+      "Hanger arms hold the bike",
+      "Air Kit pump with gauge",
+      "Wall-mount Tool Kit",
+      "Air & Bike Repair signs"
+    ],
+    "images": [
+      {
+        "src": "/images/galleries/bike-repair-stations/dero-fixit-station.png",
+        "alt": "Bike Repair Stations — cyclist using a Dero Fixit public bike repair station beside a park path",
+        "source": "dero",
+        "tier": "essential",
+        "id": "BRS-01",
+        "name": "Dero Fixit Station"
+      },
+      {
+        "src": "/images/galleries/bike-repair-stations/dero-fixit-tool-list.png",
+        "alt": "Bike Repair Stations — Dero Fixit tethered tools: screwdrivers, Allen wrenches, box wrenches, T25 Torx, and tire levers",
+        "source": "dero",
+        "tier": "essential",
+        "id": "BRS-02",
+        "name": "Fixit Tool Set"
+      },
+      {
+        "src": "/images/galleries/bike-repair-stations/dero-air-kit-pump.png",
+        "alt": "Bike Repair Stations — Dero Air Kit public bike pump with pressure gauge",
+        "source": "dero",
+        "tier": "essential",
+        "id": "BRS-03",
+        "name": "Dero Air Kit"
+      },
+      {
+        "src": "/images/galleries/bike-repair-stations/dero-wall-tool-kit.png",
+        "alt": "Bike Repair Stations — Dero wall-mounted bike Tool Kit with tethered tools",
+        "source": "dero",
+        "tier": "essential",
+        "id": "BRS-04",
+        "name": "Dero Wall Tool Kit"
+      },
+      {
+        "src": "/images/galleries/bike-repair-stations/dero-air-and-repair-signs.png",
+        "alt": "Bike Repair Stations — Dero Air sign and Bike Repair sign with QR code",
+        "source": "dero",
+        "tier": "essential",
+        "id": "BRS-05",
+        "name": "Air & Bike Repair Signs",
+        "imageFit": "contain"
+      }
+    ]
+  },
+  {
     "slug": "flagpoles",
     "name": "Flagpoles",
     "tier": "essential",

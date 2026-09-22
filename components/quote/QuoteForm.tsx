@@ -20,9 +20,15 @@ interface QuoteFormProps {
   defaultCategory?: string;
   /** Specific products/models the visitor can pick (e.g. BN-01 — Lily VS1) */
   specificItems?: QuoteFormItem[];
+  /** Singular noun for specificItems (e.g. "bench", "bollard") */
+  itemNoun?: string;
 }
 
-export function QuoteForm({ defaultCategory, specificItems }: QuoteFormProps) {
+export function QuoteForm({
+  defaultCategory,
+  specificItems,
+  itemNoun = "item",
+}: QuoteFormProps) {
   const searchParams = useSearchParams();
   const categoryFromUrl = searchParams.get("category") ?? "";
   const itemFromUrl = searchParams.get("item") ?? "";
@@ -216,9 +222,9 @@ export function QuoteForm({ defaultCategory, specificItems }: QuoteFormProps) {
 
       {specificItems && specificItems.length > 0 && (
         <div>
-          <span className="text-sm font-medium">Specific bench</span>
+          <span className="text-sm font-medium">Specific {itemNoun}</span>
           <p className="mt-1 text-xs text-muted-foreground">
-            Click a bench label below any photo, or pick from the list.
+            Click a {itemNoun} label below any photo, or pick from the list.
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {selectedItems.map((item) => (
@@ -246,7 +252,7 @@ export function QuoteForm({ defaultCategory, specificItems }: QuoteFormProps) {
               e.target.value = "";
             }}
           >
-            <option value="">Add a specific bench…</option>
+            <option value="">Add a specific {itemNoun}…</option>
             {availableItems.map((opt) => (
               <option key={opt.id} value={opt.label}>
                 {opt.label}

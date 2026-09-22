@@ -235,6 +235,42 @@ export const GALLERY_FAQS: Record<string, FaqItem[]> = {
       answer: `Yes. ${regionalServe}`,
     },
   ],
+  "bike-repair-stations": [
+    {
+      question: "Is Parkezza an authorized Dero dealer?",
+      answer:
+        "Yes. Parkezza is an authorized Dero dealer in Utah and quotes Dero Fixit repair stations, Air Kit pumps, Tool Kits, and signage alongside the rest of your site furnishing package.",
+    },
+    {
+      question: "What is a Dero Fixit bike repair station?",
+      answer:
+        "The Dero Fixit is a public bike repair station (often called a bike fix-it station) with hanger arms that hold a bicycle off the ground and a set of cable-tethered tools, so cyclists can adjust brakes, fix flats, and make quick repairs on the spot.",
+    },
+    {
+      question: "What tools come on the Fixit?",
+      answer:
+        "Phillips and flat head screwdrivers; 2.5, 3, 4, 5, 6, and 8mm Allen wrenches; 8, 9, 10, 11, 15, and 32mm box wrenches; a T25 Torx wrench; and two tire levers—each on a security cable.",
+    },
+    {
+      question: "Is there a pump, and what about indoor bike rooms?",
+      answer:
+        "Yes. The Dero Air Kit is a public bike pump with a pressure gauge that can sit next to a Fixit. For bike rooms, parking garages, and walls, the Dero Tool Kit mounts to the wall with the same style of tethered tools. Air and Bike Repair signs help riders find the station.",
+    },
+    {
+      question: "Where should bike repair stations be installed?",
+      answer:
+        "Common locations are trailheads, campus bike parking, transit stops, parks, recreation centers, and HOA path networks. Share your site and mounting surface with your quote so we can confirm the right installation.",
+    },
+    {
+      question: "Can repair stations be quoted with bike racks and benches?",
+      answer:
+        "Yes. Campuses, municipalities, and trail managers often package repair stations with bike racks, benches, and litter receptacles as one cycling amenity quote.",
+    },
+    {
+      question: "Do you supply bike repair stations in Utah and nationwide?",
+      answer: `Yes. ${regionalServe}`,
+    },
+  ],
   flagpoles: [
     {
       question: "What commercial flagpoles are available?",

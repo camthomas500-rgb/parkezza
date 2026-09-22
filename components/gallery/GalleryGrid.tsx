@@ -298,16 +298,27 @@ function QuoteFormFallback() {
   );
 }
 
+const ITEM_NOUNS: Record<string, string> = {
+  benches: "bench",
+  bollards: "bollard",
+  "picnic-tables": "picnic table",
+  "pool-furniture": "pool furniture piece",
+  "shade-structures": "shade structure",
+  "pergolas-gazebos": "pergola",
+  "bike-repair-stations": "product",
+};
+
+/** Headline uses the noun only for these; others read "Interested in {gallery}?" */
+const SPECIFIC_HEADLINE_SLUGS = new Set([
+  "benches",
+  "bollards",
+  "picnic-tables",
+  "pool-furniture",
+]);
+
 function inquiryHeadline(gallery: Gallery): string {
-  if (gallery.slug === "benches") return "Interested in a specific bench?";
-  if (gallery.slug === "bollards") {
-    return "Interested in a specific bollard?";
-  }
-  if (gallery.slug === "picnic-tables") {
-    return "Interested in a specific picnic table?";
-  }
-  if (gallery.slug === "pool-furniture") {
-    return "Interested in a specific pool furniture piece?";
+  if (SPECIFIC_HEADLINE_SLUGS.has(gallery.slug)) {
+    return `Interested in a specific ${ITEM_NOUNS[gallery.slug]}?`;
   }
   return `Interested in ${gallery.name.toLowerCase()}?`;
 }
@@ -460,6 +471,7 @@ export function GalleryGrid({ gallery }: { gallery: Gallery }) {
               <QuoteForm
                 defaultCategory={gallery.slug}
                 specificItems={showInquiry ? inquiryItems : undefined}
+                itemNoun={ITEM_NOUNS[gallery.slug]}
               />
             </Suspense>
           </div>

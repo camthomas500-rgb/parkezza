@@ -72,6 +72,7 @@ export const CATEGORY_NAV = [
   { name: "Picnic Tables", slug: "picnic-tables" },
   { name: "Pergolas Trellis", slug: "pergolas-gazebos" },
   { name: "Bike Racks", slug: "bike-racks" },
+  { name: "Bike Repair Stations", slug: "bike-repair-stations" },
   { name: "Flagpoles", slug: "flagpoles" },
   { name: "Tree Guards", slug: "tree-guards" },
 ] as const;

@@ -73,6 +73,11 @@ export const GALLERY_SEO: Record<
     description:
       "Commercial bike racks and secure bicycle parking for campuses, streetscapes, transit stops, and public plazas. Loop and decorative designs that coordinate with site furnishings.",
   },
+  "bike-repair-stations": {
+    title: "Dero Fixit Bike Repair Stations | Authorized Dero Dealer Utah",
+    description:
+      "Authorized Dero dealer in Utah. Dero Fixit public bike repair stations with tethered tools, Air Kit pumps, wall-mount Tool Kits, and signage for trailheads, campuses, parks, and HOA paths. Request a quote.",
+  },
   flagpoles: {
     title: "Commercial Flagpoles for Civic, Campus & Corporate Sites",
     description:
@@ -95,7 +100,7 @@ export const HOME_FAQS: FaqItem[] = [
   {
     question: "What outdoor site furnishings does Parkezza offer?",
     answer:
-      "Parkezza curates commercial outdoor site furnishings including benches, litter receptacles, shade structures, bollards, dog waste stations, commercial umbrellas, pool furniture, picnic tables, pergolas and trellis, bike racks, flagpoles, and tree guards for public and hospitality environments.",
+      "Parkezza curates commercial outdoor site furnishings including benches, litter receptacles, shade structures, bollards, dog waste stations, commercial umbrellas, pool furniture, picnic tables, pergolas and trellis, bike racks, bike repair stations, flagpoles, and tree guards for public and hospitality environments.",
   },
   {
     question: "Who does Parkezza serve?",

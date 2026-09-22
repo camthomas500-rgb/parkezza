@@ -21,6 +21,11 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       {
+        source: "/galleries/bike-fixit-stations",
+        destination: "/galleries/bike-repair-stations",
+        permanent: true,
+      },
+      {
         source: "/galleries/banners",
         destination: "/galleries/flagpoles",
         permanent: true,
