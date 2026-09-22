@@ -59,7 +59,7 @@ export function ServiceAreaFooter({
           {INTERMOUNTAIN_STATES.join(" · ")}
         </p>
         <p className="mx-auto mt-6 max-w-2xl text-[11px] font-medium uppercase tracking-[0.14em] text-muted-foreground/80">
-          Utah communities we often serve
+          Local Utah Focus
         </p>
         <p className="mx-auto mt-2 max-w-2xl text-[11px] leading-relaxed text-muted-foreground/70">
           {[...UTAH_LOCAL_CITY_SEO, ...UTAH_LOCAL_COUNTIES].join(" · ")}
