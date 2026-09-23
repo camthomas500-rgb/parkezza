@@ -5,6 +5,7 @@ import { CategoryGrid } from "@/components/home/CategoryGrid";
 import { FaqSection } from "@/components/home/FaqSection";
 import { MarketsSection } from "@/components/home/MarketsSection";
 import { SpecifierPath } from "@/components/home/SpecifierPath";
+import { WhyParkezza } from "@/components/home/WhyParkezza";
 import { ServiceAreaFooter } from "@/components/layout/ServiceAreaFooter";
 import { QuoteForm } from "@/components/quote/QuoteForm";
 import { pageMetadata, SITE_DESCRIPTION, SITE_TITLE } from "@/lib/seo";
@@ -69,6 +70,8 @@ export default function IndexPage() {
           <CategoryGrid />
         </div>
       </section>
+
+      <WhyParkezza />
 
       <MarketsSection />
 
