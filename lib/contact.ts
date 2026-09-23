@@ -1,11 +1,5 @@
-/**
- * Google Business Profile link.
- * TODO: replace with the exact "Share profile" link from the GBP dashboard
- * (Profile > Share) once available — that permalink is more reliable than a
- * search query for driving reviews/directions.
- */
-export const GOOGLE_BUSINESS_URL =
-  "https://www.google.com/search?q=Parkezza+Park+City+Utah";
+/** Official Google "Share profile" permalink for the Parkezza Business Profile */
+export const GOOGLE_BUSINESS_URL = "https://share.google/ft6iBliJIVHTk7Ru4";
 
 /** Obfuscated contact strings — not rendered in HTML until user interaction */
 export function getPhoneNumber(): string {
