@@ -13,10 +13,10 @@ import {
 export const SITE_URL = "https://parkezza.com";
 export const SITE_NAME = "Parkezza";
 /** Default browser tab / document title */
-export const SITE_TITLE = "Parkezza - Commercial Outdoor Site Furnishings";
+export const SITE_TITLE = "Parkezza - Utah Commercial Outdoor Site Furnishings";
 
 export const SITE_DESCRIPTION =
-  "Commercial outdoor site furnishings for HOAs, landscape architects, and resort developers. Utah roots, Intermountain focus, projects nationwide.";
+  "Utah-based commercial outdoor site furnishings dealer for parks, trails, developments, and community centers. In-person meetings in Utah; quotes and delivery nationwide.";
 
 /** Search-intent titles for gallery SERP snippets (H1 on page stays the short category name). */
 export const GALLERY_SEO: Record<
@@ -228,7 +228,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     logo: absoluteUrl("/logo-parkezza.png"),
     image: absoluteUrl("/logo-parkezza.png"),
-    description: `Commercial outdoor site furnishings for resorts, developments, golf courses, HOAs, municipal facilities, parks, and public spaces nationwide—with Utah roots and Intermountain West experience.`,
+    description: `Utah-based dealer and distributor of commercial outdoor site furnishings for parks, trails, developments, and community centers—also serving resorts, golf courses, HOAs, and municipalities nationwide. In-person meetings encouraged around Park City, Kamas City, and Heber City, Utah; quotes and delivery nationwide.`,
     email: "projects@parkezza.com",
     contactPoint: {
       "@type": "ContactPoint",
