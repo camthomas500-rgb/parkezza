@@ -2,11 +2,11 @@ import { Suspense } from "react";
 import { ServiceAreaFooter } from "@/components/layout/ServiceAreaFooter";
 import { QuoteForm } from "@/components/quote/QuoteForm";
 import { pageMetadata } from "@/lib/seo";
+import { IN_PERSON_MEETINGS_COPY } from "@/lib/regions";
 
 export const metadata = pageMetadata({
   title: "Contact Parkezza — Utah Outdoor Site Furnishings Partner",
-  description:
-    "Contact Parkezza, a Utah-based, single-source outdoor site furnishings partner drawing on relationships across leading manufacturers. In-person meetings around Park City, Kamas City, and Heber City; quotes and delivery nationwide.",
+  description: `Contact Parkezza, a Utah-based, single-source outdoor site furnishings partner drawing on relationships across leading manufacturers. ${IN_PERSON_MEETINGS_COPY}`,
   path: "/contact",
 });
 
@@ -28,8 +28,8 @@ export default function ContactPage() {
         <h1 className="mt-2 font-display text-4xl text-charcoal">Get in touch</h1>
         <p className="mt-4 text-muted-foreground">
           Project quotes, specifications, and quantities — we respond within one
-          business day. Utah meetings available when helpful; quotes welcome
-          nationwide.
+          business day. In-person consultations available in Utah; quotes
+          welcome nationwide.
         </p>
         <div className="mt-10">
           <Suspense fallback={<QuoteFormFallback />}>

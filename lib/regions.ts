@@ -76,3 +76,7 @@ export const UTAH_LOCAL_COPY =
 
 export const SERVICE_AREA_COPY =
   `Parkezza quotes commercial outdoor site furnishings nationwide, with Utah roots for in-person meetings when helpful and strong Intermountain West experience (${PRIMARY_STATES_PHRASE}). ${UTAH_LOCAL_COPY}`;
+
+/** Balanced, professional phrasing: local option first, nationwide scope in the same breath. */
+export const IN_PERSON_MEETINGS_COPY =
+  "In-person consultations available in Utah; quotes and delivery nationwide.";

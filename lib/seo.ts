@@ -8,6 +8,7 @@ import {
   UTAH_LOCAL_CITY_SEO,
   UTAH_LOCAL_COUNTIES,
   UTAH_LOCAL_PHRASE,
+  IN_PERSON_MEETINGS_COPY,
 } from "@/lib/regions";
 
 export const SITE_URL = "https://parkezza.com";
@@ -228,7 +229,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     logo: absoluteUrl("/logo-parkezza.png"),
     image: absoluteUrl("/logo-parkezza.png"),
-    description: `Parkezza is a Utah-based, single-source partner for commercial outdoor site furnishings. Drawing on relationships across leading manufacturers, we assemble comprehensive, coordinated packages—benches, litter receptacles, shade structures, and more—for parks, trails, developments, and community centers, so clients don't have to source and coordinate multiple suppliers themselves. Also serving resorts, golf courses, HOAs, and municipalities nationwide. In-person meetings encouraged around Park City, Kamas City, and Heber City, Utah; quotes and delivery nationwide.`,
+    description: `Parkezza is a Utah-based, single-source partner for commercial outdoor site furnishings. Drawing on relationships across leading manufacturers, we assemble comprehensive, coordinated packages—benches, litter receptacles, shade structures, and more—for parks, trails, developments, and community centers, so clients don't have to source and coordinate multiple suppliers themselves. Serving resorts, golf courses, HOAs, and municipalities nationwide. ${IN_PERSON_MEETINGS_COPY}`,
     email: "projects@parkezza.com",
     contactPoint: {
       "@type": "ContactPoint",
