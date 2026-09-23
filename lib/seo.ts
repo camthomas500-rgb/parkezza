@@ -16,7 +16,7 @@ export const SITE_NAME = "Parkezza";
 export const SITE_TITLE = "Parkezza - Utah Commercial Outdoor Site Furnishings";
 
 export const SITE_DESCRIPTION =
-  "Utah-based commercial outdoor site furnishings dealer for parks, trails, developments, and community centers. In-person meetings in Utah; quotes and delivery nationwide.";
+  "Utah-based, single-source outdoor site furnishings partner—drawing on relationships across leading manufacturers to build one coordinated package for parks, trails, developments, and community centers nationwide.";
 
 /** Search-intent titles for gallery SERP snippets (H1 on page stays the short category name). */
 export const GALLERY_SEO: Record<
@@ -228,7 +228,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     logo: absoluteUrl("/logo-parkezza.png"),
     image: absoluteUrl("/logo-parkezza.png"),
-    description: `Utah-based dealer and distributor of commercial outdoor site furnishings for parks, trails, developments, and community centers—also serving resorts, golf courses, HOAs, and municipalities nationwide. In-person meetings encouraged around Park City, Kamas City, and Heber City, Utah; quotes and delivery nationwide.`,
+    description: `Parkezza is a Utah-based, single-source partner for commercial outdoor site furnishings. Drawing on relationships across leading manufacturers, we assemble comprehensive, coordinated packages—benches, litter receptacles, shade structures, and more—for parks, trails, developments, and community centers, so clients don't have to source and coordinate multiple suppliers themselves. Also serving resorts, golf courses, HOAs, and municipalities nationwide. In-person meetings encouraged around Park City, Kamas City, and Heber City, Utah; quotes and delivery nationwide.`,
     email: "projects@parkezza.com",
     contactPoint: {
       "@type": "ContactPoint",

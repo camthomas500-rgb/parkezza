@@ -20,9 +20,10 @@ export function Footer() {
             />
           </Link>
           <p className="mt-4 max-w-sm text-sm leading-relaxed text-ivory/75">
-            Utah-based dealer and distributor of commercial outdoor site
-            furnishings for parks, trails, developments, and community
-            centers—quotes and delivery nationwide.
+            Utah-based, single-source outdoor site furnishings partner—drawing
+            on relationships across leading manufacturers to build one
+            coordinated package for parks, trails, developments, and
+            community centers nationwide.
           </p>
         </div>
         <div>

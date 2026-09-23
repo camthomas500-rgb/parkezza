@@ -4,9 +4,9 @@ import { QuoteForm } from "@/components/quote/QuoteForm";
 import { pageMetadata } from "@/lib/seo";
 
 export const metadata = pageMetadata({
-  title: "Contact Parkezza — Utah Outdoor Site Furnishings Dealer",
+  title: "Contact Parkezza — Utah Outdoor Site Furnishings Partner",
   description:
-    "Contact Parkezza, a Utah-based dealer and distributor of commercial outdoor site furnishings. In-person meetings around Park City, Kamas City, and Heber City; quotes and delivery nationwide.",
+    "Contact Parkezza, a Utah-based, single-source outdoor site furnishings partner drawing on relationships across leading manufacturers. In-person meetings around Park City, Kamas City, and Heber City; quotes and delivery nationwide.",
   path: "/contact",
 });
 
