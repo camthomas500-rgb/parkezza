@@ -23,16 +23,19 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 bg-charcoal text-ivory">
       <div className="mx-auto flex h-28 max-w-7xl items-center justify-between gap-4 px-4 sm:h-32 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0">
+        <Link href="/" className="flex shrink-0 flex-col items-center">
           <Image
-            src="/logo-parkezza-dark.png?v=solid23"
+            src="/logo-parkezza-dark.png?v=solid24"
             alt="Parkezza"
             width={560}
             height={180}
-            className="h-24 w-auto sm:h-28 md:h-32"
+            className="h-20 w-auto sm:h-24 md:h-28"
             priority
             unoptimized
           />
+          <span className="mt-0.5 font-display text-sm font-semibold uppercase tracking-[0.18em] text-bronze sm:text-base">
+            Parkezza
+          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
