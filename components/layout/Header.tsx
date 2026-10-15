@@ -23,7 +23,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-white text-charcoal lg:border-b-0">
       <div className="mx-auto flex h-28 max-w-7xl items-center justify-between gap-4 px-4 sm:h-32 sm:px-6 lg:px-8">
-        <Link href="/" className="flex shrink-0 items-center gap-3">
+        <Link href="/" className="flex shrink-0 items-end gap-2">
           <Image
             src="/logo-parkezza.png?v=white1"
             alt="Parkezza"
@@ -33,7 +33,7 @@ export function Header() {
             priority
             unoptimized
           />
-          <span className="font-display text-lg font-semibold tracking-wide text-bronze sm:text-xl md:text-2xl">
+          <span className="mb-1 font-sans text-[11px] font-light tracking-[0.04em] text-bronze sm:mb-1.5 sm:text-xs md:text-sm">
             Parkezza.com
           </span>
         </Link>
