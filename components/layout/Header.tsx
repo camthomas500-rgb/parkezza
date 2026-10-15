@@ -64,8 +64,8 @@ export function Header() {
         </div>
       </div>
 
-      {/* Category collections — second (and third) line */}
-      <div className="hidden border-t border-white/10 lg:block">
+      {/* Category collections — gold bar, white names */}
+      <div className="hidden bg-bronze lg:block">
         <nav
           aria-label="Product categories"
           className="mx-auto flex max-w-7xl flex-wrap items-center gap-x-4 gap-y-1.5 px-4 py-2.5 sm:px-6 lg:px-8"
@@ -74,7 +74,7 @@ export function Header() {
             <Link
               key={cat.slug}
               href={`/galleries/${cat.slug}`}
-              className="text-[11px] font-medium uppercase tracking-[0.06em] text-ivory/70 transition-colors hover:text-bronze"
+              className="text-[11px] font-semibold uppercase tracking-[0.06em] text-white transition-opacity hover:opacity-80"
             >
               {cat.name}
             </Link>
@@ -99,15 +99,15 @@ export function Header() {
               {link.name}
             </Link>
           ))}
-          <div className="my-2 border-t border-white/10 pt-3">
-            <p className="px-3 pb-2 text-[10px] font-semibold uppercase tracking-wider text-bronze">
+          <div className="-mx-4 mt-2 bg-bronze px-4 py-3">
+            <p className="px-3 pb-2 text-[10px] font-semibold uppercase tracking-wider text-white/80">
               Collections
             </p>
             {CATEGORY_NAV.map((cat) => (
               <Link
                 key={cat.slug}
                 href={`/galleries/${cat.slug}`}
-                className="block rounded-lg px-3 py-2 text-xs font-medium text-ivory/80"
+                className="block rounded-lg px-3 py-2 text-xs font-medium text-white"
                 onClick={() => setOpen(false)}
               >
                 {cat.name}
