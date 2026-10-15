@@ -21,11 +21,11 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-charcoal text-ivory">
+    <header className="sticky top-0 z-50 border-b border-border bg-white text-charcoal lg:border-b-0">
       <div className="mx-auto flex h-28 max-w-7xl items-center justify-between gap-4 px-4 sm:h-32 sm:px-6 lg:px-8">
-        <Link href="/" className="flex shrink-0 flex-col items-center">
+        <Link href="/" className="shrink-0">
           <Image
-            src="/logo-parkezza-dark.png?v=solid24"
+            src="/logo-parkezza.png?v=white1"
             alt="Parkezza"
             width={560}
             height={180}
@@ -33,9 +33,6 @@ export function Header() {
             priority
             unoptimized
           />
-          <span className="mt-0.5 font-display text-sm font-semibold uppercase tracking-[0.18em] text-bronze sm:text-base">
-            Parkezza
-          </span>
         </Link>
 
         <nav className="hidden items-center gap-6 lg:flex">
@@ -43,7 +40,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="text-sm font-medium text-ivory/80 transition-colors hover:text-bronze"
+              className="text-sm font-medium text-charcoal transition-colors hover:text-bronze"
             >
               {link.name}
             </Link>
@@ -55,7 +52,7 @@ export function Header() {
           <LetsTalk />
           <button
             type="button"
-            className="inline-flex items-center justify-center rounded-lg p-2 text-ivory"
+            className="inline-flex items-center justify-center rounded-lg p-2 text-charcoal"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Close menu" : "Open menu"}
           >
@@ -84,7 +81,7 @@ export function Header() {
 
       <div
         className={cn(
-          "border-t border-white/10 bg-charcoal lg:hidden",
+          "border-t border-border bg-white lg:hidden",
           open ? "block" : "hidden"
         )}
       >
@@ -93,7 +90,7 @@ export function Header() {
             <Link
               key={link.href}
               href={link.href}
-              className="rounded-lg px-3 py-2.5 text-sm font-medium text-ivory/90"
+              className="rounded-lg px-3 py-2.5 text-sm font-medium text-charcoal"
               onClick={() => setOpen(false)}
             >
               {link.name}
