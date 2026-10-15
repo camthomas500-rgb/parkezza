@@ -1,6 +1,3 @@
-/** Official Google "Share profile" permalink for the Parkezza Business Profile */
-export const GOOGLE_BUSINESS_URL = "https://share.google/ft6iBliJIVHTk7Ru4";
-
 /** Obfuscated contact strings — not rendered in HTML until user interaction */
 export function getPhoneNumber(): string {
   return [52, 51, 53, 45, 57, 48, 49, 45, 56, 48, 50, 56]

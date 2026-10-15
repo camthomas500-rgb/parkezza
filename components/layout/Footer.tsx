@@ -2,8 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { LetsTalk } from "@/components/layout/LetsTalk";
 import { CATEGORY_NAV } from "@/lib/content";
-import { GOOGLE_BUSINESS_URL } from "@/lib/contact";
-
 export function Footer() {
   return (
     <footer className="border-t border-border bg-charcoal text-ivory">
@@ -95,14 +93,6 @@ export function Footer() {
           <div className="mt-4">
             <LetsTalk variant="footer" />
           </div>
-          <a
-            href={GOOGLE_BUSINESS_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-4 inline-block text-sm font-medium text-bronze underline underline-offset-2 hover:text-white"
-          >
-            Find us on Google →
-          </a>
         </div>
       </div>
       <div className="border-t border-white/10 py-6">
