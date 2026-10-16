@@ -30,6 +30,11 @@ export const GALLERY_FAQS: Record<string, FaqItem[]> = {
       answer:
         "Share quantities, preferred materials or finishes, mounting type, ADA or accessibility notes if relevant, and drawings or site plans when available. We respond with model options and pricing, typically within one business day.",
     },
+    {
+      question: "How do I get pricing on a bench I liked?",
+      answer:
+        "Click Get pricing under that bench photo. The quote form will include the model reference. Add a quantity if you know it. We do not publish a public price list—freight, finish, mounting, and quantity change the number—and we reply with current pricing, typically within one business day.",
+    },
   ],
   "litter-receptacles": [
     {

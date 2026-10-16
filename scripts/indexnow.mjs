@@ -50,10 +50,12 @@ function collectUrls() {
     // so this script stays dependency-free (no TS import).
     const resourceSlugs = [
       "specifying-outdoor-site-furnishings",
+      "landscape-architect-site-furnishings",
       "dog-waste-stations-for-trails-and-paths",
       "matching-benches-and-litter-receptacles",
       "ada-picnic-tables-for-parks",
       "intermountain-west-and-nationwide-projects",
+      "requesting-pricing-for-site-furnishings",
     ];
     for (const slug of resourceSlugs) {
       urls.push(`${SITE_URL}/resources/${slug}`);

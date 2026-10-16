@@ -187,6 +187,32 @@ export const RESOURCE_GUIDES: ResourceGuide[] = [
       },
     ],
   },
+  {
+    slug: "requesting-pricing-for-site-furnishings",
+    title: "How to Request Pricing for Commercial Outdoor Site Furnishings",
+    description:
+      "How HOAs, landscape architects, contractors, and municipalities get current pricing from Parkezza—for one bench they liked or a full site package.",
+    summary:
+      "No public price list. Click Get pricing on a photo, add quantity, and we reply within one business day.",
+    sections: [
+      {
+        heading: "Found a bench or product you like? Ask for that price",
+        body: `Browse the galleries, then click Get pricing under the photo. The quote form adds the model reference (for example BN-01 — Aus). Add a quantity if you know it, plus your name and email. That is enough for a first pricing reply. You do not need a finished spec.`,
+      },
+      {
+        heading: "Why Parkezza does not publish a price list",
+        body: `Commercial outdoor site furnishings change with quantity, finish, mounting (portable, surface-mount, or inground), freight, and whether the order is one item or a coordinated package. A public list would be wrong more often than right. We quote current pricing, typically within one business day.`,
+      },
+      {
+        heading: "What to include if you have a project",
+        body: `Categories you need, model names or codes if you picked them, quantities by area, preferred materials or colors, mounting notes, ADA needs, drawings or site plans, and your timeline. Landscape architects can send placeholders. HOA and resort teams can send amenity goals and photos.`,
+      },
+      {
+        heading: "Where to send the request",
+        body: `Use the quote form on any product gallery, the homepage (#quote), or /quote. We typically respond within one business day with options and pricing for projects anywhere in the United States.`,
+      },
+    ],
+  },
 ];
 
 export function getResourceGuides(): ResourceGuide[] {
@@ -199,4 +225,174 @@ export function getResourceGuide(slug: string): ResourceGuide | undefined {
 
 export function getResourceSlugs(): string[] {
   return RESOURCE_GUIDES.map((g) => g.slug);
+}
+
+/** Specifier guides to surface on each product gallery (topical AI / internal links). */
+export const GALLERY_RELATED_RESOURCES: Record<
+  string,
+  { slug: string; label: string }[]
+> = {
+  benches: [
+    {
+      slug: "requesting-pricing-for-site-furnishings",
+      label: "How to request pricing",
+    },
+    {
+      slug: "matching-benches-and-litter-receptacles",
+      label: "Matching benches and litter receptacles",
+    },
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+    {
+      slug: "landscape-architect-site-furnishings",
+      label: "Landscape architect placeholders to procurement",
+    },
+  ],
+  "litter-receptacles": [
+    {
+      slug: "matching-benches-and-litter-receptacles",
+      label: "Matching benches and litter receptacles",
+    },
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+  "picnic-tables": [
+    {
+      slug: "ada-picnic-tables-for-parks",
+      label: "ADA picnic tables for parks",
+    },
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+  "shade-structures": [
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+    {
+      slug: "ada-picnic-tables-for-parks",
+      label: "ADA picnic tables and shade packages",
+    },
+  ],
+  "dog-waste-stations": [
+    {
+      slug: "dog-waste-stations-for-trails-and-paths",
+      label: "Dog waste stations for trails and paths",
+    },
+    {
+      slug: "matching-benches-and-litter-receptacles",
+      label: "Matching benches and litter receptacles",
+    },
+  ],
+  umbrellas: [
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+  "pool-furniture": [
+    {
+      slug: "landscape-architect-site-furnishings",
+      label: "Landscape architect placeholders to procurement",
+    },
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+  bollards: [
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+  "pergolas-gazebos": [
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+  "bike-racks": [
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+  "bike-repair-stations": [
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+  flagpoles: [
+    {
+      slug: "intermountain-west-and-nationwide-projects",
+      label: "Intermountain West and nationwide projects",
+    },
+  ],
+  "tree-guards": [
+    {
+      slug: "specifying-outdoor-site-furnishings",
+      label: "How to specify outdoor site furnishings",
+    },
+  ],
+};
+
+/** Product galleries to surface from each specifier guide. */
+export const RESOURCE_RELATED_GALLERIES: Record<
+  string,
+  { slug: string; label: string }[]
+> = {
+  "specifying-outdoor-site-furnishings": [
+    { slug: "benches", label: "Benches" },
+    { slug: "litter-receptacles", label: "Litter receptacles" },
+    { slug: "shade-structures", label: "Shade structures" },
+    { slug: "picnic-tables", label: "Picnic tables" },
+  ],
+  "landscape-architect-site-furnishings": [
+    { slug: "benches", label: "Benches" },
+    { slug: "litter-receptacles", label: "Litter receptacles" },
+    { slug: "pool-furniture", label: "Pool furniture" },
+    { slug: "bollards", label: "Bollards" },
+  ],
+  "dog-waste-stations-for-trails-and-paths": [
+    { slug: "dog-waste-stations", label: "Dog waste stations" },
+    { slug: "benches", label: "Benches" },
+    { slug: "litter-receptacles", label: "Litter receptacles" },
+  ],
+  "matching-benches-and-litter-receptacles": [
+    { slug: "benches", label: "Benches" },
+    { slug: "litter-receptacles", label: "Litter receptacles" },
+  ],
+  "ada-picnic-tables-for-parks": [
+    { slug: "picnic-tables", label: "Picnic tables" },
+    { slug: "shade-structures", label: "Shade structures" },
+    { slug: "litter-receptacles", label: "Litter receptacles" },
+  ],
+  "intermountain-west-and-nationwide-projects": [
+    { slug: "benches", label: "Benches" },
+    { slug: "litter-receptacles", label: "Litter receptacles" },
+    { slug: "flagpoles", label: "Flagpoles" },
+    { slug: "bollards", label: "Bollards" },
+  ],
+  "requesting-pricing-for-site-furnishings": [
+    { slug: "benches", label: "Benches" },
+    { slug: "litter-receptacles", label: "Litter receptacles" },
+    { slug: "picnic-tables", label: "Picnic tables" },
+    { slug: "pool-furniture", label: "Pool furniture" },
+  ],
+};
+
+export function getGalleryRelatedResources(gallerySlug: string) {
+  return GALLERY_RELATED_RESOURCES[gallerySlug] ?? [];
+}
+
+export function getResourceRelatedGalleries(resourceSlug: string) {
+  return RESOURCE_RELATED_GALLERIES[resourceSlug] ?? [];
 }

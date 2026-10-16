@@ -13,11 +13,12 @@ import {
 
 export const SITE_URL = "https://parkezza.com";
 export const SITE_NAME = "Parkezza";
-/** Default browser tab / document title */
-export const SITE_TITLE = "Parkezza - Utah Commercial Outdoor Site Furnishings";
+/** Default browser tab / document title — commercial/nationwide first; Utah stays in body & service-area copy */
+export const SITE_TITLE =
+  "Parkezza - Commercial Outdoor Site Furnishings Nationwide";
 
 export const SITE_DESCRIPTION =
-  "Utah-based, single-source outdoor site furnishings partner—drawing on relationships across leading manufacturers to build one coordinated package for parks, trails, developments, and community centers nationwide.";
+  "Single-source commercial outdoor site furnishings partner—coordinated packages of benches, litter, shade, and amenities for parks, trails, developments, and community centers nationwide. Utah roots for in-person meetings when helpful.";
 
 /** Search-intent titles for gallery SERP snippets (H1 on page stays the short category name). */
 export const GALLERY_SEO: Record<
@@ -127,6 +128,11 @@ export const HOME_FAQS: FaqItem[] = [
       "Use the quote form on the Parkezza homepage (or Request a Quote / Contact). Add every product category you need, plus model references when known, quantities, finish preferences, drawings or site plans if available, and your timeline. We typically respond within one business day.",
   },
   {
+    question: "How do I get pricing for a bench or product I liked?",
+    answer:
+      "Click Get pricing under the photo on any gallery, or open the quote form and add that model (for example BN-01 — Aus). Include quantity if you know it. Parkezza does not publish a public price list because freight, finishes, mounting, and quantity change the number; we reply with current pricing, typically within one business day.",
+  },
+  {
     question: "What is the difference between Signature and Essential products?",
     answer:
       "Signature lines emphasize premium design and finishes for distinguished outdoor environments. Essential products focus on dependable, high-use performance for parks, campuses, and public spaces—often at a more accessible specification and budget.",
@@ -229,7 +235,7 @@ export function organizationJsonLd() {
     url: SITE_URL,
     logo: absoluteUrl("/logo-parkezza.png"),
     image: absoluteUrl("/logo-parkezza.png"),
-    description: `Parkezza is a Utah-based, single-source partner for commercial outdoor site furnishings. Drawing on relationships across leading manufacturers, we assemble comprehensive, coordinated packages—benches, litter receptacles, shade structures, and more—for parks, trails, developments, and community centers, so clients don't have to source and coordinate multiple suppliers themselves. Serving resorts, golf courses, HOAs, and municipalities nationwide. ${IN_PERSON_MEETINGS_COPY}`,
+    description: `Parkezza is a single-source partner for commercial outdoor site furnishings nationwide. Drawing on relationships across leading manufacturers, we assemble comprehensive, coordinated packages—benches, litter receptacles, shade structures, picnic tables, pool furniture, and more—for parks, trails, developments, resorts, HOAs, campuses, and community centers. ${IN_PERSON_MEETINGS_COPY}`,
     email: "projects@parkezza.com",
     contactPoint: {
       "@type": "ContactPoint",

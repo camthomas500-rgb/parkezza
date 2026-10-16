@@ -224,7 +224,8 @@ export function QuoteForm({
         <div>
           <span className="text-sm font-medium">Specific {itemNoun}</span>
           <p className="mt-1 text-xs text-muted-foreground">
-            Click a {itemNoun} label below any photo, or pick from the list.
+            Click Get pricing below any photo, or pick a specific {itemNoun}{" "}
+            from the list.
           </p>
           <div className="mt-2 flex flex-wrap gap-2">
             {selectedItems.map((item) => (

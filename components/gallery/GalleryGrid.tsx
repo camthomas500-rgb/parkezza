@@ -103,12 +103,10 @@ function ImageTile({
         (inquireHref ? (
           <Link
             href={inquireHref}
-            className="mt-2 inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-accent"
+            className="mt-2 inline-flex flex-wrap items-baseline gap-x-2 gap-y-0.5 text-sm text-muted-foreground hover:text-accent"
           >
             <span>{labelText}</span>
-            <span aria-hidden="true" className="text-accent">
-              →
-            </span>
+            <span className="font-medium text-accent">Get pricing →</span>
           </Link>
         ) : (
           <p className="mt-2 text-sm text-muted-foreground">{labelText}</p>
@@ -318,9 +316,9 @@ const SPECIFIC_HEADLINE_SLUGS = new Set([
 
 function inquiryHeadline(gallery: Gallery): string {
   if (SPECIFIC_HEADLINE_SLUGS.has(gallery.slug)) {
-    return `Interested in a specific ${ITEM_NOUNS[gallery.slug]}?`;
+    return `Want pricing on a specific ${ITEM_NOUNS[gallery.slug]}?`;
   }
-  return `Interested in ${gallery.name.toLowerCase()}?`;
+  return `Want pricing on ${gallery.name.toLowerCase()}?`;
 }
 
 export function GalleryGrid({ gallery }: { gallery: Gallery }) {
